@@ -1,0 +1,4422 @@
+{
+"programs": [
+{
+"bank": "A",
+"num": 0,
+"name": "L/R Piano",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 1,
+"name": "A.Piano 1",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 2,
+"name": "M1 Piano",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 3,
+"name": "Romance Pf",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 4,
+"name": "Suitcase",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 5,
+"name": "Stage EP",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 6,
+"name": "Dyno EP 3",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 7,
+"name": "Pure Wurly",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 8,
+"name": "Dist.Wurly",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 9,
+"name": "R&B EP",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 10,
+"name": "Deluxe EP",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 11,
+"name": "Clav AC",
+"sub": "Clav/Harpsi"
+},
+{
+"bank": "A",
+"num": 12,
+"name": "Clav BC",
+"sub": "Clav/Harpsi"
+},
+{
+"bank": "A",
+"num": 13,
+"name": "Perc Organ",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 14,
+"name": "Jazz Organ",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 15,
+"name": "Full Drawb",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 16,
+"name": "A.Piano 2",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 17,
+"name": "Classic Pf",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 18,
+"name": "Attack Pf (Kn1)",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 19,
+"name": "GrandPiano",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 20,
+"name": "Upright Pf",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 21,
+"name": "HonkeyTonk",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 22,
+"name": "Sad Piano",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 23,
+"name": "90's Piano",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 24,
+"name": "Piano Pad",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 25,
+"name": "Elec Grand",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 26,
+"name": "PanSuit EP (Kn1&2)",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 27,
+"name": "Silver EP",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 28,
+"name": "Dyno EP 1",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 29,
+"name": "Dyno EP 2",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 30,
+"name": "Vintage EP (Kn1)",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 31,
+"name": "Super EP (Kn1)",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 32,
+"name": "RichTea EP",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 33,
+"name": "Phase EP",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 34,
+"name": "Wurly EP",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 35,
+"name": "Reed EP",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 36,
+"name": "Wurly Pad",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 37,
+"name": "Pad EP",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 38,
+"name": "SynPiano X",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 39,
+"name": "Phantom EP",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 40,
+"name": "Night EP",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 41,
+"name": "Nu Digi EP",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 42,
+"name": "Sweep EP",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 43,
+"name": "Clav AD",
+"sub": "Clav/Harpsi"
+},
+{
+"bank": "A",
+"num": 44,
+"name": "Clav BD",
+"sub": "Clav/Harpsi"
+},
+{
+"bank": "A",
+"num": 45,
+"name": "Harpsicord 8'+4'",
+"sub": "Clav/Harpsi"
+},
+{
+"bank": "A",
+"num": 46,
+"name": "Perc BX3",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 47,
+"name": "Killer B",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 48,
+"name": "ClickOrgan",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 49,
+"name": "Gospel OrganPerc",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 50,
+"name": "Tone Wheel",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 51,
+"name": "VeloSW BX3",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 52,
+"name": "Dist.Organ",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 53,
+"name": "M1 Organ",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 54,
+"name": "BigRockOrgan",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 55,
+"name": "JazPercOrgan",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 56,
+"name": "DarkJazzOrgan",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 57,
+"name": "Pure Organ",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 58,
+"name": "Ballad Organ",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 59,
+"name": "Daddy'sOrgan",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 60,
+"name": "Rock Organ",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 61,
+"name": "Vox Organ1",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 62,
+"name": "Vox Organ2",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 63,
+"name": "DW-Church1(Kn)",
+"sub": "Pipe Organ"
+},
+{
+"bank": "A",
+"num": 64,
+"name": "DW-Church2(Kn)",
+"sub": "Pipe Organ"
+},
+{
+"bank": "A",
+"num": 65,
+"name": "Mixture",
+"sub": "Pipe Organ"
+},
+{
+"bank": "A",
+"num": 66,
+"name": "Positive",
+"sub": "Pipe Organ"
+},
+{
+"bank": "A",
+"num": 67,
+"name": "Pipe Reed",
+"sub": "Pipe Organ"
+},
+{
+"bank": "A",
+"num": 68,
+"name": "Pipe Full",
+"sub": "Pipe Organ"
+},
+{
+"bank": "A",
+"num": 69,
+"name": "Legato Str",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 70,
+"name": "Arco Str",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 71,
+"name": "FewBowsStr",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 72,
+"name": "NewAge Str",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 73,
+"name": "The Voices",
+"sub": "Vocal"
+},
+{
+"bank": "A",
+"num": 74,
+"name": "Slow Choir",
+"sub": "Vocal"
+},
+{
+"bank": "A",
+"num": 75,
+"name": "Vocalesque",
+"sub": "Airy"
+},
+{
+"bank": "A",
+"num": 76,
+"name": "Brass Ens1",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 77,
+"name": "Fanfare",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 78,
+"name": "Trumpet",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 79,
+"name": "Big Band",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 80,
+"name": "Sax Ens",
+"sub": "Woodwind"
+},
+{
+"bank": "A",
+"num": 81,
+"name": "TenorSax 1 (JS-Y)",
+"sub": "Woodwind"
+},
+{
+"bank": "A",
+"num": 82,
+"name": "Flute",
+"sub": "Woodwind"
+},
+{
+"bank": "A",
+"num": 83,
+"name": "DoubleReed",
+"sub": "Reed"
+},
+{
+"bank": "A",
+"num": 84,
+"name": "Musette",
+"sub": "Reed"
+},
+{
+"bank": "A",
+"num": 85,
+"name": "Stereo Str",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 86,
+"name": "Sym.Bows",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 87,
+"name": "MarcatoStr",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 88,
+"name": "Multi Str",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 89,
+"name": "Camera Str",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 90,
+"name": "QuartetStr",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 91,
+"name": "String Duo",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 92,
+"name": "SoloViolin",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 93,
+"name": "Octave Str",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 94,
+"name": "Str/Choir",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 95,
+"name": "Sky Strings",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 96,
+"name": "Pizz Ens.",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 97,
+"name": "Take Voice",
+"sub": "Vocal"
+},
+{
+"bank": "A",
+"num": 98,
+"name": "Oooh Voice",
+"sub": "Vocal"
+},
+{
+"bank": "A",
+"num": 99,
+"name": "Aaah Voice",
+"sub": "Vocal"
+},
+{
+"bank": "A",
+"num": 100,
+"name": "LightChoir",
+"sub": "Vocal"
+},
+{
+"bank": "A",
+"num": 101,
+"name": "Robot Vox",
+"sub": "Vocal"
+},
+{
+"bank": "A",
+"num": 102,
+"name": "Synthy Vox (JS-Y)",
+"sub": "Vocal"
+},
+{
+"bank": "A",
+"num": 103,
+"name": "Fem Remap",
+"sub": "Vocal"
+},
+{
+"bank": "A",
+"num": 104,
+"name": "Male Remap",
+"sub": "Vocal"
+},
+{
+"bank": "A",
+"num": 105,
+"name": "Fresh Vox",
+"sub": "Airy"
+},
+{
+"bank": "A",
+"num": 106,
+"name": "Arctic Vox",
+"sub": "Airy"
+},
+{
+"bank": "A",
+"num": 107,
+"name": "Full Vox",
+"sub": "Airy"
+},
+{
+"bank": "A",
+"num": 108,
+"name": "TightBrass",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 109,
+"name": "Brass Ens2",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 110,
+"name": "Octave Brs",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 111,
+"name": "Brass Ens3",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 112,
+"name": "Burnin Brs",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 113,
+"name": "Fat Brass",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 114,
+"name": "Exp.Brass",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 115,
+"name": "Film Brass",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 116,
+"name": "Pop Brass",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 117,
+"name": "TrumpetEns",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 118,
+"name": "Trb. Ens",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 119,
+"name": "Trombone",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 120,
+"name": "Muted Tp",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 121,
+"name": "Brass&Reed Ens",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 122,
+"name": "Jazz Winds",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 123,
+"name": "Horns&Ens",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 124,
+"name": "FrenchHorn",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 125,
+"name": "F.Horn Ens",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 126,
+"name": "Tenor&Alto",
+"sub": "Woodwind"
+},
+{
+"bank": "A",
+"num": 127,
+"name": "SopranoSax (JS-Y)",
+"sub": "Woodwind"
+},
+{
+"bank": "B",
+"num": 0,
+"name": "Alto Sax 1 (JS-Y)",
+"sub": "Woodwind"
+},
+{
+"bank": "B",
+"num": 1,
+"name": "Alto Sax 2 (JS-Y)",
+"sub": "Woodwind"
+},
+{
+"bank": "B",
+"num": 2,
+"name": "TenorSax 2 (JS-Y)",
+"sub": "Woodwind"
+},
+{
+"bank": "B",
+"num": 3,
+"name": "BaritonSax (JS-Y)",
+"sub": "Woodwind"
+},
+{
+"bank": "B",
+"num": 4,
+"name": "Clarinet",
+"sub": "Woodwind"
+},
+{
+"bank": "B",
+"num": 5,
+"name": "Bassoon",
+"sub": "Woodwind"
+},
+{
+"bank": "B",
+"num": 6,
+"name": "Silver Fl.",
+"sub": "Woodwind"
+},
+{
+"bank": "B",
+"num": 7,
+"name": "Fusion Fl.",
+"sub": "Woodwind"
+},
+{
+"bank": "B",
+"num": 8,
+"name": "SpitBottle",
+"sub": "Woodwind"
+},
+{
+"bank": "B",
+"num": 9,
+"name": "Shakuhachi",
+"sub": "Woodwind"
+},
+{
+"bank": "B",
+"num": 10,
+"name": "Recorder",
+"sub": "Woodwind"
+},
+{
+"bank": "B",
+"num": 11,
+"name": "Eng. Horn",
+"sub": "Reed"
+},
+{
+"bank": "B",
+"num": 12,
+"name": "Fisa 1",
+"sub": "Reed"
+},
+{
+"bank": "B",
+"num": 13,
+"name": "Fisa 2",
+"sub": "Reed"
+},
+{
+"bank": "B",
+"num": 14,
+"name": "Fisa 3",
+"sub": "Reed"
+},
+{
+"bank": "B",
+"num": 15,
+"name": "Harmonica",
+"sub": "Reed"
+},
+{
+"bank": "B",
+"num": 16,
+"name": "Nylon Gtr",
+"sub": "A.Guitar"
+},
+{
+"bank": "B",
+"num": 17,
+"name": "Velo A.Gtr",
+"sub": "A.Guitar"
+},
+{
+"bank": "B",
+"num": 18,
+"name": "12String 1(Kn1)",
+"sub": "A.Guitar"
+},
+{
+"bank": "B",
+"num": 19,
+"name": "DynamicGtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 20,
+"name": "Rhythm Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 21,
+"name": "E.Gtr JS-Y Mute",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 22,
+"name": "U-Vibe Gtr(Kn2)",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 23,
+"name": "VolSwellGtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 24,
+"name": "TweedPhsGtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 25,
+"name": "Vel Ld Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 26,
+"name": "Mute D.Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 27,
+"name": "PowerChords",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 28,
+"name": "Piezo Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 29,
+"name": "Jazz Gtr 1 (JS-Y)",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 30,
+"name": "Harp",
+"sub": "Plucked"
+},
+{
+"bank": "B",
+"num": 31,
+"name": "Sitar 1",
+"sub": "Plucked"
+},
+{
+"bank": "B",
+"num": 32,
+"name": "ChimeStrat",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 33,
+"name": "Velo Strat",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 34,
+"name": "L&R HandGtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 35,
+"name": "FatCleanGtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 36,
+"name": "VintageGtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 37,
+"name": "Chorus Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 38,
+"name": "TremoloGtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 39,
+"name": "Rotary Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 40,
+"name": "Funky Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 41,
+"name": "ProcessGtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 42,
+"name": "SoloistGtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 43,
+"name": "Crunch Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 44,
+"name": "JS Wah Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 45,
+"name": "JSKillerGtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 46,
+"name": "FeedbackGtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 47,
+"name": "WetDist.Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 48,
+"name": "AmpDistGtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 49,
+"name": "SuperD.Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 50,
+"name": "PedalSteel Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 51,
+"name": "Jazz Gtr 2",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 52,
+"name": "VoxWah Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 53,
+"name": "GtHarmonic",
+"sub": "E.Guitar"
+},
+{
+"bank": "B",
+"num": 54,
+"name": "FlamencoGtr",
+"sub": "A.Guitar"
+},
+{
+"bank": "B",
+"num": 55,
+"name": "Guitar&Vox",
+"sub": "Plucked"
+},
+{
+"bank": "B",
+"num": 56,
+"name": "Finger Gtr",
+"sub": "A.Guitar"
+},
+{
+"bank": "B",
+"num": 57,
+"name": "Stereo Gtr",
+"sub": "A.Guitar"
+},
+{
+"bank": "B",
+"num": 58,
+"name": "Acoust-ish",
+"sub": "A.Guitar"
+},
+{
+"bank": "B",
+"num": 59,
+"name": "Ac.Guitar",
+"sub": "A.Guitar"
+},
+{
+"bank": "B",
+"num": 60,
+"name": "FingertipsGtr",
+"sub": "A.Guitar"
+},
+{
+"bank": "B",
+"num": 61,
+"name": "12String 2 Real",
+"sub": "A.Guitar"
+},
+{
+"bank": "B",
+"num": 62,
+"name": "12String 3 Old",
+"sub": "A.Guitar"
+},
+{
+"bank": "B",
+"num": 63,
+"name": "Sitar Gtr",
+"sub": "A.Guitar"
+},
+{
+"bank": "B",
+"num": 64,
+"name": "Sitar 2",
+"sub": "Plucked"
+},
+{
+"bank": "B",
+"num": 65,
+"name": "Santur",
+"sub": "Plucked"
+},
+{
+"bank": "B",
+"num": 66,
+"name": "Koto",
+"sub": "Plucked"
+},
+{
+"bank": "B",
+"num": 67,
+"name": "PickBass 3",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 68,
+"name": "Stein Bass",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 69,
+"name": "Fretless 1 Sweet",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 70,
+"name": "Slap Bass (Kn1)",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 71,
+"name": "Wah Bass",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 72,
+"name": "DistPickBs",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 73,
+"name": "Ac.Upright Bs",
+"sub": "A.Bass"
+},
+{
+"bank": "B",
+"num": 74,
+"name": "Saw Bass",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 75,
+"name": "Dub Sub",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 76,
+"name": "Boost Bass",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 77,
+"name": "Pulse Bass",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 78,
+"name": "Decayed Bs",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 79,
+"name": "Euro8va Bs",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 80,
+"name": "DarkR&B Bs",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 81,
+"name": "Bass Pulse (JSY)",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 82,
+"name": "Nasty Bs 2",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 83,
+"name": "PickBass 1",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 84,
+"name": "PickBass 2",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 85,
+"name": "VeloPickBs",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 86,
+"name": "PickBed Bs",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 87,
+"name": "Finger Bs1",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 88,
+"name": "Finger Bs2",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 89,
+"name": "FatRock Bs(JS-Y)",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 90,
+"name": "Grunt Bass",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 91,
+"name": "DarkPumpBs",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 92,
+"name": "Fretless 2",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 93,
+"name": "Fretless 3 Fat",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 94,
+"name": "Fretless 4 Agressive",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 95,
+"name": "Fretless 5 Octave",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 96,
+"name": "Fretless 6 Dual",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 97,
+"name": "Multi Bs (JS-Y)",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 98,
+"name": "SwitchBass",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 99,
+"name": "VeloSlapBs",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 100,
+"name": "Punky Slap Bass",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 101,
+"name": "Tight Slap Bass",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 102,
+"name": "Slapper Bs",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 103,
+"name": "Attk Bass",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 104,
+"name": "Wire Bass",
+"sub": "E.Bass"
+},
+{
+"bank": "B",
+"num": 105,
+"name": "Old Ac. Bs",
+"sub": "A.Bass"
+},
+{
+"bank": "B",
+"num": 106,
+"name": "A'KustikBs(JS-Y)",
+"sub": "A.Bass"
+},
+{
+"bank": "B",
+"num": 107,
+"name": "Solid Bass",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 108,
+"name": "VelBark Bs",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 109,
+"name": "Damp Bass",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 110,
+"name": "Nasty Bs 1",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 111,
+"name": "Poinker Bs",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 112,
+"name": "Ramp Bass",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 113,
+"name": "Jungle Bs1",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 114,
+"name": "Square Bs1",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 115,
+"name": "Square Bs2",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 116,
+"name": "NastySq.Bs",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 117,
+"name": "Sub Bass 1",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 118,
+"name": "Sub Bass 2",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 119,
+"name": "30303 Bass",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 120,
+"name": "Bad Boy Bs",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 121,
+"name": "Jungle Bs2",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 122,
+"name": "Digi Bass",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 123,
+"name": "VPM Bass",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 124,
+"name": "Spitter Bs",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 125,
+"name": "Organ Bass",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 126,
+"name": "Kik & Bass",
+"sub": "Synth Bass"
+},
+{
+"bank": "B",
+"num": 127,
+"name": "DangerBass",
+"sub": "Synth Bass"
+},
+{
+"bank": "C",
+"num": 0,
+"name": "WickedBass",
+"sub": "Synth Bass"
+},
+{
+"bank": "C",
+"num": 1,
+"name": "Widow Bass",
+"sub": "Synth Bass"
+},
+{
+"bank": "C",
+"num": 2,
+"name": "RodentBass",
+"sub": "Synth Bass"
+},
+{
+"bank": "C",
+"num": 3,
+"name": "SuppaSawBs",
+"sub": "Synth Bass"
+},
+{
+"bank": "C",
+"num": 4,
+"name": "(Demo Use) Troy RevBass",
+"sub": "Synth Bass"
+},
+{
+"bank": "C",
+"num": 5,
+"name": "Power Pad1",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 6,
+"name": "SugarSmash",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 7,
+"name": "Velo Twang",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 8,
+"name": "Perky Vox",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 9,
+"name": "Syn Brass1",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 10,
+"name": "SeperWaves",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 11,
+"name": "PureSynPad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 12,
+"name": "Sweet Pad1",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 13,
+"name": "Reed Pad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 14,
+"name": "DEEP SPACE",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 15,
+"name": "Rez. Down",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 16,
+"name": "Butterfly Pad",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 17,
+"name": "Vox Pulse",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 18,
+"name": "DolphinPad",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 19,
+"name": "Auto Pilot",
+"sub": "Short decay"
+},
+{
+"bank": "C",
+"num": 20,
+"name": "Goa Lover",
+"sub": "Short decay"
+},
+{
+"bank": "C",
+"num": 21,
+"name": "Power Pad2",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 22,
+"name": "BIG Pad",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 23,
+"name": "MegaBigSynth",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 24,
+"name": "BuzzySynth",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 25,
+"name": "StabberSynth",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 26,
+"name": "SawEns Synth",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 27,
+"name": "Power Snap",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 28,
+"name": "VintageSaw",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 29,
+"name": "Fast Synth",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 30,
+"name": "SynSweeper",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 31,
+"name": "Future Pad",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 32,
+"name": "Poly Synth",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 33,
+"name": "Bright Synth",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 34,
+"name": "Suspense",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 35,
+"name": "Pop SynPad",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 36,
+"name": "SynFanfare",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 37,
+"name": "FinalSynth",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 38,
+"name": "CompactSynth",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 39,
+"name": "Syn Brass2",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 40,
+"name": "Saw SynBrs",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 41,
+"name": "HipHop Brs",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 42,
+"name": "Rez. Sweep",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 43,
+"name": "Ciao",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 44,
+"name": "Cosmic Synth",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 45,
+"name": "Digi-Poly6",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 46,
+"name": "2VCO Saw",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 47,
+"name": "Rezbo",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 48,
+"name": "SimplePoly",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 49,
+"name": "MetalicRez",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 50,
+"name": "Rez Clav",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 51,
+"name": "VintageKey",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 52,
+"name": "BoingyPluk",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 53,
+"name": "SynBell EP",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 54,
+"name": "Koto Pad",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 55,
+"name": "Metal Arp",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 56,
+"name": "80'sSquare",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 57,
+"name": "Fuzz Felt",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 58,
+"name": "Gargle Synth (Kn1)",
+"sub": "Fast"
+},
+{
+"bank": "C",
+"num": 59,
+"name": "StringsPad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 60,
+"name": "The Pad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 61,
+"name": "Money Pad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 62,
+"name": "lfo pad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 63,
+"name": "SynStrings",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 64,
+"name": "Magic Pad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 65,
+"name": "Brass Pad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 66,
+"name": "Prayer Pad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 67,
+"name": "Sine Pad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 68,
+"name": "SitBackPad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 69,
+"name": "Arctic Pad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 70,
+"name": "DigiNeoPad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 71,
+"name": "MercuryPad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 72,
+"name": "TsunamiPad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 73,
+"name": "Meditate",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 74,
+"name": "Tranqil (Kn1)",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 75,
+"name": "Syn Filter",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 76,
+"name": "Sweet Pad2",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 77,
+"name": "Clouds Pad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 78,
+"name": "Givin' Pop",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 79,
+"name": "Search Pad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 80,
+"name": "Vulcan Vox",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 81,
+"name": "OrionVoice",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 82,
+"name": "Superb Pad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 83,
+"name": "FallingPad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 84,
+"name": "Ravel Pad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 85,
+"name": "DigiIcePad",
+"sub": "Slow"
+},
+{
+"bank": "C",
+"num": 86,
+"name": "MysteryPad",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 87,
+"name": "Pulsator",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 88,
+"name": "GrowingPad",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 89,
+"name": "Space Pod",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 90,
+"name": "Busy Pad",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 91,
+"name": "S&H Bass (Kn1)",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 92,
+"name": "TimeKeeper",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 93,
+"name": "Sci-FiTown",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 94,
+"name": "TsunamiVox",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 95,
+"name": "Aurora Pad",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 96,
+"name": "LFO RunPad(JS&kn1)",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 97,
+"name": "TinklinPad",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 98,
+"name": "Crimson5th",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 99,
+"name": "RezRelease",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 100,
+"name": "AquaPhonics",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 101,
+"name": "Swirl Pad",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 102,
+"name": "OXYGEN",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 103,
+"name": "Transform",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 104,
+"name": "SwirlDream",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 105,
+"name": "Starlight",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 106,
+"name": "Flying",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 107,
+"name": "Android",
+"sub": "Motion"
+},
+{
+"bank": "C",
+"num": 108,
+"name": "Saw Pizz",
+"sub": "Short decay"
+},
+{
+"bank": "C",
+"num": 109,
+"name": "Evolver",
+"sub": "Short decay"
+},
+{
+"bank": "C",
+"num": 110,
+"name": "Wild Arp",
+"sub": "Short decay"
+},
+{
+"bank": "C",
+"num": 111,
+"name": "Arp Twins",
+"sub": "Short decay"
+},
+{
+"bank": "C",
+"num": 112,
+"name": "Flip Blip",
+"sub": "Short decay"
+},
+{
+"bank": "C",
+"num": 113,
+"name": "DW8000Lead",
+"sub": "Syn Lead"
+},
+{
+"bank": "C",
+"num": 114,
+"name": "Saw Lead",
+"sub": "Syn Lead"
+},
+{
+"bank": "C",
+"num": 115,
+"name": "Unison Ld1",
+"sub": "Syn Lead"
+},
+{
+"bank": "C",
+"num": 116,
+"name": "Uni-Saw Ld",
+"sub": "Syn Lead"
+},
+{
+"bank": "C",
+"num": 117,
+"name": "RockLeader",
+"sub": "Syn Lead"
+},
+{
+"bank": "C",
+"num": 118,
+"name": "Sine Lead",
+"sub": "Syn Lead"
+},
+{
+"bank": "C",
+"num": 119,
+"name": "Square Ld",
+"sub": "Syn Lead"
+},
+{
+"bank": "C",
+"num": 120,
+"name": "GlidingSqu Lead",
+"sub": "Syn Lead"
+},
+{
+"bank": "C",
+"num": 121,
+"name": "OperatorLd",
+"sub": "Syn Lead"
+},
+{
+"bank": "C",
+"num": 122,
+"name": "Cheap Lead(JS-Y)",
+"sub": "Syn Lead"
+},
+{
+"bank": "C",
+"num": 123,
+"name": "RingMod Ld",
+"sub": "Syn Lead"
+},
+{
+"bank": "C",
+"num": 124,
+"name": "HipHop Ld",
+"sub": "Syn Lead"
+},
+{
+"bank": "C",
+"num": 125,
+"name": "Reso Lead",
+"sub": "Syn Lead"
+},
+{
+"bank": "C",
+"num": 126,
+"name": "DDL SyncLd",
+"sub": "Syn Lead"
+},
+{
+"bank": "C",
+"num": 127,
+"name": "Glide Lead",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 0,
+"name": "BIG Lead",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 1,
+"name": "FatSawLeed",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 2,
+"name": "Espress Ld",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 3,
+"name": "BalladLead",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 4,
+"name": "Seq Lead",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 5,
+"name": "Battle Ld1",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 6,
+"name": "Battle Ld2",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 7,
+"name": "Unison Ld2",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 8,
+"name": "Old&Analog",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 9,
+"name": "Detuned Ld",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 10,
+"name": "Trancer Ld",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 11,
+"name": "Vintage Ld",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 12,
+"name": "Legend Ld",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 13,
+"name": "Mission Ld",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 14,
+"name": "VeloMegaLd",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 15,
+"name": "Fat Sync",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 16,
+"name": "Synchro Ld",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 17,
+"name": "AnaBrassLd",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 18,
+"name": "MeanSyncLd",
+"sub": "Syn Lead"
+},
+{
+"bank": "D",
+"num": 19,
+"name": "Basic Kit3",
+"sub": "Natural"
+},
+{
+"bank": "D",
+"num": 20,
+"name": "PowerKit 2",
+"sub": "Natural"
+},
+{
+"bank": "D",
+"num": 21,
+"name": "HipHopKit2",
+"sub": "Dance"
+},
+{
+"bank": "D",
+"num": 22,
+"name": "R&B Kit",
+"sub": "Dance"
+},
+{
+"bank": "D",
+"num": 23,
+"name": "Dance Kit",
+"sub": "Dance"
+},
+{
+"bank": "D",
+"num": 24,
+"name": "Analog Kit",
+"sub": "Dance"
+},
+{
+"bank": "D",
+"num": 25,
+"name": "Tricky Kit",
+"sub": "Dance"
+},
+{
+"bank": "D",
+"num": 26,
+"name": "Perc.Kit",
+"sub": "Perc"
+},
+{
+"bank": "D",
+"num": 27,
+"name": "PuffleBells",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 28,
+"name": "NirvanaBell",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 29,
+"name": "Skull Mlts",
+"sub": "Mallet"
+},
+{
+"bank": "D",
+"num": 30,
+"name": "Vibraphone",
+"sub": "Mallet"
+},
+{
+"bank": "D",
+"num": 31,
+"name": "Brass Hit",
+"sub": "Hits"
+},
+{
+"bank": "D",
+"num": 32,
+"name": "Pizz Hit",
+"sub": "Hits"
+},
+{
+"bank": "D",
+"num": 33,
+"name": "BladeTrack",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 34,
+"name": "Techno Vox",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 35,
+"name": "Basic Kit1",
+"sub": "Natural"
+},
+{
+"bank": "D",
+"num": 36,
+"name": "Basic Kit2",
+"sub": "Natural"
+},
+{
+"bank": "D",
+"num": 37,
+"name": "Rock Kit",
+"sub": "Natural"
+},
+{
+"bank": "D",
+"num": 38,
+"name": "PowerKit 1",
+"sub": "Natural"
+},
+{
+"bank": "D",
+"num": 39,
+"name": "Jazz/Brush Kit",
+"sub": "Natural"
+},
+{
+"bank": "D",
+"num": 40,
+"name": "HipHopKit1",
+"sub": "Dance"
+},
+{
+"bank": "D",
+"num": 41,
+"name": "House Kit",
+"sub": "Dance"
+},
+{
+"bank": "D",
+"num": 42,
+"name": "ElectroKit",
+"sub": "Dance"
+},
+{
+"bank": "D",
+"num": 43,
+"name": "D'n'B Kit",
+"sub": "Dance"
+},
+{
+"bank": "D",
+"num": 44,
+"name": "Breaks Kit",
+"sub": "Dance"
+},
+{
+"bank": "D",
+"num": 45,
+"name": "Noisy Kit",
+"sub": "Dance"
+},
+{
+"bank": "D",
+"num": 46,
+"name": "Psycho Kit",
+"sub": "Dance"
+},
+{
+"bank": "D",
+"num": 47,
+"name": "Orch&Ethno",
+"sub": "Perc"
+},
+{
+"bank": "D",
+"num": 48,
+"name": "BD&SD Kit1",
+"sub": "Perc"
+},
+{
+"bank": "D",
+"num": 49,
+"name": "BD&SD Kit2",
+"sub": "Perc"
+},
+{
+"bank": "D",
+"num": 50,
+"name": "Cymbal Kit",
+"sub": "Perc"
+},
+{
+"bank": "D",
+"num": 51,
+"name": "Dance Sets",
+"sub": "Dance"
+},
+{
+"bank": "D",
+"num": 52,
+"name": "Marc Tree",
+"sub": "Perc"
+},
+{
+"bank": "D",
+"num": 53,
+"name": "Gong",
+"sub": "Perc"
+},
+{
+"bank": "D",
+"num": 54,
+"name": "TinkleBells",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 55,
+"name": "MovingBell",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 56,
+"name": "Thin Bell",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 57,
+"name": "VS Bell",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 58,
+"name": "Magic Bells",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 59,
+"name": "KrystalBell",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 60,
+"name": "Digi Bells",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 61,
+"name": "Ens.Bells",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 62,
+"name": "EarthBells",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 63,
+"name": "FutureBell",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 64,
+"name": "TropicBells",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 65,
+"name": "PanGamaBell",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 66,
+"name": "BreathyBell",
+"sub": "Bell"
+},
+{
+"bank": "D",
+"num": 67,
+"name": "BreathyMlt",
+"sub": "Mallet"
+},
+{
+"bank": "D",
+"num": 68,
+"name": "Kalimba",
+"sub": "Mallet"
+},
+{
+"bank": "D",
+"num": 69,
+"name": "MondoRimba",
+"sub": "Mallet"
+},
+{
+"bank": "D",
+"num": 70,
+"name": "Marimba",
+"sub": "Mallet"
+},
+{
+"bank": "D",
+"num": 71,
+"name": "Gamelon",
+"sub": "Mallet"
+},
+{
+"bank": "D",
+"num": 72,
+"name": "Log Drum",
+"sub": "Mallet"
+},
+{
+"bank": "D",
+"num": 73,
+"name": "Great Wall",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 74,
+"name": "Hemispheres",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 75,
+"name": "New Voyage",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 76,
+"name": "Orb Probes",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 77,
+"name": "Soundscapes",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 78,
+"name": "Monster",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 79,
+"name": "Venusian",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 80,
+"name": "Dark Night",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 81,
+"name": "SteamSweeps",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 82,
+"name": "SonicBlast",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 83,
+"name": "Screacher",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 84,
+"name": "LoopIteria",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 85,
+"name": "Cyborg Hit",
+"sub": "SFX"
+},
+{
+"bank": "D",
+"num": 86,
+"name": "Goa Hits",
+"sub": "Hits"
+},
+{
+"bank": "D",
+"num": 87,
+"name": "Angel Hits",
+"sub": "Hits"
+},
+{
+"bank": "D",
+"num": 88,
+"name": "ChipperHit",
+"sub": "Hits"
+},
+{
+"bank": "D",
+"num": 89,
+"name": "Organ Hit",
+"sub": "Hits"
+},
+{
+"bank": "D",
+"num": 90,
+"name": "Jungle Hit",
+"sub": "Hits"
+},
+{
+"bank": "D",
+"num": 91,
+"name": "Guitar Hit",
+"sub": "Hits"
+},
+{
+"bank": "D",
+"num": 92,
+"name": "2Times Hit",
+"sub": "Hits"
+},
+{
+"bank": "D",
+"num": 93,
+"name": "India Hit",
+"sub": "Hits"
+},
+{
+"bank": "D",
+"num": 94,
+"name": "KarmaSutra",
+"sub": "Hits"
+},
+{
+"bank": "D",
+"num": 95,
+"name": "MegaDr Hit",
+"sub": "Hits"
+}
+],
+"combis": [
+{
+"bank": "A",
+"num": 0,
+"name": "Piano&Str",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 1,
+"name": "AppoloKeys",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 2,
+"name": "Heaven Pad",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 3,
+"name": "Piano&Vox",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 4,
+"name": "Film Piano",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 5,
+"name": "Ambi Time",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 6,
+"name": "Night EP",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 7,
+"name": "Wurly Jam",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 8,
+"name": "Funk Jam",
+"sub": "Clav/Harpsi"
+},
+{
+"bank": "A",
+"num": 9,
+"name": "Famous EP",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 10,
+"name": "BreathPiano",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 11,
+"name": "Syn Piano",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 12,
+"name": "Split Org1",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 13,
+"name": "Gospel Organ",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 14,
+"name": "PipeOrgan2(Kn)",
+"sub": "Pipe Organ"
+},
+{
+"bank": "A",
+"num": 15,
+"name": "Orch.Pipes",
+"sub": "Pipe Organ"
+},
+{
+"bank": "A",
+"num": 16,
+"name": "Piano Pad",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 17,
+"name": "Bellissima",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 18,
+"name": "NaturalMix",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 19,
+"name": "Romance EP",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 20,
+"name": "Funky Keys",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 21,
+"name": "Brs&Piano",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 22,
+"name": "WesternBar(Kn1)",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 23,
+"name": "PianoPulse",
+"sub": "A.Piano"
+},
+{
+"bank": "A",
+"num": 24,
+"name": "Suit & Pad",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 25,
+"name": "Super EP",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 26,
+"name": "Hi Key EP",
+"sub": "Real E.P"
+},
+{
+"bank": "A",
+"num": 27,
+"name": "Phat Clav",
+"sub": "Clav/Harpsi"
+},
+{
+"bank": "A",
+"num": 28,
+"name": "CuttinClav",
+"sub": "Clav/Harpsi"
+},
+{
+"bank": "A",
+"num": 29,
+"name": "Bell&Tine",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 30,
+"name": "Tiney EP",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 31,
+"name": "Synth EP",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 32,
+"name": "Comp-o-Net",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 33,
+"name": "Steely Keys",
+"sub": "Synth E.P"
+},
+{
+"bank": "A",
+"num": 34,
+"name": "DrawbOrgan",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 35,
+"name": "Perc.Organ",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 36,
+"name": "Rock Organ",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 37,
+"name": "Reggae Organ",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 38,
+"name": "Split Org2",
+"sub": "E.Organ"
+},
+{
+"bank": "A",
+"num": 39,
+"name": "PipeOrgan1(Kn)",
+"sub": "Pipe Organ"
+},
+{
+"bank": "A",
+"num": 40,
+"name": "Holy Pipes",
+"sub": "Pipe Organ"
+},
+{
+"bank": "A",
+"num": 41,
+"name": "Dyn Orch",
+"sub": "Orchestral"
+},
+{
+"bank": "A",
+"num": 42,
+"name": "Drama Orch.",
+"sub": "Orchestral"
+},
+{
+"bank": "A",
+"num": 43,
+"name": "Orchstrate",
+"sub": "Orchestral"
+},
+{
+"bank": "A",
+"num": 44,
+"name": "DeepIsland",
+"sub": "Orchestral"
+},
+{
+"bank": "A",
+"num": 45,
+"name": "Smooth Strings",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 46,
+"name": "Strings Of Silk",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 47,
+"name": "Golden Strings",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 48,
+"name": "Oct.Strings",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 49,
+"name": "Velo Vox",
+"sub": "Vocal"
+},
+{
+"bank": "A",
+"num": 50,
+"name": "Tingle Vox",
+"sub": "Airy"
+},
+{
+"bank": "A",
+"num": 51,
+"name": "Wind Dance",
+"sub": "Airy"
+},
+{
+"bank": "A",
+"num": 52,
+"name": "Orch.Brass",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 53,
+"name": "FunkyBrass Sect.",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 54,
+"name": "Jazz Band",
+"sub": "Woodwind"
+},
+{
+"bank": "A",
+"num": 55,
+"name": "Woodwinds",
+"sub": "Woodwind"
+},
+{
+"bank": "A",
+"num": 56,
+"name": "EthnoOcean",
+"sub": "World"
+},
+{
+"bank": "A",
+"num": 57,
+"name": "Sweet Orch",
+"sub": "Orchestral"
+},
+{
+"bank": "A",
+"num": 58,
+"name": "Rhythm&Bows",
+"sub": "Orchestral"
+},
+{
+"bank": "A",
+"num": 59,
+"name": "Tutti Orch",
+"sub": "Orchestral"
+},
+{
+"bank": "A",
+"num": 60,
+"name": "GothamTrack",
+"sub": "Orchestral"
+},
+{
+"bank": "A",
+"num": 61,
+"name": "VintageOrch",
+"sub": "Orchestral"
+},
+{
+"bank": "A",
+"num": 62,
+"name": "ChamberEns",
+"sub": "Orchestral"
+},
+{
+"bank": "A",
+"num": 63,
+"name": "BowStrings",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 64,
+"name": "Cinema Strings",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 65,
+"name": "SilkStrings",
+"sub": "Strings"
+},
+{
+"bank": "A",
+"num": 66,
+"name": "NightInRio",
+"sub": "World"
+},
+{
+"bank": "A",
+"num": 67,
+"name": "Valahian",
+"sub": "World"
+},
+{
+"bank": "A",
+"num": 68,
+"name": "The ToyBox",
+"sub": "Airy"
+},
+{
+"bank": "A",
+"num": 69,
+"name": "Arctic Strings",
+"sub": "Airy"
+},
+{
+"bank": "A",
+"num": 70,
+"name": "Shandygaff",
+"sub": "Airy"
+},
+{
+"bank": "A",
+"num": 71,
+"name": "LightDance",
+"sub": "Airy"
+},
+{
+"bank": "A",
+"num": 72,
+"name": "Agent Pad",
+"sub": "Airy"
+},
+{
+"bank": "A",
+"num": 73,
+"name": "Airy Bell",
+"sub": "Airy"
+},
+{
+"bank": "A",
+"num": 74,
+"name": "Power Brs",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 75,
+"name": "Warm Brass Ens.",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 76,
+"name": "Horn Sect.",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 77,
+"name": "French Ens",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 78,
+"name": "Muted Sect.",
+"sub": "Brass"
+},
+{
+"bank": "A",
+"num": 79,
+"name": "Jazz Ens",
+"sub": "Woodwind"
+},
+{
+"bank": "A",
+"num": 80,
+"name": "Gtr.Player (Kn1)",
+"sub": "A.Guitar"
+},
+{
+"bank": "A",
+"num": 81,
+"name": "A.Gtrs&Vox",
+"sub": "A.Guitar"
+},
+{
+"bank": "A",
+"num": 82,
+"name": "Christmas",
+"sub": "A.Guitar"
+},
+{
+"bank": "A",
+"num": 83,
+"name": "Forest Gtr",
+"sub": "A.Guitar"
+},
+{
+"bank": "A",
+"num": 84,
+"name": "Chic&Funky",
+"sub": "E.Guitar"
+},
+{
+"bank": "A",
+"num": 85,
+"name": "FractalGtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "A",
+"num": 86,
+"name": "HarpishPad",
+"sub": "Plucked"
+},
+{
+"bank": "A",
+"num": 87,
+"name": "EthnoWorld",
+"sub": "Plucked"
+},
+{
+"bank": "A",
+"num": 88,
+"name": "Gtr.Sings",
+"sub": "A.Guitar"
+},
+{
+"bank": "A",
+"num": 89,
+"name": "Sophia'sGtr",
+"sub": "A.Guitar"
+},
+{
+"bank": "A",
+"num": 90,
+"name": "NewStyleGtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "A",
+"num": 91,
+"name": "AmbyPlucked",
+"sub": "E.Guitar"
+},
+{
+"bank": "A",
+"num": 92,
+"name": "Wave Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "A",
+"num": 93,
+"name": "Killer Gtr",
+"sub": "E.Guitar"
+},
+{
+"bank": "A",
+"num": 94,
+"name": "Rock King!",
+"sub": "E.Guitar"
+},
+{
+"bank": "A",
+"num": 95,
+"name": "New Age",
+"sub": "Plucked"
+},
+{
+"bank": "A",
+"num": 96,
+"name": "HarpStrings",
+"sub": "Plucked"
+},
+{
+"bank": "A",
+"num": 97,
+"name": "KotoWorld",
+"sub": "Plucked"
+},
+{
+"bank": "A",
+"num": 98,
+"name": "Bass&Piano",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 99,
+"name": "Club KORG",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 100,
+"name": "ElectroEye's",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 101,
+"name": "Groovy Dub",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 102,
+"name": "Electropop Split",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 103,
+"name": "GuitarBros.",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 104,
+"name": "Jazzy Gtr.",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 105,
+"name": "ModernRock(JS-Y)",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 106,
+"name": "The Agent",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 107,
+"name": "PumpPump!!(Kn2)",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 108,
+"name": "4DaLaydeez",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 109,
+"name": "Split Room",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 110,
+"name": "Down Beat",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 111,
+"name": "Dubstep",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 112,
+"name": "Waiti&Hop",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 113,
+"name": "Droplets",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 114,
+"name": "Bs&PianoPd",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 115,
+"name": "DiscoSplit",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 116,
+"name": "HappySplit",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 117,
+"name": "Bass & EP",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 118,
+"name": "Gig Split",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 119,
+"name": "Hip Trip",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 120,
+"name": "SynBs&Wurly",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 121,
+"name": "GarageNite",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 122,
+"name": "Run Town",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 123,
+"name": "Moon Jam",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 124,
+"name": "Bass/Clav Mix",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 125,
+"name": "OrganBeats",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 126,
+"name": "Bass&Vibe",
+"sub": "Bass Split"
+},
+{
+"bank": "A",
+"num": 127,
+"name": "JazzBs/Gtr",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 0,
+"name": "16th Strummer",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 1,
+"name": "Echo Jamm",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 2,
+"name": "What?",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 3,
+"name": "ElectroTek",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 4,
+"name": "ZombieKlub",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 5,
+"name": "Big Split",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 6,
+"name": "\"Chemicals (Kn1,2)\"",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 7,
+"name": "Spit Split",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 8,
+"name": "[<Moon Jam>]",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 9,
+"name": "LonelyMoon",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 10,
+"name": "Hi/Lo BPM",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 11,
+"name": "Slow Crawl",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 12,
+"name": "Butane DnB",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 13,
+"name": "5thSynSplit",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 14,
+"name": "ComptonSplit",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 15,
+"name": "Razor Soft",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 16,
+"name": "Euro Split",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 17,
+"name": "HouseSplit",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 18,
+"name": "U B Dancn'",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 19,
+"name": "Rave Split",
+"sub": "Bass Split"
+},
+{
+"bank": "B",
+"num": 20,
+"name": "BoomPowPad",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 21,
+"name": "HipHopKing",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 22,
+"name": "Icy Synth",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 23,
+"name": "QuantumSynth",
+"sub": "Slow"
+},
+{
+"bank": "B",
+"num": 24,
+"name": "Ambi Core",
+"sub": "Slow"
+},
+{
+"bank": "B",
+"num": 25,
+"name": "Dream Pad",
+"sub": "Slow"
+},
+{
+"bank": "B",
+"num": 26,
+"name": "SweeperPad",
+"sub": "Slow"
+},
+{
+"bank": "B",
+"num": 27,
+"name": "Rain Gate",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 28,
+"name": "WinterChill",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 29,
+"name": "BloomSynth",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 30,
+"name": "Syn Chaser",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 31,
+"name": "Sunrise",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 32,
+"name": "Synco Swim",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 33,
+"name": "WireRhythm",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 34,
+"name": "NoizFactory",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 35,
+"name": "Cool",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 36,
+"name": "AnthemSynth",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 37,
+"name": "VyntageSynth",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 38,
+"name": "Buzz-A-Log",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 39,
+"name": "PowerSynth",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 40,
+"name": "BeeG Pad 1",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 41,
+"name": "MetroPolis Kn2",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 42,
+"name": "MajestyPad",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 43,
+"name": "BIGWashSynth",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 44,
+"name": "DanceRock Synth",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 45,
+"name": "Heavy Nails",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 46,
+"name": "ElectroSynth",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 47,
+"name": "NoisySynth",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 48,
+"name": "Square Pad",
+"sub": "Fast"
+},
+{
+"bank": "B",
+"num": 49,
+"name": "BeeG Pad 2",
+"sub": "Slow"
+},
+{
+"bank": "B",
+"num": 50,
+"name": "Calm Pad",
+"sub": "Slow"
+},
+{
+"bank": "B",
+"num": 51,
+"name": "Simple Pad",
+"sub": "Slow"
+},
+{
+"bank": "B",
+"num": 52,
+"name": "LectroHold(Kn1)",
+"sub": "Slow"
+},
+{
+"bank": "B",
+"num": 53,
+"name": "VocoderMix",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 54,
+"name": "Dust Devil",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 55,
+"name": "Isabelle",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 56,
+"name": "Planet Pad",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 57,
+"name": "Weightless",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 58,
+"name": "WaveOfTime",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 59,
+"name": "Godchild",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 60,
+"name": "|Transit|",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 61,
+"name": "LFO Pulsar",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 62,
+"name": "SwirlDance",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 63,
+"name": "Echopolis",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 64,
+"name": "HousePulse",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 65,
+"name": "AnalogBand",
+"sub": "Motion"
+},
+{
+"bank": "B",
+"num": 66,
+"name": "Fusion Split",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 67,
+"name": "TribalTune (Kn)",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 68,
+"name": "Hold'emPad",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 69,
+"name": "RoboWorker",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 70,
+"name": "Go Disco!!",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 71,
+"name": "PianoHouse",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 72,
+"name": "HardRock74",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 73,
+"name": "LiveRocker",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 74,
+"name": "CO2 Triplet",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 75,
+"name": "Euro Club (Kn1)",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 76,
+"name": "Perfumer",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 77,
+"name": "Misty Rain",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 78,
+"name": "LazerDance",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 79,
+"name": "TheWingman",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 80,
+"name": "Gold FIeld",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 81,
+"name": "JStk D'n'B",
+"sub": "Syn Lead"
+},
+{
+"bank": "B",
+"num": 82,
+"name": "FunkySynthy",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 83,
+"name": "SciFiChase",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 84,
+"name": "Up Beat",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 85,
+"name": "Lead'nLady",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 86,
+"name": "AmbiHouse",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 87,
+"name": "Spiky&Tight",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 88,
+"name": "RetroSplit",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 89,
+"name": "L/C/RSynth",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 90,
+"name": "Pad&DistGtr",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 91,
+"name": "SweetBlues",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 92,
+"name": "Dry Dreams",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 93,
+"name": "Quidam",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 94,
+"name": "Princess",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 95,
+"name": "EP Pad&Sax",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 96,
+"name": "DreamingTp",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 97,
+"name": "School Jam",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 98,
+"name": "Oboe Split",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 99,
+"name": "Pad&Lead",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 100,
+"name": "Reso Trip",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 101,
+"name": "Stylo Lead",
+"sub": "Solo Split"
+},
+{
+"bank": "B",
+"num": 102,
+"name": "Bendy Bass(JSX)",
+"sub": "Syn Lead"
+},
+{
+"bank": "B",
+"num": 103,
+"name": "FutureSplit",
+"sub": "Syn Lead"
+},
+{
+"bank": "B",
+"num": 104,
+"name": "Comp.Split",
+"sub": "Syn Lead"
+},
+{
+"bank": "B",
+"num": 105,
+"name": "MadDrummer",
+"sub": "Natural"
+},
+{
+"bank": "B",
+"num": 106,
+"name": "Drumfest",
+"sub": "Perc"
+},
+{
+"bank": "B",
+"num": 107,
+"name": "Royal Bells",
+"sub": "Bell"
+},
+{
+"bank": "B",
+"num": 108,
+"name": "MalletDance",
+"sub": "Mallet"
+},
+{
+"bank": "B",
+"num": 109,
+"name": "GamelanEns",
+"sub": "Mallet"
+},
+{
+"bank": "B",
+"num": 110,
+"name": "Hyperspace",
+"sub": "SFX"
+},
+{
+"bank": "B",
+"num": 111,
+"name": "Space Ship",
+"sub": "SFX"
+},
+{
+"bank": "B",
+"num": 112,
+"name": "8 Bit Hit",
+"sub": "Hits"
+},
+{
+"bank": "B",
+"num": 113,
+"name": "Drum Jam",
+"sub": "Natural"
+},
+{
+"bank": "B",
+"num": 114,
+"name": "BellishPad",
+"sub": "Bell"
+},
+{
+"bank": "B",
+"num": 115,
+"name": "TinkleBellPad",
+"sub": "Bell"
+},
+{
+"bank": "B",
+"num": 116,
+"name": "Mallet EP",
+"sub": "Bell"
+},
+{
+"bank": "B",
+"num": 117,
+"name": "Cozy Bells",
+"sub": "Bell"
+},
+{
+"bank": "B",
+"num": 118,
+"name": "Rotary Bellz",
+"sub": "Bell"
+},
+{
+"bank": "B",
+"num": 119,
+"name": "HappyBells",
+"sub": "Bell"
+},
+{
+"bank": "B",
+"num": 120,
+"name": "Mlt Mayhem",
+"sub": "Mallet"
+},
+{
+"bank": "B",
+"num": 121,
+"name": "Mallet Piano",
+"sub": "Mallet"
+},
+{
+"bank": "B",
+"num": 122,
+"name": "Pad & Logs",
+"sub": "Mallet"
+},
+{
+"bank": "B",
+"num": 123,
+"name": "TV-Show!",
+"sub": "SFX"
+},
+{
+"bank": "B",
+"num": 124,
+"name": "Invasion",
+"sub": "SFX"
+},
+{
+"bank": "B",
+"num": 125,
+"name": "HorrorFilm",
+"sub": "SFX"
+},
+{
+"bank": "B",
+"num": 126,
+"name": "Jungle Pad",
+"sub": "SFX"
+},
+{
+"bank": "B",
+"num": 127,
+"name": "VentureHit",
+"sub": "Hits"
+}
+]
+}

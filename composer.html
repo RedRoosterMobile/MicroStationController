@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>microSTATION Composer</title>
+<style>
+  :root { --bg:#f6f6f4; --fg:#1d1d1b; --muted:#6b6b66; --card:#fff; --line:#dcdcd6; --accent:#1f6feb; --warn:#9a5b00; --warnbg:#fff4de; --ok:#1a7f37; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#161615; --fg:#ecece8; --muted:#9a9a93; --card:#212120; --line:#3a3a37; --accent:#5b9bff; --warn:#f0b755; --warnbg:#3a2e14; --ok:#56d364; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.45 system-ui, sans-serif; }
+  main { max-width:860px; margin:0 auto; padding:20px 16px 48px; }
+  h1 { font-size:20px; margin:0 0 2px; }
+  .sub { color:var(--muted); margin:0 0 16px; font-size:13px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin-bottom:14px; }
+  .card h2 { font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin:0 0 10px; font-weight:600; }
+  button, select, textarea, input { font:inherit; color:inherit; background:var(--card); border:1px solid var(--line); border-radius:6px; padding:5px 10px; }
+  button { cursor:pointer; } button:hover:not(:disabled) { border-color:var(--accent); }
+  button.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+  button:disabled, select:disabled { opacity:.45; cursor:not-allowed; }
+  textarea { width:100%; min-height:70px; resize:vertical; }
+  .bar { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .grow { flex:1; min-width:140px; }
+  .banner { border-radius:8px; padding:10px 12px; margin-bottom:14px; background:var(--warnbg); color:var(--warn); display:none; }
+  .banner.show { display:block; }
+  .dot { width:9px; height:9px; border-radius:50%; background:var(--muted); display:inline-block; }
+  .dot.on { background:var(--ok); }
+  .track { display:grid; grid-template-columns:34px 1fr 1.6fr 90px auto auto auto; gap:8px; align-items:center; padding:6px 0; border-bottom:1px solid var(--line); }
+  .track:last-child { border-bottom:0; }
+  .ch { font-variant-numeric:tabular-nums; font-weight:600; padding:5px 2px; }
+  .track input[type=range] { width:100%; padding:0; }
+  .track.muted { opacity:.5; }
+  .on { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .hint { color:var(--muted); font-size:13px; }
+  .tracks-note { display:none; }
+  @media (max-width:640px) { .track { grid-template-columns:34px 1fr 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>microSTATION Composer</h1>
+  <p class="sub">Describe a song, Claude writes it as General MIDI, and it plays on the keyboard's 16 channels. Change instruments live per channel.</p>
+  <div class="banner" id="banner"></div>
+
+  <div class="card">
+    <h2>Keyboard</h2>
+    <div class="bar">
+      <span class="dot" id="dot"></span><span id="conn">Not connected</span>
+      <button id="connect">Connect</button>
+      <select id="outsel" disabled></select>
+      <label class="hint">Global ch <select id="gch"></select></label>
+      <label class="hint">Drums on ch <select id="dch"></select></label>
+      <label class="hint"><input type="checkbox" id="bank" style="padding:0"> Send bank select</label>
+      <label class="hint"><input type="checkbox" id="sx" style="padding:0"> Set sounds via SysEx</label>
+      <button id="setup" disabled title="Switch to Sequencer mode and send GM System On">Prepare keyboard (Sequencer + GM)</button>
+    </div>
+    <div class="bar" style="margin-top:8px"><button id="readtracks">Read keyboard tracks</button><button id="selftest" title="Tries three ways to set a bank on track 16 and reads the keyboard back">Self-test sound routing</button><span class="hint">Shows each track's program, bank, MIDI channel and status (Sequencer mode).</span></div>
+    <pre id="trackinfo" class="hint" style="margin:6px 0 0;white-space:pre-wrap"></pre>
+    <p class="hint" style="margin:8px 0 0">Needs Sequencer mode with each track's <b>Status</b> = INT/BTH and <b>MIDI Ch.</b> = 1–16 (a GM-style template does this). “Prepare” switches mode and sends GM System On, which sets all tracks to GM sounds.</p>
+  </div>
+
+  <div class="card">
+    <h2>Describe the song</h2>
+    <textarea id="prompt" placeholder="e.g. Upbeat 90s eurodance, 128 BPM, A minor, pumping bass, bright supersaw lead, four-on-the-floor drums"></textarea>
+    <div class="bar" style="margin-top:8px">
+      <button id="compose" class="primary">Compose</button>
+      <button id="revise" disabled>Revise current song</button>
+      <button id="test" title="Load a built-in 5-channel groove, no composing needed">Load test song</button>
+      <span class="hint" id="cstatus"></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 id="title">Song</h2>
+    <div class="bar" style="margin-bottom:8px">
+      <button id="play" disabled>▶ Play</button>
+      <button id="stop" disabled>■ Stop</button>
+      <label class="hint"><input type="checkbox" id="loop" checked style="padding:0"> Loop</label>
+      <label class="hint">Tempo <input type="number" id="tempo" min="30" max="300" style="width:70px"> BPM</label>
+      <span class="hint" id="pos"></span>
+      <span class="grow"></span>
+      <button id="dl" disabled>Download .mid</button>
+    </div>
+    <div id="tracks"><span class="hint">Nothing composed yet.</span></div>
+  </div>
+</main>
+<script type="module" src="/src/composer.js"></script>
+</body>
+</html>

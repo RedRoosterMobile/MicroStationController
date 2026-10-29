@@ -1,0 +1,3104 @@
+[
+ {
+  "raw": 0,
+  "slot": "P0",
+  "name": "UP",
+  "length": null
+ },
+ {
+  "raw": 1,
+  "slot": "P1",
+  "name": "DOWN",
+  "length": null
+ },
+ {
+  "raw": 2,
+  "slot": "P2",
+  "name": "ALT1",
+  "length": null
+ },
+ {
+  "raw": 3,
+  "slot": "P3",
+  "name": "ALT2",
+  "length": null
+ },
+ {
+  "raw": 4,
+  "slot": "P4",
+  "name": "RANDOM",
+  "length": null
+ },
+ {
+  "raw": 5,
+  "slot": "U000",
+  "name": "Gt-1 Strum",
+  "length": 16
+ },
+ {
+  "raw": 6,
+  "slot": "U001",
+  "name": "Gt-Guitar Strum 1",
+  "length": 32
+ },
+ {
+  "raw": 7,
+  "slot": "U002",
+  "name": "Gt-Guitar Strum 2",
+  "length": 16
+ },
+ {
+  "raw": 8,
+  "slot": "U003",
+  "name": "Gt-Guitar Strum 3",
+  "length": 16
+ },
+ {
+  "raw": 9,
+  "slot": "U004",
+  "name": "Gt-Guitar Strum 4",
+  "length": 24
+ },
+ {
+  "raw": 10,
+  "slot": "U005",
+  "name": "Gt-Guitar Strum 5",
+  "length": 16
+ },
+ {
+  "raw": 11,
+  "slot": "U006",
+  "name": "Gt-Guitar Strum 6",
+  "length": 16
+ },
+ {
+  "raw": 12,
+  "slot": "U007",
+  "name": "Gt-Syncorhythm",
+  "length": 16
+ },
+ {
+  "raw": 13,
+  "slot": "U008",
+  "name": "Gt-Laidback Strummer",
+  "length": 32
+ },
+ {
+  "raw": 14,
+  "slot": "U009",
+  "name": "Gt-Strum Momentum",
+  "length": 32
+ },
+ {
+  "raw": 15,
+  "slot": "U010",
+  "name": "Gt-16Chord Strum",
+  "length": 16
+ },
+ {
+  "raw": 16,
+  "slot": "U011",
+  "name": "Gt-Country Strum 1",
+  "length": 16
+ },
+ {
+  "raw": 17,
+  "slot": "U012",
+  "name": "Gt-Country Strum 2",
+  "length": 48
+ },
+ {
+  "raw": 18,
+  "slot": "U013",
+  "name": "Gt-Funky Strums",
+  "length": 32
+ },
+ {
+  "raw": 19,
+  "slot": "U014",
+  "name": "Gt-ElecGtr Strum",
+  "length": 8
+ },
+ {
+  "raw": 20,
+  "slot": "U015",
+  "name": "Gt-Soul Strum",
+  "length": 32
+ },
+ {
+  "raw": 21,
+  "slot": "U016",
+  "name": "Gt-Reggae Strum",
+  "length": 12
+ },
+ {
+  "raw": 22,
+  "slot": "U017",
+  "name": "Gt-Simple Strum",
+  "length": 16
+ },
+ {
+  "raw": 23,
+  "slot": "U018",
+  "name": "Gt-Bossa Guitar",
+  "length": 16
+ },
+ {
+  "raw": 24,
+  "slot": "U019",
+  "name": "Gt-Bossa Nova",
+  "length": 16
+ },
+ {
+  "raw": 25,
+  "slot": "U020",
+  "name": "Gt-Jazzy Strum",
+  "length": 16
+ },
+ {
+  "raw": 26,
+  "slot": "U021",
+  "name": "Gt-Jazzmitazz Riff",
+  "length": 16
+ },
+ {
+  "raw": 27,
+  "slot": "U022",
+  "name": "Gt-Stum and Finger",
+  "length": 32
+ },
+ {
+  "raw": 28,
+  "slot": "U023",
+  "name": "Gt-Stranded Strum",
+  "length": 16
+ },
+ {
+  "raw": 29,
+  "slot": "U024",
+  "name": "Gt-Prayer Strum",
+  "length": 16
+ },
+ {
+  "raw": 30,
+  "slot": "U025",
+  "name": "Gt-Slap & Strum",
+  "length": 32
+ },
+ {
+  "raw": 31,
+  "slot": "U026",
+  "name": "Gt-Ballad Pick 1",
+  "length": 32
+ },
+ {
+  "raw": 32,
+  "slot": "U027",
+  "name": "Gt-Ballad Pick 2",
+  "length": 32
+ },
+ {
+  "raw": 33,
+  "slot": "U028",
+  "name": "Gt-Country Pick 1",
+  "length": 16
+ },
+ {
+  "raw": 34,
+  "slot": "U029",
+  "name": "Gt-Country Pick 2",
+  "length": 16
+ },
+ {
+  "raw": 35,
+  "slot": "U030",
+  "name": "Gt-Funk Bass/Guitar",
+  "length": 32
+ },
+ {
+  "raw": 36,
+  "slot": "U031",
+  "name": "Gt-Funky 1",
+  "length": 16
+ },
+ {
+  "raw": 37,
+  "slot": "U032",
+  "name": "Gt-Funky 2",
+  "length": 32
+ },
+ {
+  "raw": 38,
+  "slot": "U033",
+  "name": "Gt-Nylon Arpeggio",
+  "length": 24
+ },
+ {
+  "raw": 39,
+  "slot": "U034",
+  "name": "Gt-Pluck Gliss",
+  "length": 36
+ },
+ {
+  "raw": 40,
+  "slot": "U035",
+  "name": "Gt-Picking",
+  "length": 32
+ },
+ {
+  "raw": 41,
+  "slot": "U036",
+  "name": "Gt-Reggae Upbeat",
+  "length": 16
+ },
+ {
+  "raw": 42,
+  "slot": "U037",
+  "name": "Gt-Single n Mute",
+  "length": 16
+ },
+ {
+  "raw": 43,
+  "slot": "U038",
+  "name": "Gt-Tampura drone",
+  "length": 8
+ },
+ {
+  "raw": 44,
+  "slot": "U039",
+  "name": "Gt-3/4 Arpeggio",
+  "length": 24
+ },
+ {
+  "raw": 45,
+  "slot": "U040",
+  "name": "Gt-Ballad Arpeggio",
+  "length": 16
+ },
+ {
+  "raw": 46,
+  "slot": "U041",
+  "name": "Gt-Mordor",
+  "length": 48
+ },
+ {
+  "raw": 47,
+  "slot": "U042",
+  "name": "Gt-Rap Melody",
+  "length": 16
+ },
+ {
+  "raw": 48,
+  "slot": "U043",
+  "name": "Gt-R&B Gtr Loopish",
+  "length": 16
+ },
+ {
+  "raw": 49,
+  "slot": "U044",
+  "name": "Gt-Rock Riff",
+  "length": 32
+ },
+ {
+  "raw": 50,
+  "slot": "U045",
+  "name": "Gt-Mute Reverse",
+  "length": 16
+ },
+ {
+  "raw": 51,
+  "slot": "U046",
+  "name": "Gt-Arp Up",
+  "length": 16
+ },
+ {
+  "raw": 52,
+  "slot": "U047",
+  "name": "Gt-Repeat",
+  "length": 8
+ },
+ {
+  "raw": 53,
+  "slot": "U048",
+  "name": "Plk-Banjo Wild",
+  "length": 16
+ },
+ {
+  "raw": 54,
+  "slot": "U049",
+  "name": "Plk-Harp Regular Down",
+  "length": 16
+ },
+ {
+  "raw": 55,
+  "slot": "U050",
+  "name": "Plk-Harp Short Arpeggio",
+  "length": 16
+ },
+ {
+  "raw": 56,
+  "slot": "U051",
+  "name": "Plk-Koto 5th Arpeggio",
+  "length": 8
+ },
+ {
+  "raw": 57,
+  "slot": "U052",
+  "name": "Plk-Chinese Koto",
+  "length": 16
+ },
+ {
+  "raw": 58,
+  "slot": "U053",
+  "name": "Plk-Oud Arab Action",
+  "length": 24
+ },
+ {
+  "raw": 59,
+  "slot": "U054",
+  "name": "Plk-Tambal 1",
+  "length": 12
+ },
+ {
+  "raw": 60,
+  "slot": "U055",
+  "name": "Plk-Tambal 2",
+  "length": 24
+ },
+ {
+  "raw": 61,
+  "slot": "U056",
+  "name": "Key-Orchestral Piano",
+  "length": 16
+ },
+ {
+  "raw": 62,
+  "slot": "U057",
+  "name": "Key-Piano Wide Arpeggio",
+  "length": 32
+ },
+ {
+  "raw": 63,
+  "slot": "U058",
+  "name": "Key-Piano Pop",
+  "length": 16
+ },
+ {
+  "raw": 64,
+  "slot": "U059",
+  "name": "Key-Swing Piano Chords",
+  "length": 24
+ },
+ {
+  "raw": 65,
+  "slot": "U060",
+  "name": "Key-Piano Arpeggio 1",
+  "length": 16
+ },
+ {
+  "raw": 66,
+  "slot": "U061",
+  "name": "Key-Piano Arpeggio 2",
+  "length": 16
+ },
+ {
+  "raw": 67,
+  "slot": "U062",
+  "name": "Key-Piano Comp",
+  "length": 32
+ },
+ {
+  "raw": 68,
+  "slot": "U063",
+  "name": "Key-House Piano",
+  "length": 16
+ },
+ {
+  "raw": 69,
+  "slot": "U064",
+  "name": "Key-Techno Chordism",
+  "length": 32
+ },
+ {
+  "raw": 70,
+  "slot": "U065",
+  "name": "Key-Magical Chord Arp",
+  "length": 16
+ },
+ {
+  "raw": 71,
+  "slot": "U066",
+  "name": "Key-E.Piano Arpeggio",
+  "length": 16
+ },
+ {
+  "raw": 72,
+  "slot": "U067",
+  "name": "Key-E.Piano Calm",
+  "length": 16
+ },
+ {
+  "raw": 73,
+  "slot": "U068",
+  "name": "Key-E.Piano Padding",
+  "length": 16
+ },
+ {
+  "raw": 74,
+  "slot": "U069",
+  "name": "Key-E.Piano Progressive",
+  "length": 16
+ },
+ {
+  "raw": 75,
+  "slot": "U070",
+  "name": "Key-Clavi Comp",
+  "length": 16
+ },
+ {
+  "raw": 76,
+  "slot": "U071",
+  "name": "Key-Clavinetix",
+  "length": 32
+ },
+ {
+  "raw": 77,
+  "slot": "U072",
+  "name": "Key-Clavinutz",
+  "length": 32
+ },
+ {
+  "raw": 78,
+  "slot": "U073",
+  "name": "Key-Fynky Clavi",
+  "length": 16
+ },
+ {
+  "raw": 79,
+  "slot": "U074",
+  "name": "Key-Clavi Pattern",
+  "length": 16
+ },
+ {
+  "raw": 80,
+  "slot": "U075",
+  "name": "Key-Harpsy Arpeggio",
+  "length": 16
+ },
+ {
+  "raw": 81,
+  "slot": "U076",
+  "name": "Key-Accordeon Tango",
+  "length": 16
+ },
+ {
+  "raw": 82,
+  "slot": "U077",
+  "name": "Key-Bandoneon Tango",
+  "length": 32
+ },
+ {
+  "raw": 83,
+  "slot": "U078",
+  "name": "Key-Harmonica Rock",
+  "length": 16
+ },
+ {
+  "raw": 84,
+  "slot": "U079",
+  "name": "Key-Arp Educator",
+  "length": 32
+ },
+ {
+  "raw": 85,
+  "slot": "U080",
+  "name": "Key-Crying Harp Riff",
+  "length": 16
+ },
+ {
+  "raw": 86,
+  "slot": "U081",
+  "name": "Org-Organ Comp",
+  "length": 16
+ },
+ {
+  "raw": 87,
+  "slot": "U082",
+  "name": "Org-Raggae Organ",
+  "length": 8
+ },
+ {
+  "raw": 88,
+  "slot": "U083",
+  "name": "Org-House Organ",
+  "length": 16
+ },
+ {
+  "raw": 89,
+  "slot": "U084",
+  "name": "Org-Prog Organ Phrase",
+  "length": 36
+ },
+ {
+  "raw": 90,
+  "slot": "U085",
+  "name": "Org-Pipe Positive",
+  "length": 8
+ },
+ {
+  "raw": 91,
+  "slot": "U086",
+  "name": "Bs-Euro 8th Notes",
+  "length": 16
+ },
+ {
+  "raw": 92,
+  "slot": "U087",
+  "name": "Bs-8th Note 1 Pitch",
+  "length": 16
+ },
+ {
+  "raw": 93,
+  "slot": "U088",
+  "name": "Bs-Pedal",
+  "length": 1
+ },
+ {
+  "raw": 94,
+  "slot": "U089",
+  "name": "Bs-1Note Repeat Lo",
+  "length": 8
+ },
+ {
+  "raw": 95,
+  "slot": "U090",
+  "name": "Bs-Fast Velo Note",
+  "length": 16
+ },
+ {
+  "raw": 96,
+  "slot": "U091",
+  "name": "Bs-Follow Leader 16ths",
+  "length": 16
+ },
+ {
+  "raw": 97,
+  "slot": "U092",
+  "name": "Bs-Stagger",
+  "length": 8
+ },
+ {
+  "raw": 98,
+  "slot": "U093",
+  "name": "Bs-Ram Stone",
+  "length": 32
+ },
+ {
+  "raw": 99,
+  "slot": "U094",
+  "name": "Bs-12 Bar",
+  "length": 24
+ },
+ {
+  "raw": 100,
+  "slot": "U095",
+  "name": "Bs-Subtle Riff",
+  "length": 16
+ },
+ {
+  "raw": 101,
+  "slot": "U096",
+  "name": "Bs-Lost at Sea Riff",
+  "length": 16
+ },
+ {
+  "raw": 102,
+  "slot": "U097",
+  "name": "Bs-Ballad Base",
+  "length": 16
+ },
+ {
+  "raw": 103,
+  "slot": "U098",
+  "name": "Bs-Busy V Dancer",
+  "length": 32
+ },
+ {
+  "raw": 104,
+  "slot": "U099",
+  "name": "Bs-Pushing",
+  "length": 16
+ },
+ {
+  "raw": 105,
+  "slot": "U100",
+  "name": "Bs-Octave Funk",
+  "length": 32
+ },
+ {
+  "raw": 106,
+  "slot": "U101",
+  "name": "Bs-Shaman",
+  "length": 16
+ },
+ {
+  "raw": 107,
+  "slot": "U102",
+  "name": "Bs-Bass Pump",
+  "length": 32
+ },
+ {
+  "raw": 108,
+  "slot": "U103",
+  "name": "Bs-Acid 1",
+  "length": 16
+ },
+ {
+  "raw": 109,
+  "slot": "U104",
+  "name": "Bs-Funky Rock",
+  "length": 16
+ },
+ {
+  "raw": 110,
+  "slot": "U105",
+  "name": "Bs-Drum'n'Bass 1",
+  "length": 32
+ },
+ {
+  "raw": 111,
+  "slot": "U106",
+  "name": "Bs-Skippy Riff",
+  "length": 8
+ },
+ {
+  "raw": 112,
+  "slot": "U107",
+  "name": "Bs-Relentless Octaves",
+  "length": 16
+ },
+ {
+  "raw": 113,
+  "slot": "U108",
+  "name": "Bs-Octave Hop",
+  "length": 8
+ },
+ {
+  "raw": 114,
+  "slot": "U109",
+  "name": "Bs-D'n'Bass 1",
+  "length": 32
+ },
+ {
+  "raw": 115,
+  "slot": "U110",
+  "name": "Bs-Single Eighth Notes",
+  "length": 16
+ },
+ {
+  "raw": 116,
+  "slot": "U111",
+  "name": "Bs-R & B Bass",
+  "length": 32
+ },
+ {
+  "raw": 117,
+  "slot": "U112",
+  "name": "Bs-Pirate Riff",
+  "length": 16
+ },
+ {
+  "raw": 118,
+  "slot": "U113",
+  "name": "Bs-Slap Synth 1234",
+  "length": 15
+ },
+ {
+  "raw": 119,
+  "slot": "U114",
+  "name": "Bs-80 Ana step",
+  "length": 16
+ },
+ {
+  "raw": 120,
+  "slot": "U115",
+  "name": "Bs-Poking 8ths",
+  "length": 16
+ },
+ {
+  "raw": 121,
+  "slot": "U116",
+  "name": "Bs-Retro Bass",
+  "length": 32
+ },
+ {
+  "raw": 122,
+  "slot": "U117",
+  "name": "Bs-Father of Disco",
+  "length": 32
+ },
+ {
+  "raw": 123,
+  "slot": "U118",
+  "name": "Bs-Kraft RoboLine",
+  "length": 32
+ },
+ {
+  "raw": 124,
+  "slot": "U119",
+  "name": "Bs-Nu House",
+  "length": 16
+ },
+ {
+  "raw": 125,
+  "slot": "U120",
+  "name": "Bs-2 finger''s Up/Down",
+  "length": 16
+ },
+ {
+  "raw": 126,
+  "slot": "U121",
+  "name": "Bs-Oxigene Line",
+  "length": 12
+ },
+ {
+  "raw": 127,
+  "slot": "U122",
+  "name": "Bs-Techno 1",
+  "length": 16
+ },
+ {
+  "raw": 128,
+  "slot": "U123",
+  "name": "Bs-Techno 2",
+  "length": 8
+ },
+ {
+  "raw": 129,
+  "slot": "U124",
+  "name": "Bs-Techno 3",
+  "length": 8
+ },
+ {
+  "raw": 130,
+  "slot": "U125",
+  "name": "Bs-Techno 4",
+  "length": 16
+ },
+ {
+  "raw": 131,
+  "slot": "U126",
+  "name": "Bs-Techno 5",
+  "length": 16
+ },
+ {
+  "raw": 132,
+  "slot": "U127",
+  "name": "Bs-Trance",
+  "length": 16
+ },
+ {
+  "raw": 133,
+  "slot": "U128",
+  "name": "Bs-Dance",
+  "length": 8
+ },
+ {
+  "raw": 134,
+  "slot": "U129",
+  "name": "Bs-Euro",
+  "length": 16
+ },
+ {
+  "raw": 135,
+  "slot": "U130",
+  "name": "Bs-Funky Tekno",
+  "length": 16
+ },
+ {
+  "raw": 136,
+  "slot": "U131",
+  "name": "Bs-Old Dance 1",
+  "length": 32
+ },
+ {
+  "raw": 137,
+  "slot": "U132",
+  "name": "Bs-Old Dance 2",
+  "length": 16
+ },
+ {
+  "raw": 138,
+  "slot": "U133",
+  "name": "Bs-House",
+  "length": 32
+ },
+ {
+  "raw": 139,
+  "slot": "U134",
+  "name": "Bs-Acid 2",
+  "length": 16
+ },
+ {
+  "raw": 140,
+  "slot": "U135",
+  "name": "Bs-Acid 3",
+  "length": 16
+ },
+ {
+  "raw": 141,
+  "slot": "U136",
+  "name": "Bs-Dotted Line",
+  "length": 24
+ },
+ {
+  "raw": 142,
+  "slot": "U137",
+  "name": "Bs-Breakbeat Riff",
+  "length": 32
+ },
+ {
+  "raw": 143,
+  "slot": "U138",
+  "name": "Bs-Brit Funk",
+  "length": 32
+ },
+ {
+  "raw": 144,
+  "slot": "U139",
+  "name": "Bs-Chaser",
+  "length": 32
+ },
+ {
+  "raw": 145,
+  "slot": "U140",
+  "name": "Bs-Crysis",
+  "length": 32
+ },
+ {
+  "raw": 146,
+  "slot": "U141",
+  "name": "Bs-D'n'B Bah Rah",
+  "length": 32
+ },
+ {
+  "raw": 147,
+  "slot": "U142",
+  "name": "Bs-D'n'Bass 2",
+  "length": 32
+ },
+ {
+  "raw": 148,
+  "slot": "U143",
+  "name": "Bs-House Bass",
+  "length": 32
+ },
+ {
+  "raw": 149,
+  "slot": "U144",
+  "name": "Bs-Reggae Bass",
+  "length": 32
+ },
+ {
+  "raw": 150,
+  "slot": "U145",
+  "name": "Bs-Tangent",
+  "length": 16
+ },
+ {
+  "raw": 151,
+  "slot": "U146",
+  "name": "Bs-CJazz",
+  "length": 32
+ },
+ {
+  "raw": 152,
+  "slot": "U147",
+  "name": "Bs-Fingering Bass",
+  "length": 32
+ },
+ {
+  "raw": 153,
+  "slot": "U148",
+  "name": "Bs-Funk",
+  "length": 32
+ },
+ {
+  "raw": 154,
+  "slot": "U149",
+  "name": "Bs-Soul",
+  "length": 32
+ },
+ {
+  "raw": 155,
+  "slot": "U150",
+  "name": "Bs-Jacobass",
+  "length": 16
+ },
+ {
+  "raw": 156,
+  "slot": "U151",
+  "name": "Bs-Monster BassRiff",
+  "length": 32
+ },
+ {
+  "raw": 157,
+  "slot": "U152",
+  "name": "Bs-Flash",
+  "length": 32
+ },
+ {
+  "raw": 158,
+  "slot": "U153",
+  "name": "Bs-Bass Roller",
+  "length": 32
+ },
+ {
+  "raw": 159,
+  "slot": "U154",
+  "name": "Bs-Cool Funky Bass",
+  "length": 32
+ },
+ {
+  "raw": 160,
+  "slot": "U155",
+  "name": "Bs-Drum'n'Bass 2",
+  "length": 32
+ },
+ {
+  "raw": 161,
+  "slot": "U156",
+  "name": "Bs-Deep Driver",
+  "length": 16
+ },
+ {
+  "raw": 162,
+  "slot": "U157",
+  "name": "Bs-74's Rock Bass",
+  "length": 32
+ },
+ {
+  "raw": 163,
+  "slot": "U158",
+  "name": "Bs-Let's",
+  "length": 16
+ },
+ {
+  "raw": 164,
+  "slot": "U159",
+  "name": "Bs-Finger Bass Line",
+  "length": 16
+ },
+ {
+  "raw": 165,
+  "slot": "U160",
+  "name": "Bs-Erotic",
+  "length": 16
+ },
+ {
+  "raw": 166,
+  "slot": "U161",
+  "name": "Bs-Nanda Bass",
+  "length": 16
+ },
+ {
+  "raw": 167,
+  "slot": "U162",
+  "name": "Bs-Tech Dance Bass",
+  "length": 32
+ },
+ {
+  "raw": 168,
+  "slot": "U163",
+  "name": "Bs-Space Groove",
+  "length": 32
+ },
+ {
+  "raw": 169,
+  "slot": "U164",
+  "name": "Bs-Skip's Jazz Riff",
+  "length": 32
+ },
+ {
+  "raw": 170,
+  "slot": "U165",
+  "name": "Bs-Dance Stepper",
+  "length": 32
+ },
+ {
+  "raw": 171,
+  "slot": "U166",
+  "name": "Bs-Gold Field Line",
+  "length": 8
+ },
+ {
+  "raw": 172,
+  "slot": "U167",
+  "name": "Bs-One shot",
+  "length": 32
+ },
+ {
+  "raw": 173,
+  "slot": "U168",
+  "name": "Bs-Slap Octaves",
+  "length": 16
+ },
+ {
+  "raw": 174,
+  "slot": "U169",
+  "name": "Bs-One One Five",
+  "length": 32
+ },
+ {
+  "raw": 175,
+  "slot": "U170",
+  "name": "Bs-Gospel Bass Notes",
+  "length": 32
+ },
+ {
+  "raw": 176,
+  "slot": "U171",
+  "name": "Bs-Hip Hop",
+  "length": 32
+ },
+ {
+  "raw": 177,
+  "slot": "U172",
+  "name": "Bs-Root & Fifth",
+  "length": 32
+ },
+ {
+  "raw": 178,
+  "slot": "U173",
+  "name": "Bs-Root Five",
+  "length": 32
+ },
+ {
+  "raw": 179,
+  "slot": "U174",
+  "name": "Bs-Balance Country",
+  "length": 32
+ },
+ {
+  "raw": 180,
+  "slot": "U175",
+  "name": "Bs-Tribal",
+  "length": 16
+ },
+ {
+  "raw": 181,
+  "slot": "U176",
+  "name": "Bs-Long Bass",
+  "length": 16
+ },
+ {
+  "raw": 182,
+  "slot": "U177",
+  "name": "Bs-Walking swing",
+  "length": 32
+ },
+ {
+  "raw": 183,
+  "slot": "U178",
+  "name": "Bs-Walkin'",
+  "length": 48
+ },
+ {
+  "raw": 184,
+  "slot": "U179",
+  "name": "Bs-WalkingWalker",
+  "length": 48
+ },
+ {
+  "raw": 185,
+  "slot": "U180",
+  "name": "Bs-Fast pace walk",
+  "length": 40
+ },
+ {
+  "raw": 186,
+  "slot": "U181",
+  "name": "Bs-Acid 5Step",
+  "length": 5
+ },
+ {
+  "raw": 187,
+  "slot": "U182",
+  "name": "Bs-Slow Rocking",
+  "length": 24
+ },
+ {
+  "raw": 188,
+  "slot": "U183",
+  "name": "Syn-Relentless Dotted",
+  "length": 8
+ },
+ {
+  "raw": 189,
+  "slot": "U184",
+  "name": "Syn-Agressiv Octaves Hit",
+  "length": 32
+ },
+ {
+  "raw": 190,
+  "slot": "U185",
+  "name": "Syn-Matrix Arp",
+  "length": 16
+ },
+ {
+  "raw": 191,
+  "slot": "U186",
+  "name": "Syn-Hold 'em riff",
+  "length": 16
+ },
+ {
+  "raw": 192,
+  "slot": "U187",
+  "name": "Syn-Hot L Key",
+  "length": 32
+ },
+ {
+  "raw": 193,
+  "slot": "U188",
+  "name": "Syn-Minor Point",
+  "length": 16
+ },
+ {
+  "raw": 194,
+  "slot": "U189",
+  "name": "Syn-Bellhop Chordplay",
+  "length": 8
+ },
+ {
+  "raw": 195,
+  "slot": "U190",
+  "name": "Syn-Waveseq Synco Bass",
+  "length": 32
+ },
+ {
+  "raw": 196,
+  "slot": "U191",
+  "name": "Syn-MalletRoller",
+  "length": 16
+ },
+ {
+  "raw": 197,
+  "slot": "U192",
+  "name": "Syn-Throb",
+  "length": 16
+ },
+ {
+  "raw": 198,
+  "slot": "U193",
+  "name": "Syn-2tone Velo Trip 1",
+  "length": 16
+ },
+ {
+  "raw": 199,
+  "slot": "U194",
+  "name": "Syn-2tone Velo Trip 2",
+  "length": 16
+ },
+ {
+  "raw": 200,
+  "slot": "U195",
+  "name": "Syn-Echo Chords 1",
+  "length": 16
+ },
+ {
+  "raw": 201,
+  "slot": "U196",
+  "name": "Syn-Echo Chords 2",
+  "length": 16
+ },
+ {
+  "raw": 202,
+  "slot": "U197",
+  "name": "Syn-Echo Chords 3",
+  "length": 16
+ },
+ {
+  "raw": 203,
+  "slot": "U198",
+  "name": "Syn-8th Chunk",
+  "length": 16
+ },
+ {
+  "raw": 204,
+  "slot": "U199",
+  "name": "Syn-Vel Wave SQ",
+  "length": 16
+ },
+ {
+  "raw": 205,
+  "slot": "U200",
+  "name": "Syn-Subtle Riff",
+  "length": 16
+ },
+ {
+  "raw": 206,
+  "slot": "U201",
+  "name": "Syn-Hold",
+  "length": 48
+ },
+ {
+  "raw": 207,
+  "slot": "U202",
+  "name": "Syn-ONCE!",
+  "length": 4
+ },
+ {
+  "raw": 208,
+  "slot": "U203",
+  "name": "Syn-Simple Comp",
+  "length": 16
+ },
+ {
+  "raw": 209,
+  "slot": "U204",
+  "name": "Syn-16th Busy Chord",
+  "length": 8
+ },
+ {
+  "raw": 210,
+  "slot": "U205",
+  "name": "Syn-Repeat",
+  "length": 16
+ },
+ {
+  "raw": 211,
+  "slot": "U206",
+  "name": "Syn-Stock Price",
+  "length": 8
+ },
+ {
+  "raw": 212,
+  "slot": "U207",
+  "name": "Syn-Trance Comp 1",
+  "length": 16
+ },
+ {
+  "raw": 213,
+  "slot": "U208",
+  "name": "Syn-KO Elec Lab.",
+  "length": 16
+ },
+ {
+  "raw": 214,
+  "slot": "U209",
+  "name": "Syn-Voices Chords",
+  "length": 32
+ },
+ {
+  "raw": 215,
+  "slot": "U210",
+  "name": "Syn-WS Dream",
+  "length": 32
+ },
+ {
+  "raw": 216,
+  "slot": "U211",
+  "name": "Syn-Waveseq Chords",
+  "length": 32
+ },
+ {
+  "raw": 217,
+  "slot": "U212",
+  "name": "Syn-4tone Velo Trip",
+  "length": 16
+ },
+ {
+  "raw": 218,
+  "slot": "U213",
+  "name": "Syn-4tone Ride",
+  "length": 16
+ },
+ {
+  "raw": 219,
+  "slot": "U214",
+  "name": "Syn-5tone Climb",
+  "length": 8
+ },
+ {
+  "raw": 220,
+  "slot": "U215",
+  "name": "Syn-5tone Velo Trip 1",
+  "length": 16
+ },
+ {
+  "raw": 221,
+  "slot": "U216",
+  "name": "Syn-5tone Velo Trip 2",
+  "length": 16
+ },
+ {
+  "raw": 222,
+  "slot": "U217",
+  "name": "Syn-5tone Trance 1",
+  "length": 16
+ },
+ {
+  "raw": 223,
+  "slot": "U218",
+  "name": "Syn-5tone Trance 2",
+  "length": 16
+ },
+ {
+  "raw": 224,
+  "slot": "U219",
+  "name": "Syn-6tone Ostinat",
+  "length": 16
+ },
+ {
+  "raw": 225,
+  "slot": "U220",
+  "name": "Syn-Tirtian Riff",
+  "length": 16
+ },
+ {
+  "raw": 226,
+  "slot": "U221",
+  "name": "Syn-Steady!",
+  "length": 16
+ },
+ {
+  "raw": 227,
+  "slot": "U222",
+  "name": "Syn-6tone Techno",
+  "length": 16
+ },
+ {
+  "raw": 228,
+  "slot": "U223",
+  "name": "Syn-Techno 1",
+  "length": 16
+ },
+ {
+  "raw": 229,
+  "slot": "U224",
+  "name": "Syn-Poly Arp",
+  "length": 32
+ },
+ {
+  "raw": 230,
+  "slot": "U225",
+  "name": "Syn-Bounce Chords",
+  "length": 8
+ },
+ {
+  "raw": 231,
+  "slot": "U226",
+  "name": "Syn-Tingly Riff",
+  "length": 16
+ },
+ {
+  "raw": 232,
+  "slot": "U227",
+  "name": "Syn-Syncho attack",
+  "length": 8
+ },
+ {
+  "raw": 233,
+  "slot": "U228",
+  "name": "Syn-Boom Pow Seq",
+  "length": 16
+ },
+ {
+  "raw": 234,
+  "slot": "U229",
+  "name": "Syn-Vice Squad",
+  "length": 32
+ },
+ {
+  "raw": 235,
+  "slot": "U230",
+  "name": "Syn-Flashin' Arp",
+  "length": 32
+ },
+ {
+  "raw": 236,
+  "slot": "U231",
+  "name": "Syn-Dance Comp",
+  "length": 32
+ },
+ {
+  "raw": 237,
+  "slot": "U232",
+  "name": "Syn-Trance Comp 2",
+  "length": 16
+ },
+ {
+  "raw": 238,
+  "slot": "U233",
+  "name": "Syn-Euro Lights",
+  "length": 32
+ },
+ {
+  "raw": 239,
+  "slot": "U234",
+  "name": "Syn-1 or 2 finger",
+  "length": 16
+ },
+ {
+  "raw": 240,
+  "slot": "U235",
+  "name": "Syn-RouteUp&Down",
+  "length": 16
+ },
+ {
+  "raw": 241,
+  "slot": "U236",
+  "name": "Syn-Speed Seq",
+  "length": 16
+ },
+ {
+  "raw": 242,
+  "slot": "U237",
+  "name": "Syn-Techno 2",
+  "length": 32
+ },
+ {
+  "raw": 243,
+  "slot": "U238",
+  "name": "Syn-Techno 3",
+  "length": 16
+ },
+ {
+  "raw": 244,
+  "slot": "U239",
+  "name": "Syn-Techno 4",
+  "length": 16
+ },
+ {
+  "raw": 245,
+  "slot": "U240",
+  "name": "Syn-Techno 5",
+  "length": 16
+ },
+ {
+  "raw": 246,
+  "slot": "U241",
+  "name": "Syn-Techno 6",
+  "length": 16
+ },
+ {
+  "raw": 247,
+  "slot": "U242",
+  "name": "Syn-Trance",
+  "length": 16
+ },
+ {
+  "raw": 248,
+  "slot": "U243",
+  "name": "Syn-Echo",
+  "length": 16
+ },
+ {
+  "raw": 249,
+  "slot": "U244",
+  "name": "Syn-Computer 1",
+  "length": 32
+ },
+ {
+  "raw": 250,
+  "slot": "U245",
+  "name": "Syn-Computer 2",
+  "length": 32
+ },
+ {
+  "raw": 251,
+  "slot": "U246",
+  "name": "Syn-Computer 3",
+  "length": 32
+ },
+ {
+  "raw": 252,
+  "slot": "U247",
+  "name": "Syn-Cresc/Decresc",
+  "length": 22
+ },
+ {
+  "raw": 253,
+  "slot": "U248",
+  "name": "Syn-Trails",
+  "length": 15
+ },
+ {
+  "raw": 254,
+  "slot": "U249",
+  "name": "Syn-Trickle",
+  "length": 48
+ },
+ {
+  "raw": 255,
+  "slot": "U250",
+  "name": "Syn-Dittos",
+  "length": 16
+ },
+ {
+  "raw": 256,
+  "slot": "U251",
+  "name": "Syn-Quarks",
+  "length": 8
+ },
+ {
+  "raw": 257,
+  "slot": "U252",
+  "name": "Syn-Saturn Synth",
+  "length": 32
+ },
+ {
+  "raw": 258,
+  "slot": "U253",
+  "name": "Syn-Virus Riff",
+  "length": 16
+ },
+ {
+  "raw": 259,
+  "slot": "U254",
+  "name": "Syn-80's SaveSeq",
+  "length": 16
+ },
+ {
+  "raw": 260,
+  "slot": "U255",
+  "name": "Syn-Pentatonic",
+  "length": 48
+ },
+ {
+  "raw": 261,
+  "slot": "U256",
+  "name": "Syn-StepSaw Down",
+  "length": 16
+ },
+ {
+  "raw": 262,
+  "slot": "U257",
+  "name": "Syn-Fast Melodic",
+  "length": 12
+ },
+ {
+  "raw": 263,
+  "slot": "U258",
+  "name": "Syn-Minor9th Rise",
+  "length": 8
+ },
+ {
+  "raw": 264,
+  "slot": "U259",
+  "name": "Bs/Rf-70's Disco",
+  "length": 8
+ },
+ {
+  "raw": 265,
+  "slot": "U260",
+  "name": "Bs/Rf-Dance+Comp",
+  "length": 16
+ },
+ {
+  "raw": 266,
+  "slot": "U261",
+  "name": "Bs/Rf-Acid Jazz",
+  "length": 16
+ },
+ {
+  "raw": 267,
+  "slot": "U262",
+  "name": "Bs/Rf-Retro Pattern",
+  "length": 16
+ },
+ {
+  "raw": 268,
+  "slot": "U263",
+  "name": "Bs/Rf-Rumbo",
+  "length": 48
+ },
+ {
+  "raw": 269,
+  "slot": "U264",
+  "name": "Bs/Rf-Club Bossa",
+  "length": 16
+ },
+ {
+  "raw": 270,
+  "slot": "U265",
+  "name": "Bs/Rf-Techno Bossa",
+  "length": 32
+ },
+ {
+  "raw": 271,
+  "slot": "U266",
+  "name": "Bs/Rf-Techno Pulse",
+  "length": 32
+ },
+ {
+  "raw": 272,
+  "slot": "U267",
+  "name": "Bs/Rf-Gated",
+  "length": 16
+ },
+ {
+  "raw": 273,
+  "slot": "U268",
+  "name": "Bs/Rf-Happy Dog",
+  "length": 32
+ },
+ {
+  "raw": 274,
+  "slot": "U269",
+  "name": "Bs/Rf-Stab Rhythm",
+  "length": 16
+ },
+ {
+  "raw": 275,
+  "slot": "U270",
+  "name": "Bs/Rf-Staccato Tech",
+  "length": 32
+ },
+ {
+  "raw": 276,
+  "slot": "U271",
+  "name": "Bs/Rf-Stepping",
+  "length": 16
+ },
+ {
+  "raw": 277,
+  "slot": "U272",
+  "name": "Bs/Rf-Syncpation",
+  "length": 16
+ },
+ {
+  "raw": 278,
+  "slot": "U273",
+  "name": "Bs/Rf-Crazy Bee",
+  "length": 16
+ },
+ {
+  "raw": 279,
+  "slot": "U274",
+  "name": "Bs/Rf-Trance 1",
+  "length": 32
+ },
+ {
+  "raw": 280,
+  "slot": "U275",
+  "name": "Bs/Rf-Trance 2",
+  "length": 32
+ },
+ {
+  "raw": 281,
+  "slot": "U276",
+  "name": "Bs/Rf-2 finger's Dance 1",
+  "length": 32
+ },
+ {
+  "raw": 282,
+  "slot": "U277",
+  "name": "Bs/Rf-2 finger's Dance 2",
+  "length": 16
+ },
+ {
+  "raw": 283,
+  "slot": "U278",
+  "name": "Bs/Rf-2 finger's Dance 3",
+  "length": 32
+ },
+ {
+  "raw": 284,
+  "slot": "U279",
+  "name": "Bs/Rf-Ambi",
+  "length": 32
+ },
+ {
+  "raw": 285,
+  "slot": "U280",
+  "name": "Bs/Rf-House Nation",
+  "length": 32
+ },
+ {
+  "raw": 286,
+  "slot": "U281",
+  "name": "Str-Arco Arpeggio",
+  "length": 32
+ },
+ {
+  "raw": 287,
+  "slot": "U282",
+  "name": "Str-Dynamic",
+  "length": 16
+ },
+ {
+  "raw": 288,
+  "slot": "U283",
+  "name": "Str-String Beat",
+  "length": 32
+ },
+ {
+  "raw": 289,
+  "slot": "U284",
+  "name": "Str-\"Pop\"ing Arco",
+  "length": 16
+ },
+ {
+  "raw": 290,
+  "slot": "U285",
+  "name": "Str-Archetto",
+  "length": 4
+ },
+ {
+  "raw": 291,
+  "slot": "U286",
+  "name": "Str-Arco Balzando",
+  "length": 16
+ },
+ {
+  "raw": 292,
+  "slot": "U287",
+  "name": "Str-Baroque",
+  "length": 16
+ },
+ {
+  "raw": 293,
+  "slot": "U288",
+  "name": "Str-Classical 1",
+  "length": 32
+ },
+ {
+  "raw": 294,
+  "slot": "U289",
+  "name": "Str-Classical 2",
+  "length": 16
+ },
+ {
+  "raw": 295,
+  "slot": "U290",
+  "name": "Str-Ostinato",
+  "length": 32
+ },
+ {
+  "raw": 296,
+  "slot": "U291",
+  "name": "Str-String Arp 1",
+  "length": 14
+ },
+ {
+  "raw": 297,
+  "slot": "U292",
+  "name": "Str-String Arp 2",
+  "length": 14
+ },
+ {
+  "raw": 298,
+  "slot": "U293",
+  "name": "Str-Classic 2oct",
+  "length": 24
+ },
+ {
+  "raw": 299,
+  "slot": "U294",
+  "name": "Str-New BowRoque",
+  "length": 16
+ },
+ {
+  "raw": 300,
+  "slot": "U295",
+  "name": "Str-Open String Line",
+  "length": 32
+ },
+ {
+  "raw": 301,
+  "slot": "U296",
+  "name": "Str-Strings Melody",
+  "length": 48
+ },
+ {
+  "raw": 302,
+  "slot": "U297",
+  "name": "Str-Ethnic Tri Riff",
+  "length": 24
+ },
+ {
+  "raw": 303,
+  "slot": "U298",
+  "name": "Str-Pizzicato",
+  "length": 8
+ },
+ {
+  "raw": 304,
+  "slot": "U299",
+  "name": "Str-Simple Pizzy",
+  "length": 8
+ },
+ {
+  "raw": 305,
+  "slot": "U300",
+  "name": "Brs-Brass Riff",
+  "length": 16
+ },
+ {
+  "raw": 306,
+  "slot": "U301",
+  "name": "Brs-Syncorhythm",
+  "length": 16
+ },
+ {
+  "raw": 307,
+  "slot": "U302",
+  "name": "Brs-Riphrase",
+  "length": 32
+ },
+ {
+  "raw": 308,
+  "slot": "U303",
+  "name": "Brs-Brazilian",
+  "length": 16
+ },
+ {
+  "raw": 309,
+  "slot": "U304",
+  "name": "Brs-4 Note for Swing",
+  "length": 24
+ },
+ {
+  "raw": 310,
+  "slot": "U305",
+  "name": "Brs-And Fire",
+  "length": 16
+ },
+ {
+  "raw": 311,
+  "slot": "U306",
+  "name": "Brs-Brown's Section",
+  "length": 16
+ },
+ {
+  "raw": 312,
+  "slot": "U307",
+  "name": "Brs-F.Horns March",
+  "length": 16
+ },
+ {
+  "raw": 313,
+  "slot": "U308",
+  "name": "Brs-Funky Trumpets",
+  "length": 32
+ },
+ {
+  "raw": 314,
+  "slot": "U309",
+  "name": "Brs-Funky Hop",
+  "length": 16
+ },
+ {
+  "raw": 315,
+  "slot": "U310",
+  "name": "Brs-Balcan Riff",
+  "length": 32
+ },
+ {
+  "raw": 316,
+  "slot": "U311",
+  "name": "Wod-Bassoon Riff",
+  "length": 8
+ },
+ {
+  "raw": 317,
+  "slot": "U312",
+  "name": "Wod-Bassoon Walk",
+  "length": 16
+ },
+ {
+  "raw": 318,
+  "slot": "U313",
+  "name": "Wod-Flute Modal Riff",
+  "length": 32
+ },
+ {
+  "raw": 319,
+  "slot": "U314",
+  "name": "Wod-Flute Sect. Short",
+  "length": 24
+ },
+ {
+  "raw": 320,
+  "slot": "U315",
+  "name": "Wod-PanFlute Attacks",
+  "length": 16
+ },
+ {
+  "raw": 321,
+  "slot": "U316",
+  "name": "Wod-Shakuhachi",
+  "length": 48
+ },
+ {
+  "raw": 322,
+  "slot": "U317",
+  "name": "Orch-Up & Down",
+  "length": 32
+ },
+ {
+  "raw": 323,
+  "slot": "U318",
+  "name": "Orch-Fast",
+  "length": 32
+ },
+ {
+  "raw": 324,
+  "slot": "U319",
+  "name": "Orch-Orchestral",
+  "length": 32
+ },
+ {
+  "raw": 325,
+  "slot": "U320",
+  "name": "Orch-Wood/Strings 1",
+  "length": 32
+ },
+ {
+  "raw": 326,
+  "slot": "U321",
+  "name": "Orch-Wood/Strings 2",
+  "length": 32
+ },
+ {
+  "raw": 327,
+  "slot": "U322",
+  "name": "Bel-2 & 4",
+  "length": 32
+ },
+ {
+  "raw": 328,
+  "slot": "U323",
+  "name": "Bel-Bells",
+  "length": 16
+ },
+ {
+  "raw": 329,
+  "slot": "U324",
+  "name": "Bel-Balinese Meditative",
+  "length": 16
+ },
+ {
+  "raw": 330,
+  "slot": "U325",
+  "name": "Bel-Chord then Riff",
+  "length": 16
+ },
+ {
+  "raw": 331,
+  "slot": "U326",
+  "name": "Bel-Gamelan Seq.",
+  "length": 8
+ },
+ {
+  "raw": 332,
+  "slot": "U327",
+  "name": "Bel-HiBellz Relax",
+  "length": 32
+ },
+ {
+  "raw": 333,
+  "slot": "U328",
+  "name": "Bel-Thumb Piano",
+  "length": 48
+ },
+ {
+  "raw": 334,
+  "slot": "U329",
+  "name": "Bel-16th Chord Seq.",
+  "length": 32
+ },
+ {
+  "raw": 335,
+  "slot": "U330",
+  "name": "Malt-Gabrielizm",
+  "length": 16
+ },
+ {
+  "raw": 336,
+  "slot": "U331",
+  "name": "Malt-Marimba Jungle",
+  "length": 16
+ },
+ {
+  "raw": 337,
+  "slot": "U332",
+  "name": "Malt-Marimba Dual Roll",
+  "length": 16
+ },
+ {
+  "raw": 338,
+  "slot": "U333",
+  "name": "Malt-Xilophonics",
+  "length": 16
+ },
+ {
+  "raw": 339,
+  "slot": "U334",
+  "name": "SE-Random",
+  "length": 16
+ },
+ {
+  "raw": 340,
+  "slot": "U335",
+  "name": "SE-Random Up",
+  "length": 32
+ },
+ {
+  "raw": 341,
+  "slot": "U336",
+  "name": "SE-Up uP UP",
+  "length": 8
+ },
+ {
+  "raw": 342,
+  "slot": "U337",
+  "name": "SE-Up uP UPUp uP",
+  "length": 8
+ },
+ {
+  "raw": 343,
+  "slot": "U338",
+  "name": "SE-Down Strum",
+  "length": 48
+ },
+ {
+  "raw": 344,
+  "slot": "U339",
+  "name": "SE-Penta-Fall",
+  "length": 32
+ },
+ {
+  "raw": 345,
+  "slot": "U340",
+  "name": "SE-Tubular E Major",
+  "length": 32
+ },
+ {
+  "raw": 346,
+  "slot": "U341",
+  "name": "Dr-8 Beat 1",
+  "length": 16
+ },
+ {
+  "raw": 347,
+  "slot": "U342",
+  "name": "Dr-8 Beat 2",
+  "length": 32
+ },
+ {
+  "raw": 348,
+  "slot": "U343",
+  "name": "Dr-8 Beat 3",
+  "length": 32
+ },
+ {
+  "raw": 349,
+  "slot": "U344",
+  "name": "Dr-8 Beat 4a",
+  "length": 32
+ },
+ {
+  "raw": 350,
+  "slot": "U345",
+  "name": "Dr-8 Beat 4b",
+  "length": 32
+ },
+ {
+  "raw": 351,
+  "slot": "U346",
+  "name": "Dr-Analog 8 bit",
+  "length": 16
+ },
+ {
+  "raw": 352,
+  "slot": "U347",
+  "name": "Dr-8bit Rim",
+  "length": 32
+ },
+ {
+  "raw": 353,
+  "slot": "U348",
+  "name": "Dr-Ghost Beat",
+  "length": 32
+ },
+ {
+  "raw": 354,
+  "slot": "U349",
+  "name": "Dr-Basic Pop/Rock",
+  "length": 32
+ },
+ {
+  "raw": 355,
+  "slot": "U350",
+  "name": "Dr-Country Rock",
+  "length": 32
+ },
+ {
+  "raw": 356,
+  "slot": "U351",
+  "name": "Dr-Dany's Rock",
+  "length": 32
+ },
+ {
+  "raw": 357,
+  "slot": "U352",
+  "name": "Dr-Vintage Beat",
+  "length": 32
+ },
+ {
+  "raw": 358,
+  "slot": "U353",
+  "name": "Dr-Syncro",
+  "length": 32
+ },
+ {
+  "raw": 359,
+  "slot": "U354",
+  "name": "Dr-Degree Of Funk",
+  "length": 32
+ },
+ {
+  "raw": 360,
+  "slot": "U355",
+  "name": "Dr-Pop Beat",
+  "length": 16
+ },
+ {
+  "raw": 361,
+  "slot": "U356",
+  "name": "Dr-Nu Style Groove",
+  "length": 32
+ },
+ {
+  "raw": 362,
+  "slot": "U357",
+  "name": "Dr-Electro Beat",
+  "length": 32
+ },
+ {
+  "raw": 363,
+  "slot": "U358",
+  "name": "Dr-Let's",
+  "length": 32
+ },
+ {
+  "raw": 364,
+  "slot": "U359",
+  "name": "Dr-In The Pocket",
+  "length": 32
+ },
+ {
+  "raw": 365,
+  "slot": "U360",
+  "name": "Dr-16 Beat",
+  "length": 32
+ },
+ {
+  "raw": 366,
+  "slot": "U361",
+  "name": "Dr-BD/HH/SD 16ths",
+  "length": 32
+ },
+ {
+  "raw": 367,
+  "slot": "U362",
+  "name": "Dr-BD/HH 16ths",
+  "length": 32
+ },
+ {
+  "raw": 368,
+  "slot": "U363",
+  "name": "Dr-EUROPE TRAD.",
+  "length": 16
+ },
+ {
+  "raw": 369,
+  "slot": "U364",
+  "name": "Dr-Up Beat",
+  "length": 16
+ },
+ {
+  "raw": 370,
+  "slot": "U365",
+  "name": "Dr-Rock Beater",
+  "length": 32
+ },
+ {
+  "raw": 371,
+  "slot": "U366",
+  "name": "Dr-Downdrum Beat",
+  "length": 32
+ },
+ {
+  "raw": 372,
+  "slot": "U367",
+  "name": "Dr-Heavy Metal",
+  "length": 16
+ },
+ {
+  "raw": 373,
+  "slot": "U368",
+  "name": "Dr-Open HH Metal",
+  "length": 16
+ },
+ {
+  "raw": 374,
+  "slot": "U369",
+  "name": "Dr-74's Rock",
+  "length": 32
+ },
+ {
+  "raw": 375,
+  "slot": "U370",
+  "name": "Dr-Rock tom",
+  "length": 32
+ },
+ {
+  "raw": 376,
+  "slot": "U371",
+  "name": "Dr-Modern Rock",
+  "length": 32
+ },
+ {
+  "raw": 377,
+  "slot": "U372",
+  "name": "Dr-Runbeat",
+  "length": 32
+ },
+ {
+  "raw": 378,
+  "slot": "U373",
+  "name": "Dr-Room Beat",
+  "length": 32
+ },
+ {
+  "raw": 379,
+  "slot": "U374",
+  "name": "Dr-SyncoBit",
+  "length": 16
+ },
+ {
+  "raw": 380,
+  "slot": "U375",
+  "name": "Dr-Ballad Base Bit",
+  "length": 16
+ },
+ {
+  "raw": 381,
+  "slot": "U376",
+  "name": "Dr-Half Groove",
+  "length": 32
+ },
+ {
+  "raw": 382,
+  "slot": "U377",
+  "name": "Dr-Pounding",
+  "length": 32
+ },
+ {
+  "raw": 383,
+  "slot": "U378",
+  "name": "Dr-Power Stone Bit",
+  "length": 16
+ },
+ {
+  "raw": 384,
+  "slot": "U379",
+  "name": "Dr-Open Beater",
+  "length": 32
+ },
+ {
+  "raw": 385,
+  "slot": "U380",
+  "name": "Dr-Unplugged Beat",
+  "length": 32
+ },
+ {
+  "raw": 386,
+  "slot": "U381",
+  "name": "Dr-JazzySidestick",
+  "length": 32
+ },
+ {
+  "raw": 387,
+  "slot": "U382",
+  "name": "Dr-Bossa Nova",
+  "length": 32
+ },
+ {
+  "raw": 388,
+  "slot": "U383",
+  "name": "Dr-Hugo Bossa",
+  "length": 16
+ },
+ {
+  "raw": 389,
+  "slot": "U384",
+  "name": "Dr-Easy Rider",
+  "length": 32
+ },
+ {
+  "raw": 390,
+  "slot": "U385",
+  "name": "Dr-Club Bossa 1",
+  "length": 32
+ },
+ {
+  "raw": 391,
+  "slot": "U386",
+  "name": "Dr-Club Bossa 2",
+  "length": 32
+ },
+ {
+  "raw": 392,
+  "slot": "U387",
+  "name": "Dr-R.Box Bossa",
+  "length": 16
+ },
+ {
+  "raw": 393,
+  "slot": "U388",
+  "name": "Dr-Reggae Beat",
+  "length": 32
+ },
+ {
+  "raw": 394,
+  "slot": "U389",
+  "name": "Dr-R&B 1",
+  "length": 32
+ },
+ {
+  "raw": 395,
+  "slot": "U390",
+  "name": "Dr-R&B 2",
+  "length": 32
+ },
+ {
+  "raw": 396,
+  "slot": "U391",
+  "name": "Dr-Laydeez RnB",
+  "length": 32
+ },
+ {
+  "raw": 397,
+  "slot": "U392",
+  "name": "Dr-Latin",
+  "length": 32
+ },
+ {
+  "raw": 398,
+  "slot": "U393",
+  "name": "Dr-Jazz",
+  "length": 16
+ },
+ {
+  "raw": 399,
+  "slot": "U394",
+  "name": "Dr-Jazz Drum",
+  "length": 32
+ },
+ {
+  "raw": 400,
+  "slot": "U395",
+  "name": "Dr-Jazz Swing",
+  "length": 32
+ },
+ {
+  "raw": 401,
+  "slot": "U396",
+  "name": "Dr-Fast Swing",
+  "length": 48
+ },
+ {
+  "raw": 402,
+  "slot": "U397",
+  "name": "Dr-Swing type",
+  "length": 48
+ },
+ {
+  "raw": 403,
+  "slot": "U398",
+  "name": "Dr-Shuffle",
+  "length": 24
+ },
+ {
+  "raw": 404,
+  "slot": "U399",
+  "name": "Dr-Brush Kit Reg",
+  "length": 8
+ },
+ {
+  "raw": 405,
+  "slot": "U400",
+  "name": "Dr-Smooth Hop",
+  "length": 32
+ },
+ {
+  "raw": 406,
+  "slot": "U401",
+  "name": "Dr-Jazzy HipHop",
+  "length": 32
+ },
+ {
+  "raw": 407,
+  "slot": "U402",
+  "name": "Dr-HipHop 1",
+  "length": 16
+ },
+ {
+  "raw": 408,
+  "slot": "U403",
+  "name": "Dr-HipHop 2",
+  "length": 32
+ },
+ {
+  "raw": 409,
+  "slot": "U404",
+  "name": "Dr-HipHop 3",
+  "length": 32
+ },
+ {
+  "raw": 410,
+  "slot": "U405",
+  "name": "Dr-Boom Pow Beat",
+  "length": 16
+ },
+ {
+  "raw": 411,
+  "slot": "U406",
+  "name": "Dr-HipHop/FunkPop",
+  "length": 32
+ },
+ {
+  "raw": 412,
+  "slot": "U407",
+  "name": "Dr-Hook Me Up 1",
+  "length": 16
+ },
+ {
+  "raw": 413,
+  "slot": "U408",
+  "name": "Dr-Hook Me Up 2",
+  "length": 32
+ },
+ {
+  "raw": 414,
+  "slot": "U409",
+  "name": "Dr-NuHop Groove",
+  "length": 32
+ },
+ {
+  "raw": 415,
+  "slot": "U410",
+  "name": "Dr-HipHop Groove",
+  "length": 8
+ },
+ {
+  "raw": 416,
+  "slot": "U411",
+  "name": "Dr-HipHop 4",
+  "length": 32
+ },
+ {
+  "raw": 417,
+  "slot": "U412",
+  "name": "Dr-Island Pop 1",
+  "length": 16
+ },
+ {
+  "raw": 418,
+  "slot": "U413",
+  "name": "Dr-Island Pop 2",
+  "length": 16
+ },
+ {
+  "raw": 419,
+  "slot": "U414",
+  "name": "Dr-Island Pop 3",
+  "length": 32
+ },
+ {
+  "raw": 420,
+  "slot": "U415",
+  "name": "Dr-Hip Beat",
+  "length": 32
+ },
+ {
+  "raw": 421,
+  "slot": "U416",
+  "name": "Dr-Flash",
+  "length": 32
+ },
+ {
+  "raw": 422,
+  "slot": "U417",
+  "name": "Dr-HiLow Beat",
+  "length": 16
+ },
+ {
+  "raw": 423,
+  "slot": "U418",
+  "name": "Dr-Apollo Beat",
+  "length": 32
+ },
+ {
+  "raw": 424,
+  "slot": "U419",
+  "name": "Dr-House 1",
+  "length": 8
+ },
+ {
+  "raw": 425,
+  "slot": "U420",
+  "name": "Dr-House/BD&SD",
+  "length": 32
+ },
+ {
+  "raw": 426,
+  "slot": "U421",
+  "name": "Dr-4 on the floor",
+  "length": 32
+ },
+ {
+  "raw": 427,
+  "slot": "U422",
+  "name": "Dr-Straight 4oF",
+  "length": 32
+ },
+ {
+  "raw": 428,
+  "slot": "U423",
+  "name": "Dr-House 2",
+  "length": 16
+ },
+ {
+  "raw": 429,
+  "slot": "U424",
+  "name": "Dr-House Nation",
+  "length": 32
+ },
+ {
+  "raw": 430,
+  "slot": "U425",
+  "name": "Dr-Kontemplate",
+  "length": 16
+ },
+ {
+  "raw": 431,
+  "slot": "U426",
+  "name": "Dr-New Disco 1",
+  "length": 16
+ },
+ {
+  "raw": 432,
+  "slot": "U427",
+  "name": "Dr-New Disco 2",
+  "length": 16
+ },
+ {
+  "raw": 433,
+  "slot": "U428",
+  "name": "Dr-New Disco 3",
+  "length": 16
+ },
+ {
+  "raw": 434,
+  "slot": "U429",
+  "name": "Dr-Disco Nova",
+  "length": 32
+ },
+ {
+  "raw": 435,
+  "slot": "U430",
+  "name": "Dr-GlowStick Dr&Gate",
+  "length": 16
+ },
+ {
+  "raw": 436,
+  "slot": "U431",
+  "name": "Dr-Groove Driver",
+  "length": 32
+ },
+ {
+  "raw": 437,
+  "slot": "U432",
+  "name": "Dr-Kool House 1",
+  "length": 32
+ },
+ {
+  "raw": 438,
+  "slot": "U433",
+  "name": "Dr-Kool House 2",
+  "length": 32
+ },
+ {
+  "raw": 439,
+  "slot": "U434",
+  "name": "Dr-Kool House 3",
+  "length": 32
+ },
+ {
+  "raw": 440,
+  "slot": "U435",
+  "name": "Dr-Kool House 4",
+  "length": 32
+ },
+ {
+  "raw": 441,
+  "slot": "U436",
+  "name": "Dr-Kool House 5",
+  "length": 32
+ },
+ {
+  "raw": 442,
+  "slot": "U437",
+  "name": "Dr-Electro House 1",
+  "length": 32
+ },
+ {
+  "raw": 443,
+  "slot": "U438",
+  "name": "Dr-Electro House 2",
+  "length": 32
+ },
+ {
+  "raw": 444,
+  "slot": "U439",
+  "name": "Dr-Electro House 3",
+  "length": 32
+ },
+ {
+  "raw": 445,
+  "slot": "U440",
+  "name": "Dr-Electro House 4",
+  "length": 16
+ },
+ {
+  "raw": 446,
+  "slot": "U441",
+  "name": "Dr-Floor Groover",
+  "length": 32
+ },
+ {
+  "raw": 447,
+  "slot": "U442",
+  "name": "Dr-Funky House",
+  "length": 32
+ },
+ {
+  "raw": 448,
+  "slot": "U443",
+  "name": "Dr-28% TekHouse 1",
+  "length": 32
+ },
+ {
+  "raw": 449,
+  "slot": "U444",
+  "name": "Dr-28% TekHouse 2",
+  "length": 32
+ },
+ {
+  "raw": 450,
+  "slot": "U445",
+  "name": "Dr-28% TekHouse 3",
+  "length": 32
+ },
+ {
+  "raw": 451,
+  "slot": "U446",
+  "name": "Dr-28% TekHouse 4",
+  "length": 32
+ },
+ {
+  "raw": 452,
+  "slot": "U447",
+  "name": "Dr-28% TekHouse 5",
+  "length": 32
+ },
+ {
+  "raw": 453,
+  "slot": "U448",
+  "name": "Dr-28% TekHouse 6",
+  "length": 32
+ },
+ {
+  "raw": 454,
+  "slot": "U449",
+  "name": "Dr-Nu Tekno 1",
+  "length": 16
+ },
+ {
+  "raw": 455,
+  "slot": "U450",
+  "name": "Dr-Nu Tekno 2",
+  "length": 16
+ },
+ {
+  "raw": 456,
+  "slot": "U451",
+  "name": "Dr-Nu Tekno 3a",
+  "length": 16
+ },
+ {
+  "raw": 457,
+  "slot": "U452",
+  "name": "Dr-Nu Tekno 3b",
+  "length": 16
+ },
+ {
+  "raw": 458,
+  "slot": "U453",
+  "name": "Dr-Nu Tekno 3c",
+  "length": 16
+ },
+ {
+  "raw": 459,
+  "slot": "U454",
+  "name": "Dr-Prog Tekno",
+  "length": 32
+ },
+ {
+  "raw": 460,
+  "slot": "U455",
+  "name": "Dr-Trance 1",
+  "length": 16
+ },
+ {
+  "raw": 461,
+  "slot": "U456",
+  "name": "Dr-Trance 2",
+  "length": 16
+ },
+ {
+  "raw": 462,
+  "slot": "U457",
+  "name": "Dr-Tech Dance",
+  "length": 32
+ },
+ {
+  "raw": 463,
+  "slot": "U458",
+  "name": "Dr-Talk Box 6-4-1",
+  "length": 8
+ },
+ {
+  "raw": 464,
+  "slot": "U459",
+  "name": "Dr-80 Ana Bit",
+  "length": 16
+ },
+ {
+  "raw": 465,
+  "slot": "U460",
+  "name": "Dr-80s Electronic Pop",
+  "length": 16
+ },
+ {
+  "raw": 466,
+  "slot": "U461",
+  "name": "Dr-Ambi Beat",
+  "length": 32
+ },
+ {
+  "raw": 467,
+  "slot": "U462",
+  "name": "Dr-Chill Out",
+  "length": 32
+ },
+ {
+  "raw": 468,
+  "slot": "U463",
+  "name": "Dr-Metropoliz",
+  "length": 32
+ },
+ {
+  "raw": 469,
+  "slot": "U464",
+  "name": "Dr-Oxigene AnaKit",
+  "length": 12
+ },
+ {
+  "raw": 470,
+  "slot": "U465",
+  "name": "Dr-BigBeats",
+  "length": 32
+ },
+ {
+  "raw": 471,
+  "slot": "U466",
+  "name": "Dr-BUGGER BEAT",
+  "length": 16
+ },
+ {
+  "raw": 472,
+  "slot": "U467",
+  "name": "Dr-DnB 1",
+  "length": 16
+ },
+ {
+  "raw": 473,
+  "slot": "U468",
+  "name": "Dr-DnB 2",
+  "length": 16
+ },
+ {
+  "raw": 474,
+  "slot": "U469",
+  "name": "Dr-DnB 3",
+  "length": 16
+ },
+ {
+  "raw": 475,
+  "slot": "U470",
+  "name": "Dr-DnB 4",
+  "length": 16
+ },
+ {
+  "raw": 476,
+  "slot": "U471",
+  "name": "Dr-DnB 5",
+  "length": 16
+ },
+ {
+  "raw": 477,
+  "slot": "U472",
+  "name": "Dr-Drum'n'Bass 1",
+  "length": 16
+ },
+ {
+  "raw": 478,
+  "slot": "U473",
+  "name": "Dr-Drum'n'Bass 2",
+  "length": 32
+ },
+ {
+  "raw": 479,
+  "slot": "U474",
+  "name": "Dr-Drum'n'Bass 3",
+  "length": 32
+ },
+ {
+  "raw": 480,
+  "slot": "U475",
+  "name": "Dr-Drum'n'Bass 4",
+  "length": 32
+ },
+ {
+  "raw": 481,
+  "slot": "U476",
+  "name": "Dr-Drum'n'Bass 5",
+  "length": 32
+ },
+ {
+  "raw": 482,
+  "slot": "U477",
+  "name": "Dr-Drum'n'Bass 6",
+  "length": 32
+ },
+ {
+  "raw": 483,
+  "slot": "U478",
+  "name": "Dr-JumpUp 1",
+  "length": 32
+ },
+ {
+  "raw": 484,
+  "slot": "U479",
+  "name": "Dr-JumpUp 2",
+  "length": 32
+ },
+ {
+  "raw": 485,
+  "slot": "U480",
+  "name": "Dr-Dubstep",
+  "length": 32
+ },
+ {
+  "raw": 486,
+  "slot": "U481",
+  "name": "Dr-Ambi Breaks",
+  "length": 32
+ },
+ {
+  "raw": 487,
+  "slot": "U482",
+  "name": "Dr-2Step Garage",
+  "length": 32
+ },
+ {
+  "raw": 488,
+  "slot": "U483",
+  "name": "Dr-Evacuate Dancer",
+  "length": 32
+ },
+ {
+  "raw": 489,
+  "slot": "U484",
+  "name": "Dr-Electronica",
+  "length": 32
+ },
+ {
+  "raw": 490,
+  "slot": "U485",
+  "name": "Dr-Tribal House",
+  "length": 32
+ },
+ {
+  "raw": 491,
+  "slot": "U486",
+  "name": "Dr-Gate Drive Offset",
+  "length": 24
+ },
+ {
+  "raw": 492,
+  "slot": "U487",
+  "name": "Dr-Gate Driver 1",
+  "length": 16
+ },
+ {
+  "raw": 493,
+  "slot": "U488",
+  "name": "Dr-Gate Driver 2",
+  "length": 32
+ },
+ {
+  "raw": 494,
+  "slot": "U489",
+  "name": "Dr-Gate Driver 3",
+  "length": 16
+ },
+ {
+  "raw": 495,
+  "slot": "U490",
+  "name": "Dr-Gate Driver 4",
+  "length": 16
+ },
+ {
+  "raw": 496,
+  "slot": "U491",
+  "name": "Dr-Gate Driver 5",
+  "length": 32
+ },
+ {
+  "raw": 497,
+  "slot": "U492",
+  "name": "Dr-Gate Driver 6",
+  "length": 16
+ },
+ {
+  "raw": 498,
+  "slot": "U493",
+  "name": "Dr-Gate Driver 7",
+  "length": 32
+ },
+ {
+  "raw": 499,
+  "slot": "U494",
+  "name": "Dr-Raga-matic",
+  "length": 48
+ },
+ {
+  "raw": 500,
+  "slot": "U495",
+  "name": "Dr-Orch Kit",
+  "length": 32
+ },
+ {
+  "raw": 501,
+  "slot": "U496",
+  "name": "Dr-Orch.Perc.1",
+  "length": 48
+ },
+ {
+  "raw": 502,
+  "slot": "U497",
+  "name": "Dr-Orch.Perc.2",
+  "length": 16
+ },
+ {
+  "raw": 503,
+  "slot": "U498",
+  "name": "Dr-Orch.Perc.3",
+  "length": 32
+ },
+ {
+  "raw": 504,
+  "slot": "U499",
+  "name": "Dr-Orch.Perc.4",
+  "length": 32
+ },
+ {
+  "raw": 505,
+  "slot": "U500",
+  "name": "Dr-Orch.Army",
+  "length": 32
+ },
+ {
+  "raw": 506,
+  "slot": "U501",
+  "name": "Dr-Slow March",
+  "length": 16
+ },
+ {
+  "raw": 507,
+  "slot": "U502",
+  "name": "Dr-Military March BD&SD",
+  "length": 32
+ },
+ {
+  "raw": 508,
+  "slot": "U503",
+  "name": "Dr-Percussion",
+  "length": 32
+ },
+ {
+  "raw": 509,
+  "slot": "U504",
+  "name": "Dr-Percussions",
+  "length": 32
+ },
+ {
+  "raw": 510,
+  "slot": "U505",
+  "name": "Dr-Ethnic Perc.",
+  "length": 32
+ },
+ {
+  "raw": 511,
+  "slot": "U506",
+  "name": "Dr-Perc/Latin",
+  "length": 32
+ },
+ {
+  "raw": 512,
+  "slot": "U507",
+  "name": "Dr-Delhicatessen",
+  "length": 32
+ },
+ {
+  "raw": 513,
+  "slot": "U508",
+  "name": "Dr-Shaker/Clave/Tamb",
+  "length": 16
+ },
+ {
+  "raw": 514,
+  "slot": "U509",
+  "name": "Dr-Timpani",
+  "length": 12
+ },
+ {
+  "raw": 515,
+  "slot": "U510",
+  "name": "Dr-Copland TIMPANI",
+  "length": 32
+ },
+ {
+  "raw": 516,
+  "slot": "U511",
+  "name": "Dr-Timpani Roll",
+  "length": 24
+ }
+]

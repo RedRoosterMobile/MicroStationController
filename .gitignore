@@ -1,0 +1,15 @@
+# Dependencies and build output
+node_modules/
+dist/
+# loaded from https://www.korg.com/us/support/download/product/0/87/
+docs/originals/
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# macOS
+.DS_Store

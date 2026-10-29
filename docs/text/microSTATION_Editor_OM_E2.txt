@@ -1,0 +1,1254 @@
+Editor/Plug-In Editor user’s guide
+
+
+
+
+                                     E   2
+                                                 Table of contents
+     Introduction............................................................................... 1
+        Main features .........................................................................................................1
+        Please note before use ..........................................................................................1
+        microSTATION Editor and microSTATION Plug-In Editor
+        operating requirements ........................................................................................1
+             Windows .....................................................................................................................................................................1
+             Macintosh ...................................................................................................................................................................1
+
+
+
+     Installation................................................................................. 2
+        Installation in Windows .........................................................................................2
+             Installing the Korg USB-MIDI Driver ..................................................................................................................2
+             Installing the microSTATION Editor / Plug-In Editor ...................................................................................3
+
+        Installation in Mac OS X .........................................................................................4
+
+
+     Setup .......................................................................................... 6
+        microSTATION Setup .............................................................................................6
+        microSTATION Editor (stand-alone version) setup .............................................6
+             Windows XP / Windows Vista / Windows 7 ....................................................................................................6
+             Mac OS X ....................................................................................................................................................................6
+
+        Setting up the microSTATION Plug-In Editor ......................................................7
+             About the microSTATION Plug-In Editor .........................................................................................................7
+             Using an external mixer to control the microSTATION’s audio signal .................................................8
+             Using your host application to control the microSTATION’s audio signal ..........................................8
+
+        Host application settings ......................................................................................9
+             Apple - Logic Pro 8 ..................................................................................................................................................9
+             Steinberg - Cubase 5 ............................................................................................................................................ 10
+             Ableton - Live 8 ...................................................................................................................................................... 11
+             MOTU – Digital Performer 7 .............................................................................................................................. 12
+             Digidesign – Pro Tools LE 8 ............................................................................................................................... 13
+             Cakewalk – SONAR8/8.5 ..................................................................................................................................... 15
+             Other host applications ...................................................................................................................................... 16
+             About MIDI timing ................................................................................................................................................ 16
+
+
+ii
+Basic functions and operation................................................ 17
+  Start-up ................................................................................................................ 17
+       microSTATION Editor ...........................................................................................................................................17
+       Windows XP / Windows Vista ...........................................................................................................................17
+       Mac OS X ..................................................................................................................................................................17
+       microSTATION Plug-In Editor ...........................................................................................................................17
+       About the Preload data .......................................................................................................................................17
+
+
+
+Items on the screen ................................................................. 18
+       Connection indicator (KORG logo) .................................................................................................................18
+       Mode (COMBI, PROG, SEQ, GLOBAL) / Browser (BROWSE) / Utility (UTILITY): ................................18
+       Program (Combination/Song) Number, Name: .........................................................................................18
+       Edit Pages, Tabs: ....................................................................................................................................................19
+       Realtime Controls: .................................................................................................................................................19
+       ARP: ............................................................................................................................................................................19
+       Keyboard: .................................................................................................................................................................19
+
+  Operating procedure .......................................................................................... 19
+       Selecting a mode ...................................................................................................................................................19
+       Selecting programs, combinations, and songs ..........................................................................................19
+       Auditioning programs, and selecting a program to edit ........................................................................19
+       Editor operations ...................................................................................................................................................20
+       Selecting pages and tabs ...................................................................................................................................22
+       Selecting a parameter and editing the value ..............................................................................................22
+       Selecting and executing utility functions ....................................................................................................22
+       Writing (saving) ......................................................................................................................................................23
+       Selecting a track ....................................................................................................................................................25
+       Functions provided by the microSTATION ..................................................................................................26
+
+
+
+Functions specific to the editor.............................................. 27
+  Utility commands ................................................................................................ 27
+       Load ...........................................................................................................................................................................27
+       Save ............................................................................................................................................................................27
+       Write Combination/Program/Arpeggio Patterns/Drumkit ...................................................................27
+       Rename Arpeggio/Drum kit/External Setup ...............................................................................................27
+       Reset Controller MIDI Assign ............................................................................................................................27
+       Initialize Combination .........................................................................................................................................27
+       Copy ***/Swap ***/Remove *** .......................................................................................................................27
+       Receive All ................................................................................................................................................................27
+       Transmit All .............................................................................................................................................................27
+
+
+                                                                                                                                                                                             iii
+             Receive All Combi/Current Combi Bank/Receive All Prog/
+             Current Prog Bank/Receive SEQ/Receive Global Data/
+             Drum Kit/Arpeggio Pattern ............................................................................................................................... 27
+             Transmit All Combi/Current Combi Bank/Transmit All Prog/
+             Current Prog Bank/Transmit SEQ/Transmit Global Data/
+             Drum Kit/Arpeggio Pattern ............................................................................................................................... 27
+             Receive Current Combi/Current Prog/1 SEQ/Current Arpeggio Pattern ......................................... 28
+             Transmit Current Combi/Current Prog/1 SEQ/Current Arpeggio Pattern ....................................... 28
+             Import ....................................................................................................................................................................... 28
+             Export ........................................................................................................................................................................ 28
+             Save as Default ....................................................................................................................................................... 28
+             Select Auto Load File ........................................................................................................................................... 28
+             All Sound Off ........................................................................................................................................................... 28
+
+        Software Setup (Initial settings for the microSTATION Editor) ........................29
+             Total Recall & Data Sync Settings .................................................................................................................... 29
+             Load data file automatically .............................................................................................................................. 29
+             Auto Local Control ................................................................................................................................................ 29
+             MIDI Settings .......................................................................................................................................................... 29
+             MIDI IN Port / MIDI OUT Port ............................................................................................................................ 30
+             Send microSTATION’s MIDI Out data to the host application (VST Plug-In Only) ......................... 30
+
+
+
+     Cautions ................................................................................... 31
+        USB connection ....................................................................................................31
+             If you lose data synchronization with the microSTATION when starting up the editor, please
+             check the following points. ............................................................................................................................... 31
+             About the USB port where you connect the microSTATION (Windows only) ................................ 31
+
+
+
+
+     * Apple, Mac, Logic pro and Audio Units are trademarks of Apple Inc., registered in the US. and other countries.
+     * Windows XP, Windows Vista, and Windows 7 are trademarks or registered trademarks of Microsoft Corporation
+       in the U.S. and other counties.
+     * Intel, Intel Core, and Pentium are trademarks of Intel Corporation in the U.S. and other countries.
+     * Cubase and VST are trademarks of Steinberg Media Technologies GmbH.
+     * Live is a trademark of Ableton AG.
+     * Digital Performer is a trademark of Mark of the Unicorn, Inc.
+     * Pro Tools LE and RTAS are trademarks or registered trademarks of Avid
+     * Technology, Inc., or its subsidiaries or divisions.
+     * Cakewalk is a registered trademark and SONAR are trademarks of Cakewalk, Inc.
+     * All other product and company names are trademarks or registered trademarks of their respective holders.
+
+iv
+Introduction
+   Thank you for purchasing the Korg microSTATION Music Workstation. To help you get the most
+   out of your new instrument, please read this manual carefully.
+
+
+Main features
+   The microSTATION Editor and the microSTATION Plug‐In Editor are applications for Macintosh
+   or Windows that allow you to edit the microSTATION’s programs, combinations, songs, drum kits,
+   arpeggio patterns, effects, and global settings.
+   The microSTATION Editor is a stand‐alone editor.
+   The microSTATION Plug‐In Editor is an editor that is compatible with the VST, Audio Units, or
+   RTAS formats. It lets you use the microSTATION just like a plug‐in instrument from within your
+   DAW (Digital Audio Workstation) software or other host application.
+
+
+Please note before use
+   • Copyright to all software included in this product is the property of Korg Inc.
+   • The license agreement for this software is provided separately. You must read this license
+     agreement before you install this software. Your installation of this software will be taken to
+     indicate your acceptance of this agreement.
+
+
+microSTATION Editor and microSTATION Plug-In Editor
+operating requirements
+   Note: It is not possible to open and run multiple instances of the microSTATION Editor or the
+         microSTATION Plug‐In Editor; this means that it is not possible to edit more than one
+         microSTATION synthesizer simultaneously.
+
+   Windows
+   • Computer
+     CPU:     Intel Pentium III / 1 GHz or better (Pentium D or Core Duo more are recommended)
+     Memory: 512 MB or more (1 GB or more is recommended)
+     Monitor: 1,024 x 768 pixels, 16‐bit color or better
+     A computer with a USB port, that satisfies the requirements of Windows XP / Windows Vista.
+   • Operating system
+     Microsoft Windows XP Home Edition or Professional, Service Pack 2 or later.
+     All editions of Microsoft Windows Vista Service Pack 2 or later (excluding 64‐bit editions).
+     Microsoft Windows 7
+     However, only the standalone version will work on 64‐bit editions of Windows 7 and Windows
+     Vista Service Pack 2.
+
+   Macintosh
+   • Computer
+     CPU:      PowerPC G4 800 MHz or better (Intel Mac is supported), G5 or Core Duo or better is
+               recommended
+     Memory: 512 MB or more (1 GB or more is recommended)
+     Monitor: 1,024 x 768 pixels, 32,000 colors or better
+     An Apple Macintosh with a USB port that satisfies the requirements of Mac OS X
+   • Operating system
+     Mac OS X version.10.4.11 or later
+   Note: microSTATION Plug‐In Editor must also satisfy the operating requirements of the host
+         application.
+
+                                                                                                       1
+    Installation
+    Installation in Windows
+       To install the microSTATION Editor and the microSTATION Plug‐In Editor into Windows XP,
+       Windows Vista, or Windows 7 proceed as follows.
+
+           If you want to connect the microSTATION to your computer via USB and use the microSTATION
+           Editor and the microSTATION Plug‐In Editor, you must install the Korg USB‐MIDI Driver. (Refer
+           to the USB‐MIDI Setup guide for details on how to install the Korg USB‐MIDI Driver.)
+
+       1 Insert the included accessory disc into your computer’s disc drive.
+           Normally the “microSTATION Application Installer” will start up automatically.
+           If your computer is set so the installer does not run automatically, double‐click
+           “KorgSetup.exe” on the accessory disc.
+
+
+       2 From the list, select the applications that you want to install, and click [Install].
+
+
+
+
+           The applications you selected will begin the installation process.
+
+
+       3 Follow the on‐screen directions to install the desired applications, such as microSTATION
+           Editor.
+
+
+       4 When you’ve finished installing all the selected software, close the installer.
+       Installing the Korg USB-MIDI Driver
+       Refer to the USB‐MIDI Setup guide for details on how to install the Korg USB‐MIDI Driver.
+
+
+
+
+2
+Installing the microSTATION Editor / Plug-In Editor
+1 The “microSTATION Editor/Plug‐In Editor Installer” window will appear.
+   Select and install all desired components, such as, the Editor (Standalone), Plug‐In Editor
+   (VST), and/or Plug‐In Editor (RTAS).
+   For example if you want to install the stand‐alone version, click [Install Standalone
+   Application].
+
+
+
+
+2 The microSTATION Editor screen will appear. Click [Next>].
+
+3 The “Welcome to the microSTATION Editor setup wizard” screen will appear. Click [Next>].
+
+4 The “microSTATION Editor information” screen will appear. Read the displayed content, and
+   click [Next>].
+
+
+5 The “License agreement” will appear. Carefully read the contents, and if you agree, check “I
+   accept the terms of the license agreement” and click [Next>].
+
+
+6 The “Select installation folder” screen will appear. Choose the location and user(s) for which
+   you want to install the software, and click [Next>].
+
+
+
+
+                                                                                                   3
+       7 The “Verify installation” will appear. To proceed with the installation, click [Next>].
+           Installation will begin.
+
+
+       8 If the installation was successful, click [Close].
+           The “microSTATION Editor/Plug‐In Editor Installer” window will appear.
+
+
+       9 Next you will install the plug‐in version(s) that you want to use. Using the procedure
+           described above, begin with step 1 and install the plug‐in version(s) that you want to use.
+           If you don’t want to install the VST plug‐in version or RTAS plug‐in version, click [Exit Setup]
+           to end the installation.
+           When you’ve finished installing the application(s) you want, click [Exit Setup] to exit the
+           installer.
+
+
+    Installation in Mac OS X
+       To install the microSTATION Editor and microSTATION Plug‐In Editor into Mac OS X, use the
+       following procedure.
+
+           You must install the KORG USB‐MIDI Driver if you want to connect the microSTATION to
+           your computer via USB and use the microSTATION Editor or the microSTATION Plug‐In
+           Editor. (For details on installing the KORG USB‐MIDI Driver, refer to the USB‐MIDI Setup
+           guide.)
+
+       1 Insert the included accessory disc into your disc drive.
+
+       2 Start up the installer by double‐clicking on “microSTATION Editor Installer.pkg” located in
+           the “microSTATION Editor” folder of the accessory disc.
+
+
+       3 Depending on the version of your Mac’s operating system, a confirmation dialog box may
+           appear at this point. If required, please enter your password and click [OK].
+           When the installer starts up, the following screen will appear. Click [Continue].
+
+
+
+
+4
+4 The “Important information” screen will appear. Read the contents, and click [Continue].
+
+5 The “License agreement” screen will appear. Carefully read the contents, and click [Continue].
+   A dialog box will ask whether you accept the terms of the license agreement. If you accept,
+   click [Agree].
+
+
+6 A screen where you can “Select a Destination” will appear. Select the installation destination of
+   your choice and click [Continue].
+
+
+
+
+7 The “Standard (Easy Installation)” dialog box will appear. Click [Install].
+
+8 An authentication dialog box may appear at this point, depending on the version of your
+   operating system. If so, type your password and click [OK].
+   Depending on the version of your operating system, you might see a dialog box stating “Your
+   computer must be restarted after installation.” Click [Continue installation] to begin with the
+   installation.
+
+
+9 When the installation has been successfully completed, click [Restart] to exit the installer.
+    You can’t connect two or more microSTATION units to a single computer and use them
+    simultaneously.
+
+Note: Under Mac OS X, the plug‐in version will also be installed in the appropriate folder.
+
+
+
+
+                                                                                                      5
+    Setup
+    microSTATION Setup
+           If you want to use the microSTATION Editor with the microSTATION connected to your
+           computer via USB, you must make sure that you’ve finished installing and setting‐up the
+           KORG USB‐MIDI Driver before you start up the microSTATION Editor.
+
+       1 Use a USB cable to connect the microSTATION’s USB connector to the USB port of your
+          computer.
+
+
+       2 In the microSTATION’s Global/Media mode, make sure that MIDI Filter “SysEx” is on. (The
+          factory setting is off.)
+
+
+
+
+           If you turn off the MIDI Filter “SysEx” setting of the microSTATION itself after starting up the
+           microSTATION Editor, the microSTATION and the microSTATION Editor will become unable
+           to communicate. Likewise, loading the preload data into the microSTATION will cause the
+           MIDI Filter “SysEx” to be turned off (the factory setting), meaning that the microSTATION
+           and the microSTATION Editor will become unable to communicate. If this occurs, you’ll need
+           to turn the microSTATION’s MIDI Filter “SysEx” setting back on.
+
+
+    microSTATION Editor (stand-alone version) setup
+       Start up the microSTATION Editor and verify that it’s functioning correctly.
+
+       Windows XP / Windows Vista / Windows 7
+       Starting up the microSTATION Editor
+       You can start up the editor by clicking the taskbar [Start] button – [All Programs] and then
+       pointing to “KORG” – “microSTATION” – “microSTATION Editor.”
+       Alternatively, navigate to the “KORG” folder  “microSTATION” folder, and double‐click the
+       “microSTATION Editor.exe” icon.
+       The “KORG” folder is in the location you selected during installation. By default it’s in the
+       “Program Files” folder.
+
+       Mac OS X
+       Starting up the microSTATION Editor
+       Navigate to the “Applications” folder – “KORG” folder – “microSTATION” folder, and double
+       click the “microSTATION Editor” icon.
+
+
+
+
+6
+Setting up the microSTATION Plug-In Editor
+       If you want to use the microSTATION Editor with the microSTATION connected to your
+       computer via USB, you must make sure that you have finished installing and setting‐up the
+       KORG USB‐MIDI Driver before you start up the microSTATION Editor.
+
+   This section explains how to set up the microSTATION Plug‐In Editor in your host application and
+   adjust the settings so that it will function correctly.
+
+   About the microSTATION Plug-In Editor
+   Parameter data is sent and received between the microSTATION Plug‐In Editor and the
+   microSTATION. Unlike typical plug‐in instruments, the microSTATION Plug‐In Editor does not
+   produce an audio signal.
+   Your microSTATION will output audio signals when the microSTATION Plug‐In Editor sends it
+   MIDI messages.
+   If you want to send the microSTATION’s audio signal to an audio track of your host application
+   and use it in conjunction with a plug‐in effect etc., refer to “Using your host application to control
+   the microSTATION’s audio signal” (p.8)
+
+
+                                             TONE
+                                           GENERATOR
+
+
+                     AUDIO OUTPUTS               USB
+
+                 To Mixer    or   To DAW’s
+                                  Audio Track
+
+
+
+
+                      AUDIO INTERFACE            USB
+
+                  Mac / PC
+                                                               Note:
+                        AUDIO I/O                              does not
+                         INPUTS           Plug-In Editor       produce an
+                                                               audio signal.
+
+                        Audio Track      Instrument On Track
+                      (DAW's Audio In)
+
+
+
+                   DAW
+                              AUDIO                 MIDI
+
+   Note: Because the microSTATION Plug‐In Editor does not handle audio signals, you can’t insert a
+         plug‐in effect into the channel of the track where the microSTATION Plug‐In Editor is
+         inserted, or send its audio signal via a send or bus.
+
+
+
+
+                                                                                                            7
+    Using an external mixer to control the microSTATION’s audio signal
+    If you want to mix the microSTATION’s audio signals with the audio signals sent from your host
+    application via your audio interface, or with audio signals from another sound module, you can
+    connecting devices as shown below.
+                                                       Powered
+                                                       monitors
+
+
+
+                     INPUT              INPUT                     microSTATION’s audio signals
+                                                                  Other audio signals
+                                                                  MIDI signals
+
+                                     Audio interface
+
+
+
+
+                                                        USB
+
+
+                                                                        Computer
+        L/MONO       R       USB
+
+
+
+
+                                                                   microSTATION
+
+
+
+    Using your host application to control the microSTATION’s audio signal
+    If you want to apply a plug‐in effect to the microSTATION’s audio signal, or to control the
+    microSTATION’s audio signal in your host application along with other audio tracks, connect the
+    microSTATION to your audio interface and route the audio signal into your host application. Refer
+    to the example explanations for various popular host applications on the following pages.
+                                                       Powered
+                                                       monitors
+
+
+                                                                  microSTATION’s audio signals
+                     INPUT               INPUT                    Other audio signals
+                                                                  MIDI signals
+
+
+                              Audio interface
+
+
+
+
+                                                          USB
+
+        L/                                                               Computer
+        MONO     R           USB
+
+
+
+
+                                                                   microSTATION
+
+
+    Note: For details on creating audio tracks, MIDI tracks, and plug‐in instrument tracks, and on how
+          to perform operations and adjust settings in your host application, refer to the host
+          application’s owner’s manual.
+
+
+
+
+8
+Host application settings
+   The following material explains how to start up the microSTATION Plug‐In Editor in your host
+   application and select the appropriate settings for it to function properly. Please proceed to the
+   specific explanation for the system that you’re using.
+
+   Apple - Logic Pro 8
+   1 Start up Logic Pro 8.
+
+   2 Create a Software Instrument Track, and initialize the “microSTATION Plug‐In Editor.”
+
+
+
+
+      Software Instrument Track
+
+
+   3 To route the microSTATION’s audio signal into Logic Pro 8, create an audio track or an audio
+      AUX track. On the I/O source for that track, select the audio interface input where you’ve
+      connected the microSTATION’s audio signal.
+
+
+
+
+      Audio Track
+
+
+   4 If you’re routing the microSTATION’s audio signal to an audio track, arm the REC button so
+      that you can hear/monitor the audio signal.
+      If you are routing the microSTATION’s audio signal to an audio AUX track, this setting is not
+      necessary.
+
+
+
+
+      Audio Track
+                                                                                                        9
+     Steinberg - Cubase 5
+     1 Start up Cubase 5 and create a project.
+
+     2 In the VST Instruments window, start up the “microSTATION Plug‐In Editor.”
+
+
+
+
+     3 Create a MIDI track. In the output section of that MIDI track, choose the “microSTATION
+        Plug‐In Editor” which you started up in the VST Instruments window.
+
+
+
+
+     4 To route the microSTATION’s audio signal to Cubase 5, create an audio track. On the input
+        section of the audio track, select the audio interface input where you’ve connected the
+        microSTATION’s audio signal.
+
+
+
+
+     5 Turn the Monitor button on so that you can hear/monitor the audio signal.
+
+
+
+
+10
+Ableton - Live 8
+1 Start up Live 8, and choose “View” “Session View.”
+
+2 From the plug‐in device browser, drag and drop the “microSTATION Plug‐In Editor” onto the
+   session view. This will create a MIDI track with the “microSTATION Plug‐In Editor” started
+   up.
+   Verify that the “microSTATION Plug‐In Editor” is running in the MIDI track view.
+
+
+
+
+3 Press the arm button so that the MIDI input from the external source will be sent to the
+   “microSTATION Plug‐In Editor.”
+
+
+
+
+   MIDI Track
+
+
+4 To route the microSTATION’s audio signal to Live 8, create an audio track. In the input area of
+   the audio input/output section, select the audio interface input where you’ve connected the
+   microSTATION’s audio signal.
+
+
+
+
+   Audio Track
+
+
+5 Set the Monitor setting to “In” so that you can hear the audio signal of the microSTATION.
+
+
+
+
+   Audio Track
+
+
+                                                                                                    11
+     MOTU – Digital Performer 7
+     1 Start up Digital Performer 7.
+
+     2 Create an instrument track. Start up the “microSTATION Plug‐In Editor.”
+
+
+
+
+        Instrument Track
+
+
+     3 Create a MIDI track. Choose the “microSTATION Plug‐In Editor” as the output of that MIDI
+        track.
+
+
+
+
+        Track Windows–MIDI Track
+
+
+     4 To route the microSTATION’s audio signal to Digital Performer 7, create an audio track or an
+        AUX track. On the input section of that track, select the audio interface input where you’ve
+        connected the microSTATION’s audio signal.
+
+
+
+
+        Track Windows–MIDI Track
+
+
+     5 If you’re routing the microSTATION’s audio signal to an audio track, arm the REC button so
+        that you can hear the audio signal.
+        If you are routing the microSTATION’s audio signal to an AUX track, this step is not necessary.
+
+
+
+
+        Audio Track
+
+
+
+
+12
+Digidesign – Pro Tools LE 8
+1 Start up Pro Tools LE 8, and open a session.
+
+2 Create an audio track (stereo), and start up the “microSTATION Plug‐In Editor.”
+
+
+
+
+   Audio Track
+
+
+3 Create a MIDI track. Choose the “microSTATION Plug‐In Editor” as the output of that MIDI
+   track.
+
+
+
+
+   MIDI Track
+
+
+4 To route the microSTATION’s audio signal to Pro Tools LE 8, create an audio track or an AUX
+   input track. On the input section, please select the audio interface input where you’ve
+   connected the microSTATION’s audio signal.
+
+
+
+
+   Audio Track
+
+
+
+
+                                                                                                13
+     5 If you’re routing the microSTATION’s audio signal to an audio track, arm the REC button so
+        that you can hear/monitor the audio signal.
+        If you are routing the microSTATION’s audio signal to an AUX input track, this setting is not
+        necessary.
+
+
+
+
+        Audio Track
+
+
+
+
+14
+Cakewalk – SONAR8/8.5
+1 Start up SONAR 8/8.5, and open a project.
+
+2 From the Synth Rack, choose the “microSTATION Plug‐In Editor,” and create an instrument
+   track at the same time.
+
+
+
+
+3 An instrument track with the microSTATION Plug‐In Editor assigned to it will be created.
+
+
+
+4 If you want to input the microSTATION’s audio signal to your host application, first create an
+   audio track. For the input of that audio track, select your audio interface’s input where the
+   microSTATION’s audio signal is being input.
+
+
+
+
+5 To hear the microSTATION’s audio signal that’s being input to the audio track, turn on the
+   input echo button of that audio track.
+
+
+
+
+                                                                                                   15
+     Other host applications
+     1 Start up your host application.
+
+     2 Start up the “microSTATION Plug‐In Editor” as a plug‐in instrument.
+
+     3 Create a MIDI track. Choose the “microSTATION Plug‐In Editor” as the output of that MIDI
+         track.
+
+
+     4 To route the microSTATION’s audio signal to your host application, create an audio track. On
+         the input section of that audio track, select the input where the microSTATION’s audio is
+         connected.
+
+
+     5 Enable the monitor function on the audio track that will be receiving the audio signal from the
+         microSTATION.
+     Note: The instructions given here for “Other host applications” may not necessary be appropriate
+           for setting‐up all host applications. Please refer to the instructions for a host application that
+           has a similar structure to the host application you’re using, and always refer to the owner’s
+           manual for the specific host application that you are using.
+
+     About MIDI timing
+     If you experience irregularities in MIDI timing, please adjust the settings so that MIDI messages
+     are sent directly to the microSTATION rather than being routed through the microSTATION Plug‐
+     In Editor. In this case, select the microSTATION’s SOUND port as the MIDI OUT destination of the
+     MIDI track in your host application, so that the MIDI messages will be sent directly to the
+     microSTATION.
+     Note: For details on how to create a MIDI track and specify the MIDI OUT destination for that
+           MIDI track, refer to the host application’s owner’s manual.
+
+
+
+
+16
+Basic functions and operation
+Start-up
+   microSTATION Editor
+   • From the “KORG”‐“microSTATION” folder, start up the “microSTATION Editor.”
+   Note: When you start up the editor, the microSTATION programs and other settings can be loaded
+         automatically. (“Software Setup (Initial settings for the microSTATION Editor)” on
+         page 29)
+
+       Don’t touch the keyboard or the mouse of your computer while data is being sent or received.
+
+   Windows XP / Windows Vista
+   Access the “KORG” folder from the taskbar via [Start] – [All Programs].
+
+   Mac OS X
+   The “KORG” folder is located in the “Applications” folder.
+
+   microSTATION Plug-In Editor
+   For details on starting‐up the microSTATION Plug‐In Editor, refer to the section for your host
+   application in “Setting up the microSTATION Plug‐In Editor” (p.7).
+   Note: When you start up the editor, the microSTATION programs and other settings can be loaded
+         automatically. (“Software Setup (Initial settings for the microSTATION Editor)” on
+         page 29)
+
+       Don’t touch the keyboard or the mouse of your computer while data is being sent or received.
+
+   About the Preload data
+   Start up the microSTATION Editor, and use the Receive All function to load all data into the
+   microSTATION Editor. Then save this data to a file as preload data.
+   You can now create a setting for this data file to be automatically loaded when you start up the
+   microSTATION Editor, the start‐up time will be shortened because you won’t need to load the data
+   from the microSTATION. (“Software Setup (Initial settings for the microSTATION Editor)” on
+   page 29)
+
+
+
+
+                                                                                                      17
+     Items on the screen
+        A screen like the following will appear when you start up the editor. (This illustration here shows
+        the Combination mode screen.)
+                   Realtime Controls/ARP    Mode/Browser/Utility     Program (Combination/Song) Number, Name
+
+
+
+
+      Edit Pages
+
+
+
+
+           Tabs
+
+
+
+
+              Connection Indicator                        Keyboard
+
+
+        Connection indicator (KORG logo)
+        This indicates the connection status between the microSTATION Editor/Plug‐In Editor and the
+        microSTATION.
+        • Lit-up
+                                The microSTATION Editor/Plug‐In Editor and the microSTATION are
+                                connected via MIDI.
+
+
+        • Dark
+                                The microSTATION Editor/Plug-In Editor is not connected to the microSTATION.
+
+
+
+
+        Mode (COMBI, PROG, SEQ, GLOBAL) / Browser (BROWSE) / Utility (UTILITY):
+        Here you can select program, combination, sequencer, or global mode. The browser will display
+        the names of the programs, combinations, and songs that are in the microSTATION. UTILITY lets
+        you view and select the utility commands that are available for the page that you’ve selected.
+        This is where you can write (save) data.
+
+        Program (Combination/Song) Number, Name:
+        This area shows the number and name of the program, combination, or song. Use the up/down
+        arrows to the right side to change programs, combinations, or songs.
+
+
+
+
+18
+   Edit Pages, Tabs:
+   These are used to select the page that you want to edit.
+
+   Realtime Controls:
+   Depending on the setting of the A/B/C or EXTERNAL switches, these controls are assigned to edit
+   the sound or volume, the arpeggiator settings, or to control an external MIDI device.
+
+   ARP:
+   Here you can adjust settings for the arpeggiator function.
+
+   Keyboard:
+   This section consists of an 88‐note keyboard, a pitch bend wheel, and a modulation wheel.
+   You can click the keyboard to play notes, and even play a glissando by dragging over the keyboard
+   to the left or right. You can use the pitch bend wheel and modulation wheel by dragging them
+   upward or downward.
+
+
+Operating procedure
+   Selecting a mode
+   Click the button to select the corresponding mode.
+   COMBI:     Select, play, and edit combinations.
+   PROG:      play, and edit programs.
+   SEQ:       Select, play, and edit sequencer songs.
+   GLOBAL: Edit the software setup, global settings, MIDI settings, controller CC assignments,
+           scale, sub‐category names, drum kits, and arpeggio patterns.
+
+   Selecting programs, combinations, and songs
+   • Click the [BROWSE] button to display the sound list, and then select a program (or combination
+     or song). The items you can select will depend on the mode.
+   • Depending on whether you choose Category Select or Bank Select, the programs (or
+     combinations) in the sound list will be arranged by category or by bank.
+
+   Auditioning programs, and selecting a program to edit
+   1 Click the [PROG] mode button to enter Program mode.
+
+   2 Click the [BROWSE] button to view the program list.
+
+   3 Click any program to select it. Play the keyboard of the microSTATION and you will hear that
+      program.
+
+
+   4 When you’ve decided on a program to edit, click the [OK] button to load that program.
+
+
+
+
+                                                                                                       19
+     Editor operations
+     1 Select Program mode, and click the [Quick] tab in the Edit Pages area.
+         This Quick page allows you to edit all parameters that can be edited from the microSTATION
+         itself (the Quick parameters), except for the effect parameters. To edit the effect parameters,
+         use the [IFX] and [MFX/TFX] tabs.
+
+
+     2 To the left side of the realtime controls located at the top of the screen, click the [A] selector.
+         The indications of the four knobs will be [CUTOFF], [RESONANCE], [EG INTENSITY], and
+         [EG RELEASE].
+
+
+     3 Use the four knobs of the realtime controls to vary the sound. Using the mouse to move the on‐
+         screen knobs will have the same result as turning the four knobs on the microSTATION itself.
+         For an explanation of these parameters, please refer to the microSTATION parameter guide
+         (PDF).
+
+
+
+
+     4 In the set of tabs located in the center of the screen, choose [ARP/Controllers].
+
+     5 Next, Click the [C] selector located to the left of the realtime controls so that you can control the
+         arpeggiator.
+         Now the four knobs will control the arpeggiator.
+
+
+
+
+20
+6 Turn on the ARP ON/OFF button and ARP LATCH button located below the Realtime controls
+   knobs, and then play the microSTATION’s keyboard; the arpeggiator will start playing. If you
+   want to switch the pattern of the arpeggio tha’s currently playing, change the “Pattern” setting
+   in the Arpeggiator Setup area in the lower part of the screen.
+
+
+
+
+7 While letting the arpeggiator play, move the four knobs or the knobs of the microSTATION
+   itself, and notice how the arpeggio changes.
+
+
+8 The upper part of the Quick page shows the current values of the most important parameters
+   for Program mode. This overview area shows the parameters organized by section. By clicking
+   a section name (such as “Pitch EG” or “Filter1 EG”) you can jump automatically to the page/
+   tab for editing the corresponding parameters.
+
+9 Edit pages other than the [Basic] tab allow you to edit all of the parameters that cannot be
+   edited from the microSTATION itself.
+   The [IFX] and [MFX/TFX] tab pages allow you to edit all effect parameters that cannot be
+   edited from the microSTATION itself. Parameter names shown in purple are effect parameters
+   that can be edited from the microSTATION itself.
+
+
+
+
+                                                                                                      21
+        Selecting pages and tabs
+        When you want to perform detailed editing, you can switch to other pages and tabs to access the
+        desired parameters.
+        Global mode is divided into separate pages where you can edit drum kits, sub‐category names,
+        and scales (temperaments). Select the desired page (or tab), and proceed to edit the settings.
+        • To select a page, click the tab for the desired edit page.
+        • To move between tabs within a page, select one of the tabs located in the center of the window.
+
+
+
+
+                                                                                                     Utility
+     Edit
+     Pages
+
+
+
+
+     Tabs
+
+
+
+
+        Selecting a parameter and editing the value
+        • Use the mouse to edit the items in the display.
+          For example you can change the shape of the EG by using the mouse to drag the rectangles
+          shown in the EG graphic.
+        Note: For details on the parameters, please refer to the included “Parameter guide” (PDF version).
+
+        Selecting and executing utility functions
+        The utility functions are various commands that are available in each page. The available utility
+        commands will differ depending on the page. These commands also let you save or load the edited
+        or created data on your computer, and also allow you to import system exclusive data. Click the
+        [UTILITY] button and choose a command from the menu that appears.
+        Note: For details on utility commands that are specific to the editor, refer to “Functions provided
+              by the microSTATION”. (p.26)
+
+        1 From the [UTILITY] button, choose the command that you want to use.
+
+        2 Adjust the necessary settings, and click OK to continue.
+
+
+
+22
+Writing (saving)
+If you want to keep any of the edits you have made, you must write (save) them.
+
+    The Write operation will save the edited settings on the microSTATION.
+
+If you select another program or close the application before you execute the Write operation, the
+content you had been editing will be lost. The same applies to combinations or songs.
+Global mode settings are maintained until you close the application, but your changes will be lost
+when you close the application. If you use the utility command “Write Global setting,” or click the
+[DUMP] button located in the upper right side of each page in Global mode, the current settings
+will be saved in the microSTATION. (Some pages do not have the [DUMP] button.)
+As an example, here’s how to write a program that you’ve edited in Program mode.
+
+1 Click [UTILITY] to access the utility menu.
+
+2 From the menu list, choose [Write Program].
+
+
+
+
+                                                                                                      23
+     3 Specify the program name, category, and save destination, and click the [OK] button.
+
+
+
+
+     Note: If you use a menu command (such as Swap Oscillator) on the microSTATION itself, the data
+           in the Editor and the data in the microSTATION may lose synchronization. In this case, use a
+           UTILITY menu command (such as Receive Current Prog) in the Editor to receive a data
+           dump of the current data.
+
+
+
+
+24
+Selecting a track
+You can select the current track in Sequencer mode. The current track is common to all pages of
+Sequencer mode.
+To select a track, use your mouse to click on the number of that track. When a track is selected as
+the current track, a white border will appear around that track.
+Note: There are some pages where you can’t select the current track. In pages where you can select
+      the current track, a white border is shown around the track that is chosen as the current
+      track.
+
+
+
+
+                                                                                                      25
+     Functions provided by the microSTATION
+     1 Drum kit
+        The Drum Kit page allows you to select the drum sample for each key, as well as visually edit
+        numerous parameters that specify how each drum sample will be sounded.
+
+
+
+
+     2 Arpeggiator
+        The arpeggiator is a function that automatically produces arpeggios (broken chords). The
+        microSTATION Editor lets you edit the parameters of the microSTATION’s (maximum of) two
+        arpeggiators in each mode (PROG, COMBI, SEQ), edit arpeggio patterns in GLOBAL mode,
+        and also to view the settings of the four knobs in real time. The arpeggio pattern edit screen
+        lets you edit the arpeggio pattern while you listen to the phrase.
+
+
+
+
+26
+Functions specific to the editor
+   These are functions that are not found on the microSTATION, and are available only from the
+   editor (microSTATION Editor/Plug‐In Editor).
+
+
+Utility commands
+   Load
+   Loads editor data that was previously saved on the computer.
+
+   Save
+   Saves data from the editor to your computer as a file.
+   Note: These functions load or save the data as dedicated files for the editor application.
+
+   Write Combination/Program/Arpeggio Patterns/Drumkit
+   These commands send the current data that was modified in the editor to the microSTATION
+   itself, and writes the data into internal memory.
+
+   Rename Arpeggio/Drum kit/External Setup
+   These commands rename the respective data. The edited name will be sent to the microSTATION
+   itself.
+
+   Reset Controller MIDI Assign
+   This automatically assigns the MIDI control change messages for each controller of the Global:
+   Controllers– ARP Controllers.
+   For details, please see “Reset ARP CC#” on PG page 66.
+
+   Initialize Combination
+   This command initializes the settings of the combination that’s currently selected.
+
+   Copy ***/Swap ***/Remove ***
+   These commands provide the same functionality as in the microSTATION’s Command menu as
+   well as functionality that’s specific to the editor. The Command menu appropriate for the data
+   handled within each tab page will appear.
+
+   Receive All
+   Receives all data from the microSTATION’s internal data into the editor.
+   Note: The sequencer performance data of Sequencer mode is excepted.
+
+   Transmit All
+   Transmits all data in the editor to the microSTATION and writes it into internal memory.
+
+   Receive All Combi/Current Combi Bank/Receive All Prog/
+   Current Prog Bank/Receive SEQ/Receive Global Data/
+   Drum Kit/Arpeggio Pattern
+   Receives the corresponding data from the microSTATION into the editor.
+
+   Transmit All Combi/Current Combi Bank/Transmit All Prog/
+   Current Prog Bank/Transmit SEQ/Transmit Global Data/
+   Drum Kit/Arpeggio Pattern
+   Transmits the corresponding data from the editor to the microSTATION and writes it.
+
+
+
+                                                                                                    27
+     Receive Current Combi/Current Prog/1 SEQ/Current Arpeggio Pattern
+     Receives data from the microSTATION into the editor.
+
+     Transmit Current Combi/Current Prog/1 SEQ/Current Arpeggio Pattern
+     Transmits data from the editor to the microSTATION.
+     Note: These Receive and Transmit commands use the KORG SysEx MIDI Dump to send or receive
+           data, or to synchronize the data between the microSTATION and the software.
+
+         Don’t touch the keyboard or the mouse of your computer while data is being sent or received.
+         Also, don’t touch the panel switches or the keyboard of the microSTATION during this
+         process.
+
+     Import
+     Loads PCG data from the microSTATION into the editor.
+
+     Export
+     Data created in the microSTATION Editor can be saved as PCG data for the microSTATION.
+
+     Save as Default
+     Writes (saves) the global mode Software Setup settings of the editor as the default settings that will
+     be used when you start up the editor.
+     Note: These utilities can be selected only in the editor’s global mode Software Setup page.
+
+     Select Auto Load File
+     In the Software Setup tab, use “Load data file automatically” to select the desired file.
+     Note: Refer to “Load data file automatically”.
+
+     All Sound Off
+     Depending on the host application, “hung” notes may occur while using the host’s functions. If
+     this happens, please use the “All Sound Off” command.
+
+
+
+
+28
+Software Setup (Initial settings for the microSTATION Editor)
+   Global mode Software Setup lets you specify the default settings that the microSTATION Editor
+   will use when it starts up. This setting is saved when you use the UTILITY command Save as
+   Default, and will be remembered the next time you start up.
+
+   Total Recall & Data Sync Settings
+
+
+
+
+   Here you can specify the editor data that will be saved and loaded as part of the song data by your
+   DAW software. This setting lets you save only the data that you need. When the microSTATION
+   Editor starts up, the types of data that you’ve checked here will also be loaded automatically from
+   the microSTATION that’s connected to your computer. (In other words, this data will be
+   synchronized.)
+   Since a data dump requires a certain amount of time, you may wish to shorten the startup time by
+   using the Load Data File Automatically function instead of this function, or by using the UTILITY
+   command Load to load a previously‐saved data file into the microSTATION Editor.
+
+   Load data file automatically
+
+
+
+
+   When the microSTATION Editor starts up, the data file that you specify here will automatically be
+   loaded into the editor. After this process is completed, the data that you checked in Total Recall &
+   Data Sync Setting will be loaded via data dump.
+
+   Auto Local Control
+
+
+
+   This setting automatically sets the microSTATION’s Local Control setting to the appropriate state
+   when you start up the editor. We recommend that you normally leave this parameter on. The
+   microSTATION’s Local Control setting will be reset to its original state when you close the editor.
+
+   MIDI Settings
+
+
+
+
+   Here you can adjust settings for MIDI connections between the microSTATION Editor and the
+   microSTATION.
+
+
+
+
+                                                                                                          29
+     MIDI IN Port / MIDI OUT Port
+     This selects the connection port for the microSTATION and the microSTATION Editor. The name
+     of the MIDI port that’s currently connected is shown. You won’t need to change this setting if the
+     microSTATION and the microSTATION Editor are connected correctly, since the microSTATION
+     Editor will search for the microSTATION when it starts up, and will specify the MIDI port
+     automatically.
+
+     Send microSTATION’s MIDI Out data to the host application (VST Plug-In
+     Only)
+     If you turn this option on, the MIDI OUT data of the microSTATION itself will be sent to the host
+     application as the output of the plug‐in instrument.
+     Short messages are the only type of MIDI messages that can be output. If you’re using a host
+     application that is able to receive the MIDI data sent by a plug‐in instrument, the MIDI messages
+     generated by the microSTATION’s arpeggiator function can be sent to the MIDI track of a different
+     software synthesizer.
+
+
+
+
+30
+Cautions
+USB connection
+   If you lose data synchronization with the microSTATION when starting up
+   the editor, please check the following points.
+   • If you’re using USB‐MIDI, you must use the KORG USB‐MIDI Driver. The default driver
+     provided by the operating system may have an extremely slow data transfer rate, or may not
+     communicate correctly.
+   • If you’re using a USB hub, try connecting the microSTATION directly to a USB port on the
+     computer itself to see whether it will work. You can also try removing all other connected USB
+     devices except for the microSTATION.
+     When you lose data synchronization, please perform the “Receive All” or “Transmit All”
+     function in the Editor’s “UTILITY” menu in order to synchronize the data between the editor
+     and the hardware.
+
+   About the USB port where you connect the microSTATION (Windows only)
+   • The microSTATION’s USB port is USB 1.1, but if the USB port of your computer itself supports
+     USB 2.0, you may be able to increase the USB data transmission rate depending on how you
+     make connections.
+     In some cases, connecting the microSTATION directly to a USB port of the computer itself may
+     slow down the data transfer speed. If so, connect the microSTATION via a USB 2.0 hub rather
+     than directly to the computer. This may increase the USB data transfer speed.
+
+
+
+
+                                                                                                      31
+                                     IMPORTANT NOTICE TO CONSUMERS
+              This product has been manufactured according to strict specifications and voltage
+              requirements that are applicable in the country in which it is intended that this product should
+              be used. If you have purchased this product via the internet, through mail order, and/or via a
+              telephone sale, you must verify that this product is intended to be used in the country in
+              which you reside.
+              WARNING: Use of this product in any country other than that for which it is intended could
+              be dangerous and could invalidate the manufacturer’s or distributor’s warranty.
+              Please also retain your receipt as proof of purchase otherwise your product may be
+              disqualified from the manufacturer’s or distributor’s warranty.
+
+
+
+
+                     4015-2 Yanokuchi, Inagi-city, Tokyo 206-0812 Japan
+
+© 2010 KORG INC.
+

@@ -1,0 +1,512 @@
+USB-MIDI Setup guide
+
+
+
+
+                  E    2
+    USB-MIDI Setup guide
+
+
+
+
+                           * Apple, Mac, Macintosh and Audio Units are
+                             trademarks of Apple Inc., registered in the US. and
+                             other countries.
+                           * Windows XP, Windows Vista, and Windows 7 are
+                             trademarks or registered trademarks of Microsoft
+                             Corporation in the U.S. and other counties.
+                           * Intel, Intel Core, and Pentium are trademarks of
+                             Intel Corporation in the U.S. and other countries.
+                           * VST is trademark of Steinberg Media Technologies
+                             GmbH.
+                           * RTAS is trademark or registered trademarks of
+                             Avid Technology, Inc., or its subsidiaries or
+                             divisions.
+                           * All product names and company names are the
+                             trademarks or registered trademarks of their
+                             respective owners.
+
+2
+                                                                                                          Introduction
+
+
+
+
+Introduction                                                 About the software
+                                                             The most recent versions of the applications on the
+If the microSTATION is connected to your computer            accessory disc can be downloaded from the Korg
+via USB or MIDI, performance data and settings can be        website (http://www.korg.com).
+transferred between the microSTATION and your
+computer.                                                    Please note before use
+If you install the dedicated microSTATION Editor/            Copyright to all software included in this product is
+Plug‐In Editor application to your computer, youʹll be       the property of Korg Inc.
+able to use your computer to edit the microSTATION’s         The license agreement for this software is provided
+programs in detail, and use the microSTATION from            separately. You must read this license agreement
+within your host application as though it were a plug‐       before you install this software. Your installation of this
+in.                                                          software will be taken to indicate your acceptance of
+After you have read the “About the software” and             this agreement.
+“Operating requirements” section, set up your system
+as described in this guide and in the “microSTATION
+Editor/Plug‐In Editor User Guide.”                           Operating requirements
+Connecting via USB cable
+                                                             KORG USB-MIDI driver
+1. Install the Korg USB‐MIDI driver from the
+   included accessory disc.                                  Windows
+   Windows: page 4, Mac: page 5.                             Computer: USB port required (a USB host controller
+                                                             made by Intel is recommended)
+2. If you want to use the microSTATION Editor/Plug‐
+   In Editor with your computer, you’ll have to install      Operating system: Microsoft Windows XP Home
+   it from the included accessory disc.                      Edition/Professional/x64 Edition Service Pack 3 or later
+   Windows: page 4, page 5                                   Microsoft Windows Vista Service Pack 2 or later
+3. Connect the microSTATION’s USB connector to a             (including 64‐bit Edition)
+   USB port on your computer.                                Microsoft Windows 7 (including 64‐bit Edition)
+   Please see page 7.
+                                                             Macintosh
+4. Select the necessary settings in the                      Computer: USB port required
+   microSTATION’s Global/Media mode.
+                                                             Operating system: Mac OS X 10.4.11 or later
+   Please see page 8.
+5. Select the necessary settings on your computer.           microSTATION Editor/Plug-In Editor
+   Refer to the owner’s manual of the software that you’re
+   using. For examples of setting up the plug‐in editor in   Windows:
+   popular host applications, please refer to the            • Computer
+   “microSTATION Editor/Plug‐In Editor User Guide”           CPU:      Intel Pentium III / 1 GHz or better, Pentium
+   (page 9).                                                           D or Core Duo or better is recommended
+Making connections via MIDI cables                           Memory: 512 MB or more (1 GB or more is
+If a MIDI interface is connected to your computer, you                 recommended)
+can connect the microSTATION to your computer via            Monitor: 1,024 x 768 pixels, 16‐bit color or better
+MIDI cables.                                                 A computer that satisfies the operating requirements
+1. Connect the microSTATION’s MIDI OUT and                   of Windows XP, Windows Vista or Windows 7 and has
+   MIDI IN connectors to the MIDI interface’s MIDI           a USB port
+   IN and MIDI OUT connectors respectively.                  • Operating system
+   Please see page 7.
+                                                             Microsoft Windows XP Home Edition/Professional
+   For details on your MIDI interface, refer to its
+                                                             Edition Service Pack 3 or later, Windows Vista Service
+   owner’s manual.
+                                                             Pack 2 or later, and Windows 7
+    Some types of MIDI interfaces (commercially
+                                                             However, only the stand‐alone version will run on 64‐
+    available) may be unable to receive or transmit the
+                                                             bit editions of Windows 7 and Windows Vista Service
+    microSTATION’s MIDI exclusive messages.
+                                                             Pack 2.
+2. Adjust the necessary settings in the
+                                                             Macintosh:
+   microSTATION’s Global/Media mode.
+                                                             • Computer
+   “Global/Media mode settings on the microSTA‐
+   TION” on page 8                                           CPU:       Apple G4 800 MHz or better (Intel Mac is
+3. Adjust the necessary settings on your computer.                      supported), G5 or Core Duo or better is
+   For details on the required MIDI driver and connec‐                  recommended
+   tions, refer to the owner’s manual of your MIDI           Memory: 512 MB or more (1 GB or more is
+   interface. You can also refer to the owner’s manual                  recommended)
+   of the software that you’re using.                        Monitor: 1,024 x 768 pixels, 32,000 colors or better
+                                                             An Apple Macintosh computer that satisfies the
+                                                             operating requirements of Mac OS X and has a USB
+                                                             port
+
+
+                                                                                                                           3
+    USB-MIDI Setup guide
+
+
+    • Operating system                                            STATION Editor/Plug‐In Editor Installer” dialog
+    Mac OS X version 10.4.11 or later                             box will appear.
+    * Formats supported by the microSTATION Plug‐In
+      Editor:
+      Windows: VST, RTAS
+      Macintosh: VST, Audio Unit, RTAS
+    * microSTATION Plug‐In Editor must also satisfy the
+      operating requirements of the host application.
+        You cannot run multiple instances of the
+        microSTATION Editor and microSTATION Plug‐
+        In Editor at the same time. This means that you           Select and install all desired components, such as,
+        can’t use this editor to edit two or more                 the Editor (Standalone), Plug‐In Editor (VST), and/
+        microSTATION units simultaneously.                        or Plug‐In Editor (RTAS).
+                                                                  For example if you want to install the stand‐alone
+                                                                  version, click [Install Standalone Application].
+                                                                  Follow the on‐screen instructions to proceed with
+    Installing the software                                       the installation.
+                                                                  If the installation was successful, click [Close].
+                                                                  “microSTATION Editor/Plug‐In Editor Installer”
+    Installing in Windows                                         will appear.
+    Note: In order to install or uninstall software in            Next you will install the plug‐in version(s) that you
+    Windows, you must have Administrator privileges.              want to use. Using the procedure described above,
+    Note: Before you connect the microSTATION to your             begin with step 1 and install the plug‐in version(s)
+    computer via USB, you must use the microSTATION               that you want to use.
+    application installer to install the KORG USB‐MIDI            If you don’t want to install the VST or RTAS plug‐in
+    Driver Tools.                                                 version, click [Exit Setup] to end the installation.
+                                                                  When you’ve finished installing the application(s)
+    Using the microSTATION application installer                  that you want, click [Exit Setup] to exit the installer.
+    The microSTATION application installer will install the       For details, please see the “microSTATION Editor/
+    KORG USB‐MIDI Driver Tools and the microSTATION               Plug‐In Editor User’s Guide” (PDF).
+    Editor/Plug‐In Editor.                                      4. When you’ve installed all of the selected software,
+    1. Insert the included accessory disc into your optical        exit the installer.
+       disc drive.
+       Normally the “microSTATION Application                   Installing the KORG USB-MIDI driver
+       Installer” will start up automatically.                  Use the KORG USB‐MIDI Driver Tools to install the
+       If your computer is set so the installer does not run    KORG USB‐MIDI driver.
+       automatically, double‐click “KorgSetup.exe” on the       Before you continue, you must finish installing the
+       accessory disc.                                          KORG USB‐MIDI Driver Tools in your computer.
+                                                                1. Use a USB cable to connect your computer’s USB
+                                                                   port to the microSTATION’s USB connector. Then
+                                                                   power‐on the microSTATION.
+                                                                    When your computer first detects that the
+                                                                    microSTATION is connected, the Windows default
+                                                                    driver will be installed automatically. However
+                                                                    since this driver is not the Korg USB‐MIDI driver,
+                                                                    it cannot be used correctly.
+                                                                  Note: If you are using Windows XP or Windows
+                                                                  Vista, the driver must be installed separately for
+                                                                  each USB port. If you connect the microSTATION to
+    2. From the list, select the applications that you want       a USB port used to connect the microSTATION
+       to install, and click [Install].                           other than the port that you previously used, you’ll
+       The applications you selected will begin the installa‐     need to install the KORG USB‐MIDI driver again
+       tion process.                                              using the same procedure listed above.
+       If you want to connect the microSTATION to your          2. From the taskbar, click [Start][All
+       computer via the USB port, you must install the             Programs][KORG][KORG USB‐MIDI Driver
+       Korg USB‐MIDI Driver Tools. Then from within the            Tools][Install KORG USB‐MIDI device].
+       Korg USB‐MIDI Driver Tools, you will need to                The setup utility will start.
+       install the Korg USB‐MIDI driver. (“Installing the       3. Follow the on‐screen instructions to install the
+       KORG USB‐MIDI driver” on page 4)                            KORG USB‐MIDI driver.
+    3. Follow the on‐screen instructions to install the            During the installation, if a dialog box regarding
+       software.                                                   digital signatures appears with a message saying
+       When you click the [Install] button for the microS‐         “.... has not passed Windows logo testing,” simply
+       TATION Editor/Plug‐In Editor in step 2, the “micro‐         click [Continue] to proceed.
+4
+                                                                                               Installing the software
+
+
+   If you are unable to proceed with the installation, it’s
+   possible that your computer has been set to prohibit
+   installation of unsigned drivers. Check the settings
+   of your computer as described in “Allowing installa‐
+   tion of drivers that are not digitally signed.”
+4. After you’ve installed the KORG USB‐MIDI
+   driver, exit the installer.
+   If you are asked whether you want to restart, choose
+   [Yes] to restart your computer.
+   For more about installation, setup, or uninstallation
+   of the KORG USB‐MIDI driver, refer to the installa‐
+   tion manual (HTML).
+   To view the manual, choose [Start][All Pro‐
+   grams][KORG][KORG USB‐MIDI Driver
+   Tools][Installation Manual].
+
+About the microSTATION and USB-MIDI driver
+ports
+KEYBOARD port                                                 4. In the “What action do you want Windows to
+Applications on your computer use this port to receive           take?” area , choose [Ignore] or [Warn], and then
+MIDI messages from the microSTATION (data from                   click [OK].
+the keyboard and controllers).                                   If necessary, you can change this setting back to its
+                                                                 original state after you’ve installed the KORG USB‐
+SOUND port                                                       MIDI driver.
+Applications on your computer use this port to send
+MIDI messages to the microSTATION’s internal sound
+generator, making it produce sound.
+
+Installing and setting up the microSTATION
+Editor/Plug-In Editor
+For details on installation, setup and using the
+microSTATION Editor/Plug‐In Editor, please see the
+“microSTATION Editor/Plug‐In Editor user’s guide”
+(PDF).
+
+Allowing installation of drivers that are not
+digitally signed (Windows only)
+If the computer you’re using has been set to forbid the
+installation of any drivers that are not digitally signed,
+you won’t be able to install the KORG USB‐MIDI
+driver. Proceed as follows to change this setting so that
+you’ll be able to install the drivers.                        Installing in Mac OS X
+1. From the taskbar, click [Start][Control Panel] to
+   access the control panel.                                  Installing the software
+2. In the control panel window, double‐click                  You’ll need to run the installer separately for each
+   [System], and then click the [Hardware] tab.               software item such as the KORG USB‐MIDI driver and
+                                                              the microSTATION Editor/Plug‐In Editor to install
+3. In “Drivers,” click [Driver Signing].
+                                                              them one at a time.
+                                                              1. Insert the included accessory disc into the disc
+                                                                 drive of your computer.
+                                                              2. On the accessory disc, double‐click the software
+                                                                 installer (.pkg) to start up the installer.
+                                                                 Each installer is located in the following folder.
+                                                                 • KORG USB‐MIDI driver
+                                                                    “KORG USB‐MIDI DRIVER” folder  KORG
+                                                                    USB‐MIDI DRIVER.pkg
+                                                                • microSTATION Editor
+                                                                  “microSTATION Editor” folder 
+                                                                  microSTATION Editor.pkg
+                                                              3. Follow the on‐screen instructions to install each
+                                                                 item of software such as the KORG USB‐MIDI
+                                                                 driver and microSTATION Editor.
+
+
+
+                                                                                                                         5
+    USB-MIDI Setup guide
+
+
+      If you intend to use the microSTATION with your
+      computer via the USB port, you’ll need to install the   Connecting a computer
+      KORG USB‐MIDI driver on your computer.
+      When the microSTATION Editor/Plug‐In Editor has
+      been installed successfully, restart your computer.     USB connection and setup
+      On Mac OS X, the stand‐alone version and the plug‐      Note: The USB connector of the microSTATION is only
+      in version are each installed in their own folder.      able to transmit and receive MIDI data.
+
+    About the microSTATION and USB-MIDI driver                     Before you connect the microSTATION to your
+                                                                   computer via USB, you must install the KORG
+    ports                                                          USB‐MIDI driver on your computer. If you’re
+    KEYBOARD port                                                  using Windows XP or Windows Vista, you’ll need
+    Applications on your computer use this port to receive         to install the driver for each USB port that you use.
+    MIDI messages from the microSTATION (data from                 If you connect the microSTATION to a USB port
+    the keyboard and controllers).                                 other than the one you used when installing the
+    SOUND port                                                     KORG USB‐MIDI driver, you’ll need to install the
+    Applications on your computer use this port to send            driver again. For details, please see “Installing in
+    MIDI messages to the microSTATION’s internal sound             Windows” on page 4.
+    generator, making it produce sound.                       1. Using a USB cable, connect the USB connector of
+                                                                 the microSTATION to the USB connector of your
+                                                                 computer.
+
+                                                                                                     USB cable
+
+                                                                        INPUT             INPUT
+
+
+
+                                                                                                                      Computer
+                                                                        AUDIO OUTPUT                      USB
+
+
+
+
+                                                              microSTATION
+
+                                                              2. Adjust the necessary settings in the
+                                                                 microSTATION’s Global/Media mode.
+                                                                 For details, please see “Global/Media mode settings
+                                                                 on the microSTATION” on page 8.
+                                                              3. Adjust the necessary settings on your computer.
+                                                                 For details, please see the “microSTATION Editor/
+                                                                 Plug‐In Editor user’s guide” (PDF).
+
+                                                              Using the microSTATION Editor/Plug-In Editor
+                                                              via a USB connection
+                                                              If you want to mix the microSTATION’s audio signals
+                                                              with the audio signals sent from your host application
+                                                              via your audio interface, or with audio signals from
+                                                              another sound module, make connections as
+                                                              illustrated below.
+                                                                                                         Powered
+                                                                                                         monitors
+
+
+
+                                                                       INPUT              INPUT                 microSTATION’s audio signals
+                                                                                                                Other audio signals
+                                                                                                                MIDI signals
+
+                                                                                       Audio interface
+
+
+
+
+                                                                                                          USB
+
+
+                                                                                                                       Computer
+                                                              L/MONO   R        USB
+
+
+
+
+                                                                                                                    microSTATION
+
+
+
+6
+                                                                      Verifying the functionality of the microSTATION Editor (stand-alone version)
+
+
+If you want to apply a plug‐in effect to the
+microSTATION’s audio signals, or control the                                               Verifying the functionality of
+microSTATION’s audio signals in your host application
+together with the audio data from the KORG Legacy                                          the microSTATION Editor
+Collection or other audio tracks, make the connections
+as illustrated below. Connect the devices appropriate
+                                                                                           (stand-alone version)
+for the host application that you’re using.                                                Start up the microSTATION Editor (stand‐alone version)
+                                                Powered
+                                                                                           and verify that it works correctly.
+                                                monitors
+                                                                                           For details on how to set up and start the microSTATION
+                                                           microSTATION’s audio signals
+                                                                                           Plug‐In Editor, refer to the “microSTATION Editor/
+               INPUT               INPUT                   Other audio signals             Plug‐In Editor user’s guide” (PDF) on page 6.
+                                                           MIDI signals
+
+
+                        Audio interface
+                                                                                           Setting up the microSTATION Editor
+                                                                                           Before you verify that the software is functioning
+                                                    USB                                    correctly, make sure that you’ve completed the following
+L/                                                                   Computer              steps.
+MONO       R           USB
+                                                                                           • The microSTATION’s USB connector is connected to
+                                                                                              your computer’s USB port.
+                                                                                           • The microSTATION and your computer are both
+                                                            microSTATION                      powered‐on.
+                                                                                           • The Korg USB‐MIDI driver is installed for the USB
+                                                                                              port you’ll be using.
+Connecting your computer via the                                                           • The microSTATION Editor (stand‐alone version) is
+                                                                                              installed on your computer.
+MIDI connectors
+                                                                                           1. Start up the microSTATION Editor.
+You can use a commercially available MIDI interface to
+connect the microSTATION to your computer.                                                    Windows
+                                                                                              In the taskbar, click the [Start] button and then [All
+1. Connect the microSTATION’s MIDI OUT                                                        Programs]. From the menu, choose “KORG”–
+   connector and MIDI IN connector to the MIDI IN                                             “microSTATION”–“microSTATION Editor” to start
+   port and MIDI OUT port of your MIDI interface.                                             up the editor.
+   For details, refer to the manual included with your                                        Alternatively, you can navigate to the “KORG”
+   MIDI interface.                                                                            folder–“microSTATION” folder, and double‐click
+       Some USB‐MIDI interfaces may be unable to                                              the “microSTATION Editor.exe” icon located there.
+       transmit or receive the microSTATION’s MIDI                                            The “KORG” folder will be in the location that you
+       exclusive messages.                                                                    selected when installing the software. By default, it
+                                                    MIDI interface                            will be in the “Program Files” folder.
+                                                                                              Macintosh
+                                          MIDI IN         MIDI OUT
+   INPUT
+                                                                                              Navigate to the “Applications” folder–“KORG”
+                       INPUT
+                                                                                              folder–“microSTATION” folder, and double click
+                                                                                              the “microSTATION Editor” icon.
+                                                                                Computer
+               AUDIO OUTPUT           MIDI OUT         MIDI IN                               Navigate to the “Applications” folder–“KORG”
+                                                                                             folder–“microSTATION” folder, and double click
+                                                                                             the “microSTATION Editor” icon.
+microSTATION                                                                               • When you start up, data will be transmitted and
+                                                                                             received between the microSTATION and the
+2. Adjust the necessary settings in the
+                                                                                             microSTATION Editor. The microSTATION’s display
+   microSTATION’s Global/Media mode.
+                                                                                             will indicate “Now transmitting” and the
+   For details, please see “Global/Media mode settings
+                                                                                             microSTATION Editor will indicate
+   on the microSTATION” on page 8.
+                                                                                             “Synchronizing...” while the synchronization data is
+                                                                                             exchanged.
+                                                                                           2. Click the [A] selector at the left side of the realtime
+                                                                                              controls.
+                                                                                              The indications of the four knobs will be [CUTOFF],
+                                                                                              [RESONANCE], [EG INTENSITY], and [EG
+                                                                                              RELEASE].
+                                                                                           3. Use the four knobs of the realtime controls to vary
+                                                                                              the sound. Using the mouse to move the on‐screen
+                                                                                              knobs will have the same result as turning the four
+                                                                                              knobs on the microSTATION itself.
+
+
+
+
+                                                                                                                                                        7
+    USB-MIDI Setup guide
+
+
+
+
+    Global/Media mode settings                                                                                                    MIDI Filter “SysEx” setting
+                                                                                                                                  With the factory settings, the microSTATION is set so that
+    on the microSTATION                                                                                                           it will not transmit or receive system exclusive messages
+                                                                                                                                  (“SysEx” Off). (“microSTATION Parameter guide” on
+    If the microSTATION does not function correctly with                                                                          page 63)
+    your computer, check the following settings on the
+                                                                                                                                  Since the microSTATION Editor/Plug‐In Editor use
+    microSTATION itself.
+                                                                                                                                  numerous MIDI system exclusive messages for
+                                                                                                                                  communicating with the microSTATION, this setting of
+                                                                                                                                  the microSTATION will automatically be turned On
+    “Local Ctrl” settings                                                                                                         when the software starts up.
+    The MIDI software on your computer might have an
+                                                                                                                                  If you are using a MIDI device or an application other
+    Echo Back function where messages that are received                                                                           than the microSTATION Editor/Plug‐In Editor and do not
+    at MIDI IN/USB are retransmitted without change                                                                               want system exclusive messages to be transmitted and
+    from MIDI OUT/USB.                                                                                                            received between it and the microSTATION, you’ll need
+    If your MIDI software’s Echo Back is turned on when                                                                           to use the microSTATION to manually turn this setting
+    the microSTATION is bi‐directionally connected with                                                                           On.
+    your computer, the microSTATION’s internal sound                                                                                   If you perform any of the following operations on the
+    generator will receive duplicate messages (the                                                                                     microSTATION after the microSTATION Editor/
+    internally generated messages as well as the messages                                                                              Plug‐In Editor has finished starting up, subsequent
+    received via echo‐back), which will cause problems                                                                                 communication will not be possible.
+    such as each note being sounded twice.                                                                                        • Turn MIDI Filter “SysEx” Off
+    In such cases, you can solve the problem by turning the                                                                       • On the microSTATION, use the “Load PCG”
+    microSTATION’s local control setting Off so that the                                                                              command with “All PCG” or “Global setting.”
+    signal route is internally disconnected inside the                                                                            If the microSTATION Editor/Plug‐In Editor becomes
+    microSTATION.                                                                                                                 unable to communicate with the microSTATION, please
+    With the factory settings, the microSTATION’s local                                                                           use the microSTATION itself to turn the MIDI Filter
+    control setting (“Local Ctrl”) is turned On.                                                                                  “SysEx” setting back On.
+    For details, please see “microSTATION Parameter
+    guide” (PDF) page 61.
+    Note: When using the microSTATION by itself, leave
+    the local control setting (“Local Ctrl”) turned On. If this
+    is Off, no sound will be produced when you play the
+    microSTATION’s keyboard.
+    The microSTATION Editor/Plug‐In Editor will
+    automatically set the microSTATION’s local control
+    setting to the appropriate state when the software
+    starts up.
+
+
+
+                                                                                                         Sequencer
+                                                 Local
+                                                                OFF                                   Record
+                                                 Control                                                                Tone
+                                                                ON                                                    generator
+                                                                                                                OFF
+                                                                                 Arpeggiator                    ON
+                                                     MIDI IN          Trigger                         Local
+                                                                                                      Control
+                                                                                                                  MIDI OUT
+
+
+
+
+     While the internal sequencer is playing
+     (The playback of the internal sequencer will not be sent to the arpeggiator.)
+
+                                                                                               Play
+
+                                                            Local                                 Sequencer
+                                                           Control
+                                                                      OFF                      Record
+                                                                                                                    Tone
+                                                                       ON                                         Generator
+
+                                                    MIDI IN
+                                                                                                                  MIDI OUT
+
+
+
+
+8
+                                     IMPORTANT NOTICE TO CONSUMERS
+              This product has been manufactured according to strict specifications and voltage
+              requirements that are applicable in the country in which it is intended that this product should
+              be used. If you have purchased this product via the internet, through mail order, and/or via a
+              telephone sale, you must verify that this product is intended to be used in the country in
+              which you reside.
+              WARNING: Use of this product in any country other than that for which it is intended could
+              be dangerous and could invalidate the manufacturer’s or distributor’s warranty.
+              Please also retain your receipt as proof of purchase otherwise your product may be
+              disqualified from the manufacturer’s or distributor’s warranty.
+
+
+
+
+                     4015-2 Yanokuchi, Inagi-city, Tokyo 206-0812 Japan
+
+© 2010 KORG INC.
+
