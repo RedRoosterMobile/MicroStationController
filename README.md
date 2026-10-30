@@ -1,5 +1,7 @@
 # microSTATION arpeggiator research
 
+**Live demo:** https://redroostermobile.com/microstation-controller/ (Chrome or Edge; connect a microSTATION over USB to use it; the Compose button works only with the local dev server)
+
 ## Conclusion
 
 A focused modern editor for changing a sound's arpeggiator looks feasible using Korg's published MIDI implementation. Reverse-engineering the old Mac executable is not necessary for the documented controls. The research below has since been put into practice in a working web app (see “The app” below).
@@ -39,6 +41,7 @@ npm run build      # production build of both pages
 npm test           # unit and integration tests (Vitest)
 ```
 
+- `dist/` uses relative paths (`base: './'`), so it can be uploaded to the domain root or any sub-path, for example `https://example.com/microstation-controller/`, as plain static files. Both pages work there; only “Compose” does not, because its `/api/compose` endpoint exists only in the dev server (the page says so).
 - `src/main.js` and `src/composer.js` are thin entry points that wire modules together.
 - `src/lib/` holds what both pages share: Web MIDI ports, `send` and request/response matching, Korg 8-to-7-byte unpacking, parameter value encoding, the browser-storage wrapper and DOM helpers.
 - `src/arp/` has the arp controller: SysEx protocol constants and dump parsing (`protocol.js`), keyboard I/O (`device.js`), sounds, patterns, the main panel, filter/joystick/LFO controls, pattern-name reading, saving and connection.
