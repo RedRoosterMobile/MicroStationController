@@ -3,8 +3,8 @@ import { $ } from '../lib/dom.js';
 import { ports, request, unpack } from '../lib/midi.js';
 import { sleep } from '../lib/util.js';
 import { hdr } from './channels.js';
-import { SETTERS, pushSetup, setMethod } from './routing.js';
-import { BANK_GM_DRUMS } from './sounds.js';
+import { SETTERS, pushSetup, setMethod, setSysexSounds } from './routing.js';
+import { BANK_GM, BANK_GM_DRUMS } from './sounds.js';
 import { composer } from './state.js';
 
 const STATUS = ['Off', 'INT', 'EXT', 'EX2'];
@@ -30,13 +30,28 @@ async function readTracks() {
   } catch (e) { $('trackinfo').textContent = 'Read failed: ' + e.message; }
 }
 
+// Send each bank number with the winning SysEx method and report which bank the unit actually stored (A–D = 0–3, GM = 4, g(d) = 14).
+async function probeBanks(method, c) {
+  const lines = ['Bank mapping (sent → stored):'];
+  for (const bank of [0, 1, 2, 3, 4, 14]) {
+    SETTERS[method](c, bank, 5);
+    await sleep(400);
+    const t = (await dumpTracks())[c];
+    lines.push(`  bank ${bank} → ${t.bank}${t.bank === bank ? '' : '  ← differs'} (prog ${t.prog})`);
+  }
+  return lines;
+}
+
 // Try each method on track 16 / channel 16 (unlikely to be in use) and keep the first one the unit reflects back.
+// Each trial targets a bank and program different from what the track holds now, so a leftover value can't pass as a success.
 async function selfTest() {
   const c = 15, lines = [];
   let found = null;
   try {
-    for (const [i, name] of ['sx8', 'sx7', 'cc'].entries()) {
-      const bank = BANK_GM_DRUMS, prog = [8, 16, 24][i];
+    for (const name of ['sx7', 'cc']) {
+      const current = (await dumpTracks())[c];
+      const bank = current.bank === BANK_GM_DRUMS ? BANK_GM : BANK_GM_DRUMS;
+      const prog = current.prog === 16 ? 24 : 16;
       SETTERS[name](c, bank, prog);
       await sleep(400);
       const t = (await dumpTracks())[c];
@@ -44,8 +59,14 @@ async function selfTest() {
       lines.push(`${name}: sent bank ${bank} prog ${prog}, track 16 now bank ${t.bank} prog ${t.prog} → ${ok ? 'OK' : 'no'}`);
       if (ok && !found) found = name;
     }
-    if (found) { setMethod(found); lines.push(`Using "${found}" from now on.`); if (composer.song) pushSetup(); }
-    else lines.push('None of the three methods changed the bank. Tell me this output.');
+    if (found && found !== 'cc') lines.push(...await probeBanks(found, c));
+    if (found) {
+      setMethod(found);
+      if (found !== 'cc') setSysexSounds(true);          // SysEx methods only take effect with this ticked
+      lines.push(`Using "${found}" from now on.`);
+      if (composer.song) pushSetup();
+    }
+    else lines.push('Neither method changed the bank. Tell me this output.');
   } catch (e) { lines.push('Self-test failed: ' + e.message); }
   $('trackinfo').textContent = lines.join('\n');
 }

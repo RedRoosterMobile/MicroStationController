@@ -7,9 +7,12 @@ import { ensureKit } from './kits.js';
 import { bankLsb, bankMsb } from './sounds.js';
 import { composer } from './state.js';
 
-// 'sx8'/'sx7' = SysEx parameter change with the value encoded as prog | bank<<8 or prog | bank<<7;
-// 'cc' = bank select control changes + program change. The self-test (diagnostics.js) finds which one the keyboard actually honours.
+// 'sx7' = SysEx parameter change with the value encoded as prog | bank<<7 (verified on the unit: the bank is stored unchanged);
+// 'cc' = bank select control changes + program change (needs "Prog Chg" on for each track). The self-test (diagnostics.js)
+// finds which one the keyboard actually honours.
+// An earlier 'sx8' encoding (bank<<8) doubled the bank number on the unit (B → C, D → GM), so it is gone; a saved 'sx8' falls back to 'sx7'.
 let method = store.get('comp.method', 'sx7');
+if (method === 'sx8') method = 'sx7';
 export const setMethod = m => { method = m; store.set('comp.method', m); };
 
 const sxParam = (c, v) => send([...hdr(), 0x41, 0x04, 0x00, 0x04 + c, 0x00, 0x00, ...encodeParamValue(v), 0xF7]);
@@ -19,7 +22,6 @@ const sendBankAndProgram = (c, bank, prog) => {
   send([0xC0 | c, prog]);
 };
 export const SETTERS = {
-  sx8: (c, bank, prog) => sxParam(c, prog | (bank << 8)),
   sx7: (c, bank, prog) => sxParam(c, prog | (bank << 7)),
   cc: sendBankAndProgram,
 };
@@ -34,6 +36,12 @@ export const pushVol = t => send([0xB0 | (t.ch - 1), 0x07, t.vol ?? 100]);
 
 // Bank select + program change + volume for every channel of the song.
 export const pushSetup = () => composer.song.tracks.forEach(t => { pushProgram(t); pushVol(t); ensureKit(t); });
+
+// The "Set sounds via SysEx" checkbox (saved), used by pushProgram when the method is a SysEx one.
+export function setSysexSounds(on) {
+  $('sx').checked = on;
+  store.set('comp.sx', on);
+}
 
 export function initRouting() {
   $('sx').checked = store.get('comp.sx', false);
