@@ -149,7 +149,7 @@ async function goSound(raw) {
       send([0xB0 | ch, 0x00, 0x00]); await sleep(40);
       send([0xB0 | ch, 0x20, t >> 7]); await sleep(40);
       send([0xC0 | ch, t & 127]); await sleep(500);
-      curSound = t;
+      curSound = t; resetKnobs(false);
       try { await readCurrent(); await restoreArp(wasOn); } catch (e) { banner('Re-read failed: ' + e.message); }
     }
   } finally { soundBusy = false; }
@@ -163,7 +163,7 @@ $('keeparp').onchange = e => store.set('arp.keepArp', e.target.checked);
 const stepSound = d => state && goSound((desiredSound ?? curSound ?? 0) + d);
 
 async function switchMode(m) {                      // 0 = Combination Play, 2 = Program Play
-  banner('Switching mode…'); curSound = null; desiredSound = null;
+  banner('Switching mode…'); curSound = null; desiredSound = null; resetKnobs(false);
   const wasOn = !!state?.arp;
   send([...hdr(), 0x4E, m, 0xF7]);
   await sleep(2500);                                // the unit ignores requests for a moment after a mode change
@@ -180,6 +180,53 @@ async function setParam(id, sub, value) {
   try { await readCurrent(); } catch (e) { banner('Re-read failed: ' + e.message); }
 }
 const setSlot = (slot, sub, value) => setParam(slotId(slot), sub, value);
+
+// ---------- filter / EG knobs (realtime controls, mode A): relative -99…+99, sent as MIDI CC ----------
+const KNOBS = [
+  { id: 'cutoff', label: 'Cutoff', cc: 74 }, { id: 'reso', label: 'Resonance', cc: 71 }, { id: 'egint', label: 'EG Intensity', cc: 79 },
+  { id: 'egrel', label: 'EG Release', cc: 72 }, { id: 'egatk', label: 'EG Attack', cc: 73 }, { id: 'egdec', label: 'EG Decay', cc: 75 }, { id: 'egsus', label: 'EG Sustain', cc: 70 },
+];
+const knobVal = {};
+const knobCC = x => clamp(Math.round((x + 99) / 198 * 127), 0, 127);
+$('filter').innerHTML = KNOBS.map(k => `<div class="row"><label>${k.label}</label><input type="range" id="k_${k.id}" min="-99" max="99" step="1" value="0" disabled><span class="val" id="k_${k.id}_v">0</span></div>`).join('');
+function setKnob(k, x, sendIt) {
+  knobVal[k.id] = x; $('k_' + k.id).value = x; $('k_' + k.id + '_v').textContent = (x > 0 ? '+' : '') + x;
+  if (sendIt && out) send([0xB0 | ch, k.cc, knobCC(x)]);
+}
+function resetKnobs(sendIt) { for (const k of KNOBS) setKnob(k, 0, sendIt); }
+for (const k of KNOBS) {
+  const r = $('k_' + k.id);
+  r.oninput = () => setKnob(k, +r.value, true);
+  r.onchange = () => r.blur();                      // return arrow keys to pattern stepping
+  r.ondblclick = () => setKnob(k, 0, true);
+}
+$('freset').onclick = () => resetKnobs(true);
+
+// ---------- joystick: X = pitch bend, +Y = CC#1, −Y = CC#2; springs back to centre ----------
+const pad = $('pad'), padKnob = $('knob');
+let stick = { bend: 8192, up: 0, dn: 0 };
+function sendStick(bend, up, dn) {
+  if (bend !== stick.bend) send([0xE0 | ch, bend & 127, bend >> 7]);
+  if (up !== stick.up) send([0xB0 | ch, 1, up]);
+  if (dn !== stick.dn) send([0xB0 | ch, 2, dn]);
+  stick = { bend, up, dn };
+  $('st_x').textContent = bend - 8192; $('st_up').textContent = up; $('st_dn').textContent = dn;
+}
+function moveStick(e) {
+  const r = pad.getBoundingClientRect();
+  const x = clamp((e.clientX - r.left) / r.width * 2 - 1, -1, 1), y = clamp(1 - (e.clientY - r.top) / r.height * 2, -1, 1);
+  padKnob.style.left = (50 + x * 42) + '%'; padKnob.style.top = (50 - y * 42) + '%';
+  sendStick(Math.round(8192 + x * 8191), y > 0 ? Math.round(y * 127) : 0, y < 0 ? Math.round(-y * 127) : 0);
+}
+pad.onpointerdown = e => { if (!state) return; pad.setPointerCapture(e.pointerId); moveStick(e); };
+pad.onpointermove = e => { if (pad.hasPointerCapture(e.pointerId)) moveStick(e); };
+const releaseStick = e => {
+  if (!pad.hasPointerCapture(e.pointerId)) return;
+  pad.releasePointerCapture(e.pointerId);
+  padKnob.style.left = padKnob.style.top = '50%';
+  sendStick(8192, 0, 0);
+};
+pad.onpointerup = pad.onpointercancel = releaseStick;
 
 // ---------- pattern stepping (coalesces rapid presses) ----------
 let stepBusy = false, desired = null;
@@ -222,6 +269,8 @@ function render() {
   buildSlots();
   for (const id of ['arp', 'latch', 'tempo', 'psearch', 'prev', 'next', 'save', 'sprev', 'snext', 'srandom', 'prandom', 'selbank', 'selnum', 'selsearch', 'selcat']) $(id).disabled = !on;
   $('refresh').disabled = !out; $('names').disabled = !out;
+  for (const k of KNOBS) $('k_' + k.id).disabled = !on;
+  $('freset').disabled = !on; pad.classList.toggle('off', !on);
   document.querySelectorAll('#modes button').forEach(b => { b.disabled = !out; b.classList.toggle('on', on && (state.kind === 'combi') === (b.dataset.mode === '0')); });
   document.querySelectorAll('#slots input, #slots select').forEach(e => e.disabled = !on);
   if (!on) { $('pname').textContent = '–'; $('pcur').textContent = '–'; return; }

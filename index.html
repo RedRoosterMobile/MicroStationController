@@ -54,6 +54,13 @@
   dialog::backdrop { background:rgba(0,0,0,.45); }
   .danger { color:var(--danger); }
   .danger-btn { background:var(--danger); border-color:var(--danger); color:#fff; }
+  .stick { display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  #pad { position:relative; width:180px; height:180px; border:1px solid var(--line); border-radius:12px; background:var(--bg); touch-action:none; cursor:grab; flex:none; }
+  #pad.off { opacity:.45; cursor:not-allowed; }
+  #pad::before, #pad::after { content:''; position:absolute; background:var(--line); }
+  #pad::before { left:50%; top:8px; bottom:8px; width:1px; } #pad::after { top:50%; left:8px; right:8px; height:1px; }
+  #knob { position:absolute; width:28px; height:28px; margin:-14px 0 0 -14px; left:50%; top:50%; border-radius:50%; background:var(--accent); pointer-events:none; }
+  #stickinfo { font-variant-numeric:tabular-nums; color:var(--muted); line-height:1.8; }
   @media (max-width:520px) { .row { grid-template-columns:1fr; gap:4px; } .val { text-align:left; } }
 </style>
 </head>
@@ -110,6 +117,16 @@
     </div>
     <div class="row"><label>Tempo</label><input type="range" id="tempo" min="40" max="300" step="1" disabled><span class="val"><span id="tempo_v" class="editable" title="Click to type a tempo">–</span><input type="number" id="tempo_n" min="40" max="300" step="0.01" style="display:none;width:90px"></span></div>
     <div id="slots"></div>
+  </div>
+
+  <div class="card">
+    <h2><span>Filter / EG</span><button id="freset" disabled>Reset all</button></h2>
+    <div id="filter"></div>
+    <div class="stick" style="margin-top:12px">
+      <div id="pad" class="off" title="Joystick: drag; it springs back to centre on release"><div id="knob"></div></div>
+      <div id="stickinfo">Joystick<br>X pitch bend: <span id="st_x">0</span><br>+Y mod (CC#1): <span id="st_up">0</span><br>−Y (CC#2): <span id="st_dn">0</span></div>
+    </div>
+    <p class="note">Same as the realtime knobs in mode A (Cutoff, Resonance, EG Intensity, EG Release) plus the other EG knobs. Values are relative to the sound (−99…+99, 0 = as programmed), sent as MIDI CC, so the unit's current position can't be read back; they reset to 0 when the sound changes. Double-click a slider to zero it. The joystick pad sends pitch bend (X), CC#1 (up) and CC#2 (down) and snaps back to centre when released; what those do depends on the sound's joystick assignments. Needs the unit to accept control changes (Global/Media → MIDI → Enable Control Change).</p>
   </div>
 
   <div class="card">
