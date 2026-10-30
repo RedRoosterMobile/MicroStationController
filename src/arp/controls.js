@@ -4,6 +4,7 @@ import { $ } from '../lib/dom.js';
 import { ports, send } from '../lib/midi.js';
 import { store } from '../lib/store.js';
 import { clamp } from '../lib/util.js';
+import { advanceLfo } from './lfo-math.js';
 import { session } from './session.js';
 
 const ccMsg = (cc, value) => [0xB0 | session.ch, cc, value];
@@ -90,12 +91,6 @@ const TARGETS = [
 const RATES = [['16', '4 bars'], ['8', '2 bars'], ['4', '1 bar'], ['2', '1/2'], ['1', '1/4'], ['0.5', '1/8'], ['0.25', '1/16'], ['free', 'Free (Hz)']];
 const SHAPES = [['sine', 'Sine'], ['tri', 'Triangle'], ['saw', 'Saw'], ['square', 'Square'], ['rand', 'Random']];
 const POLARITIES = [['bi', '±'], ['up', '+ only'], ['dn', '− only']];
-const WAVES = {
-  sine: p => Math.sin(2 * Math.PI * p),
-  tri: p => p < .25 ? 4 * p : p < .75 ? 2 - 4 * p : 4 * p - 4,
-  saw: p => 2 * ((p + .5) % 1) - 1,
-  square: p => p < .5 ? 1 : -1,
-};
 const LFO_TICK_MS = 20;
 
 const LFO = {};
@@ -126,14 +121,7 @@ tickWorker.onmessage = () => lfoTick(performance.now());
 const anyLfoOn = () => TARGETS.some(t => LFO[t.id].on);
 const cyclesPerSecond = l => l.rate === 'free' ? l.hz : (session.state?.tempo ?? 120) / 60 / +l.rate;
 
-function advanceLfo(l, dt) {
-  l.phase += dt * cyclesPerSecond(l);
-  if (l.phase >= 1) { l.phase %= 1; l.hold = Math.random() * 2 - 1; }
-  let v = l.shape === 'rand' ? l.hold : WAVES[l.shape](l.phase);
-  if (l.pol === 'up') v = (v + 1) / 2;
-  else if (l.pol === 'dn') v = -(v + 1) / 2;
-  return v * l.depth / 100;                           // -1…+1 share of the full range
-}
+const advance = (l, dt) => advanceLfo(l, dt, cyclesPerSecond(l));
 
 function lfoTick(now) {
   const dt = (now - lastTick) / 1000;
@@ -142,7 +130,7 @@ function lfoTick(now) {
   for (const t of TARGETS) {
     const l = LFO[t.id];
     if (!l.on) continue;
-    const amount = advanceLfo(l, dt);
+    const amount = advance(l, dt);
     if (!t.knob) { off[t.axis] = amount; continue; }
     const effective = clamp(Math.round(knobVal[t.id] + amount * 99), -99, 99), cc = knobCC(effective);
     if (cc !== l.last) { sendQuiet(ccMsg(t.knob.cc, cc)); l.last = cc; }

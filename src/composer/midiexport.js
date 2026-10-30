@@ -35,7 +35,7 @@ function songTrackEvents(t) {
   return events;
 }
 
-function songToMidi(song) {
+export function songToMidi(song) {
   const mpq = Math.round(60e6 / song.tempo);            // microseconds per quarter note
   const chunks = [trackChunk([{ t: 0, o: 0, d: [0xFF, 0x51, 3, (mpq >> 16) & 255, (mpq >> 8) & 255, mpq & 255] }])];
   for (const t of song.tracks) chunks.push(trackChunk(songTrackEvents(t)));

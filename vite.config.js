@@ -78,5 +78,6 @@ function composePlugin() {
 
 export default {
   plugins: [composePlugin()],
+  test: { setupFiles: ['./src/test-setup.js'] },
   build: { rollupOptions: { input: { main: 'index.html', composer: 'composer.html' } } },
 };

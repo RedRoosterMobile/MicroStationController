@@ -15,7 +15,7 @@ const GM_ANCHOR = { kick: 36, snare: 38, rim: 37, clap: 39, tomLo: 43, tomMid: 4
 const ODD_SAMPLE = /Reverse|Roll|Flam|Ghost|Rim|Side|Gated|Buzz|Lo-?Fi|Distort|Noise|Filter|Pitch|Tail|Hit \d|Sweep|Delay|Echo|Pad|Synth/i;
 const ODD_PENALTY = 60;
 
-function roleOf(name) {
+export function roleOf(name) {
   if (/^BD/i.test(name)) return 'kick';
   if (/^SD/i.test(name)) return 'snare';
   if (/Side ?stick|Rim ?shot|Rim$/i.test(name)) return 'rim';
@@ -24,6 +24,17 @@ function roleOf(name) {
   if (/Crash|Splash|China/i.test(name)) return 'crash';
   if (/Ride/i.test(name)) return 'ride';
   if (/^Tom/i.test(name)) return /Floor|Lo/i.test(name) ? 'tomLo' : /Mid/i.test(name) ? 'tomMid' : 'tomHi';
+  return null;
+}
+
+// The key closest to where GM would put the sound for `role`, falling back to related roles (e.g. a missing tom → another tom).
+export function chooseKey(role, keysByRole, sampleNames) {
+  for (const r of [role, ...(ROLE_FALLBACK[role] ?? [])]) {
+    const keys = keysByRole[r];
+    if (!keys?.length) continue;
+    const score = k => Math.abs(k - GM_ANCHOR[r]) + (ODD_SAMPLE.test(sampleNames[k]) ? ODD_PENALTY : 0);
+    return keys.reduce((a, b) => score(b) < score(a) ? b : a);
+  }
   return null;
 }
 
@@ -52,16 +63,7 @@ async function learnKit(bank, prog) {
     const role = roleOf(name);
     if (role) (keysByRole[role] ??= []).push(k);
   }
-  // the key closest to where GM would put the sound, falling back to related roles (e.g. a missing tom → another tom)
-  const pickKey = role => {
-    for (const r of [role, ...(ROLE_FALLBACK[role] ?? [])]) {
-      const keys = keysByRole[r];
-      if (!keys?.length) continue;
-      const score = k => Math.abs(k - GM_ANCHOR[r]) + (ODD_SAMPLE.test(sampleNames[k]) ? ODD_PENALTY : 0);
-      return keys.reduce((a, b) => score(b) < score(a) ? b : a);
-    }
-    return null;
-  };
+  const pickKey = role => chooseKey(role, keysByRole, sampleNames);
   const map = {};
   for (const [gmNote, role] of Object.entries(GM_ROLE)) { const k = pickKey(role); if (k !== null) map[gmNote] = k; }
   const found = Object.fromEntries(Object.keys(GM_ANCHOR).map(r => [r, pickKey(r)]));
