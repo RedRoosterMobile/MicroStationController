@@ -223,9 +223,12 @@ pad.onpointermove = e => { if (pad.hasPointerCapture(e.pointerId)) moveStick(e);
 const releaseStick = e => {
   if (!pad.hasPointerCapture(e.pointerId)) return;
   pad.releasePointerCapture(e.pointerId);
-  padKnob.style.left = padKnob.style.top = '50%';
-  sendStick(8192, 0, 0);
+  if (!$('snap').checked) return;                   // snap off: the stick stays where it was released
+  centerStick();
 };
+function centerStick() { padKnob.style.left = padKnob.style.top = '50%'; sendStick(8192, 0, 0); }
+$('snap').checked = store.get('stick.snap', true);
+$('snap').onchange = e => { store.set('stick.snap', e.target.checked); if (e.target.checked) centerStick(); };
 pad.onpointerup = pad.onpointercancel = releaseStick;
 
 // ---------- pattern stepping (coalesces rapid presses) ----------

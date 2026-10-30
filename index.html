@@ -124,7 +124,7 @@
     <div id="filter"></div>
     <div class="stick" style="margin-top:12px">
       <div id="pad" class="off" title="Joystick: drag; it springs back to centre on release"><div id="knob"></div></div>
-      <div id="stickinfo">Joystick<br>X pitch bend: <span id="st_x">0</span><br>+Y mod (CC#1): <span id="st_up">0</span><br>−Y (CC#2): <span id="st_dn">0</span></div>
+      <div id="stickinfo">Joystick<br>X pitch bend: <span id="st_x">0</span><br>+Y mod (CC#1): <span id="st_up">0</span><br>−Y (CC#2): <span id="st_dn">0</span><br><label><input type="checkbox" id="snap" checked> Snap back to centre</label></div>
     </div>
     <p class="note">Same as the realtime knobs in mode A (Cutoff, Resonance, EG Intensity, EG Release) plus the other EG knobs. Values are relative to the sound (−99…+99, 0 = as programmed), sent as MIDI CC, so the unit's current position can't be read back; they reset to 0 when the sound changes. Double-click a slider to zero it. The joystick pad sends pitch bend (X), CC#1 (up) and CC#2 (down) and snaps back to centre when released; what those do depends on the sound's joystick assignments. Needs the unit to accept control changes (Global/Media → MIDI → Enable Control Change).</p>
   </div>
