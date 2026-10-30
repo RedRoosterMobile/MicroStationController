@@ -74,8 +74,9 @@ async function compose(revise) {
   $('compose').disabled = $('revise').disabled = true;
   $('cstatus').textContent = 'Composing… (this takes ~20–60 s)';
   try {
-    const r = await fetch('/api/compose', { method: 'POST', body: JSON.stringify({ prompt, song: revise ? forModel(composer.song) : undefined }) });
-    const j = await r.json();
+    const r = await fetch('api/compose', { method: 'POST', body: JSON.stringify({ prompt, song: revise ? forModel(composer.song) : undefined }) });
+    const j = await r.json().catch(() => null);          // the compose endpoint always answers JSON; anything else is a static host
+    if (!j) throw new Error('composing needs the local dev server (npm run dev)');
     if (!r.ok) throw new Error(j.error || r.status);
     stop();
     loadSong(j);

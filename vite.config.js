@@ -77,6 +77,7 @@ function composePlugin() {
 }
 
 export default {
+  base: './',                                      // relative asset paths: the build works at the domain root or under any sub-path
   plugins: [composePlugin()],
   test: { setupFiles: ['./src/test-setup.js'] },
   build: { rollupOptions: { input: { main: 'index.html', composer: 'composer.html' } } },
