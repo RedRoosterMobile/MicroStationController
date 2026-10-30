@@ -32,12 +32,19 @@ function patternInfo(raw) {
 const patLabel = raw => { const p = patternInfo(raw); return `${p.slot} ${p.name}`; };
 
 // ---------- log / banner ----------
-function log(s) { if (quiet) return; const l = $('log'); l.textContent += s + '\n'; l.scrollTop = l.scrollHeight; }
+// Keep only the last LOG_MAX lines and redraw at most once per frame; an ever-growing text node makes the browser re-lay-out it on every message.
+const LOG_MAX = 200, logLines = []; let logQueued = false;
+function log(s) {
+  if (quiet) return;
+  logLines.push(s); if (logLines.length > LOG_MAX) logLines.shift();
+  if (logQueued) return; logQueued = true;
+  requestAnimationFrame(() => { logQueued = false; const l = $('log'); l.textContent = logLines.join('\n'); l.scrollTop = l.scrollHeight; });
+}
 function banner(msg) { const b = $('banner'); b.textContent = msg || ''; b.classList.toggle('show', !!msg); }
 
 // ---------- MIDI plumbing ----------
 const hdr = () => [0xF0, 0x42, 0x30 | ch, 0x00, 0x01, 0x0D];
-function send(bytes) { out.send(bytes); log('→ ' + (bytes.length > 24 ? hex(bytes.slice(0, 24)) + ' …' : hex(bytes))); }
+function send(bytes, silent) { out.send(bytes); if (!silent) log('→ ' + (bytes.length > 24 ? hex(bytes.slice(0, 24)) + ' …' : hex(bytes))); }
 
 function onMessage(e) {
   const d = e.data;
@@ -191,7 +198,7 @@ const knobCC = x => clamp(Math.round((x + 99) / 198 * 127), 0, 127);
 $('filter').innerHTML = KNOBS.map(k => `<div class="row"><label>${k.label}</label><input type="range" id="k_${k.id}" min="-99" max="99" step="1" value="0" disabled><span class="val" id="k_${k.id}_v">0</span></div>`).join('');
 function setKnob(k, x, sendIt) {
   knobVal[k.id] = x; $('k_' + k.id).value = x; $('k_' + k.id + '_v').textContent = (x > 0 ? '+' : '') + x;
-  if (sendIt && out && !LFO[k.id].on) send([0xB0 | ch, k.cc, knobCC(x)]);
+  if (sendIt && out && !LFO[k.id].on) send([0xB0 | ch, k.cc, knobCC(x)], true);
 }
 function resetKnobs(sendIt) { for (const k of KNOBS) setKnob(k, 0, sendIt); }
 for (const k of KNOBS) {
@@ -206,9 +213,9 @@ $('freset').onclick = () => resetKnobs(true);
 const pad = $('pad'), padKnob = $('knob');
 let stick = { bend: 8192, up: 0, dn: 0 };
 function sendStick(bend, up, dn) {
-  if (bend !== stick.bend) send([0xE0 | ch, bend & 127, bend >> 7]);
-  if (up !== stick.up) send([0xB0 | ch, 1, up]);
-  if (dn !== stick.dn) send([0xB0 | ch, 2, dn]);
+  if (bend !== stick.bend) send([0xE0 | ch, bend & 127, bend >> 7], true);
+  if (up !== stick.up) send([0xB0 | ch, 1, up], true);
+  if (dn !== stick.dn) send([0xB0 | ch, 2, dn], true);
   stick = { bend, up, dn };
   $('st_x').textContent = bend - 8192; $('st_up').textContent = up; $('st_dn').textContent = dn;
 }
@@ -281,8 +288,9 @@ function lfoTick(now) {
     const o = v * l.depth / 100;
     if (t.knob) {
       const eff = clamp(Math.round(knobVal[t.id] + o * 99), -99, 99), cc = knobCC(eff);
-      if (cc !== l.last) { send([0xB0 | ch, t.knob.cc, cc]); l.last = cc; }
-      $('lfos').querySelector(`[data-t="${t.id}"] [data-p="out"]`).textContent = (eff > 0 ? '+' : '') + eff;
+      if (cc !== l.last) { send([0xB0 | ch, t.knob.cc, cc], true); l.last = cc; }
+      const txt = (eff > 0 ? '+' : '') + eff;
+      if (l.shown !== txt) { l.shown = txt; (l.outEl ??= $('lfos').querySelector(`[data-t="${t.id}"] [data-p="out"]`)).textContent = txt; }
     } else { off[t.id === 'jx' ? 'x' : 'y'] = o; }
   }
   lfoOff = off; if (LFO.jx.on || LFO.jy.on) applyStick();
@@ -291,8 +299,8 @@ function lfoSet(id, on) {
   const l = LFO[id], t = TARGETS.find(x => x.id === id), row = $('lfos').querySelector(`[data-t="${id}"]`);
   l.on = on; l.last = null; row.querySelector('[data-p="on"]').checked = on;
   if (!on) {
-    row.querySelector('[data-p="out"]').textContent = '';
-    if (t.knob) { if (out) send([0xB0 | ch, t.knob.cc, knobCC(knobVal[id])]); }   // back to the manual value
+    row.querySelector('[data-p="out"]').textContent = ''; l.shown = null;
+    if (t.knob) { if (out) send([0xB0 | ch, t.knob.cc, knobCC(knobVal[id])], true); }   // back to the manual value
     else { lfoOff = { x: LFO.jx.on ? lfoOff.x : 0, y: LFO.jy.on ? lfoOff.y : 0 }; if (id === 'jx') lfoOff.x = 0; else lfoOff.y = 0; applyStick(); }
   }
   if (on) l.phase = 0;
