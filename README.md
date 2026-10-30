@@ -2,7 +2,19 @@
 
 ## Conclusion
 
-A focused modern editor for changing a sound's arpeggiator looks feasible using Korg's published MIDI implementation. Reverse-engineering the old Mac executable is not necessary for the documented controls. No MIDI communication or hardware testing has been performed yet.
+A focused modern editor for changing a sound's arpeggiator looks feasible using Korg's published MIDI implementation. Reverse-engineering the old Mac executable is not necessary for the documented controls. The research below has since been put into practice in a working web app (see “The app” below).
+
+## The app
+
+A Vite web page (`npm run dev`, `index.html` + `src/main.js`) that talks to the keyboard over Web MIDI with SysEx enabled (use Chrome or Edge). There is also a pattern composer page (`composer.html`, `src/composer.js`).
+
+- **Connect:** identifies the unit and its global channel, reads the current Program or Combination, and can switch between Program and Combination Play.
+- **Sounds:** browse, search and filter the factory Programs (banks A–D) and Combinations (A–C), step with ↑/↓, or pick a random one. Selection uses Bank Select + Program Change.
+- **Arpeggiator:** on/off, latch, tempo, and for each arp (A and B in Combinations) octave, resolution, gate, velocity and swing, plus a searchable pattern list with favourites and a random button (←/→ step through patterns). Values are re-read from the unit after each change. Pattern names can be read from the unit.
+- **Save:** writes the edit buffer to a chosen bank/number after an explicit confirmation. Nothing is written to memory otherwise.
+- **Filter / EG:** sliders for Cutoff (CC#74), Resonance (CC#71), EG Intensity (CC#79), EG Release (CC#72), EG Attack (CC#73), EG Decay (CC#75) and EG Sustain (CC#70). These are the realtime-knob “mode A” parameters, relative −99…+99 with 0 as programmed, sent as MIDI CC. The unit does not report their position, so the sliders reflect only what the page last sent, and they reset on sound or mode change. Needs “Enable Control Change” on the keyboard.
+- **Joystick pad:** X sends pitch bend, up sends CC#1 and down sends CC#2. A checkbox chooses whether the stick springs back to centre on release (remembered in the browser).
+- **Automation (LFO):** one LFO per joystick axis and per filter/EG knob. Shapes are sine, triangle, saw, square and random; rates are synced to the arp tempo (4 bars to 1/16) or free in Hz; polarity is ±, + only or − only; depth is a percentage of the range. The LFO adds an offset to the manual value, and dragging the pad overrides its LFOs. A Web Worker keeps the timing steady in background tabs, and messages are sent only when a value changes (at most about 50 per second per target). “Stop all & centre” and any sound or mode change stop all LFOs.
 
 ## Downloaded references
 
@@ -85,7 +97,7 @@ The document also supplies mode requests (function 12), mode responses (42), mod
 - Verify MIDI connectivity on this modern Mac; the old USB-MIDI Setup Guide is not evidence that its historical driver supports current macOS. A compatible DIN MIDI interface is another possible transport.
 - Start with read-only identity/mode/current-Program queries, then back up the current Program.
 - Preview with parameter changes; do not send memory-write/store commands automatically. A persistent save should require explicit user action, preferably initially using the keyboard's own Write operation and a spare destination.
-- No MIDI messages have been sent, no driver installed, and no security settings changed during this research.
+- The research phase sent no MIDI messages, installed no driver and changed no security settings.
 
 ## Uncertainties to resolve on hardware
 
