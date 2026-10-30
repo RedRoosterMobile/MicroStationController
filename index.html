@@ -61,6 +61,11 @@
   #pad::before { left:50%; top:8px; bottom:8px; width:1px; } #pad::after { top:50%; left:8px; right:8px; height:1px; }
   #knob { position:absolute; width:28px; height:28px; margin:-14px 0 0 -14px; left:50%; top:50%; border-radius:50%; background:var(--accent); pointer-events:none; }
   #stickinfo { font-variant-numeric:tabular-nums; color:var(--muted); line-height:1.8; }
+  .lfo { display:flex; gap:8px; align-items:center; flex-wrap:wrap; padding:6px 0; border-top:1px solid var(--line); }
+  .lfo:first-child { border-top:0; }
+  .lfo-h { width:190px; }
+  .lfo input[type=range] { width:110px; }
+  .lfo .val { min-width:36px; }
   @media (max-width:520px) { .row { grid-template-columns:1fr; gap:4px; } .val { text-align:left; } }
 </style>
 </head>
@@ -127,6 +132,12 @@
       <div id="stickinfo">Joystick<br>X pitch bend: <span id="st_x">0</span><br>+Y mod (CC#1): <span id="st_up">0</span><br>−Y (CC#2): <span id="st_dn">0</span><br><label><input type="checkbox" id="snap" checked> Snap back to centre</label></div>
     </div>
     <p class="note">Same as the realtime knobs in mode A (Cutoff, Resonance, EG Intensity, EG Release) plus the other EG knobs. Values are relative to the sound (−99…+99, 0 = as programmed), sent as MIDI CC, so the unit's current position can't be read back; they reset to 0 when the sound changes. Double-click a slider to zero it. The joystick pad sends pitch bend (X), CC#1 (up) and CC#2 (down) and snaps back to centre when released; what those do depends on the sound's joystick assignments. Needs the unit to accept control changes (Global/Media → MIDI → Enable Control Change).</p>
+  </div>
+
+  <div class="card">
+    <h2><span>Automation (LFO)</span><button id="lfostop" disabled>Stop all &amp; centre</button></h2>
+    <div id="lfos"></div>
+    <p class="note">Each LFO adds movement on top of the slider or pad position (the slider stays where you set it; the readout shows what is actually sent). Depth is the share of the full range. Rates are synced to the arp tempo shown above (1/4 = one cycle per beat) or free in Hz. Grabbing the pad overrides its LFOs while you hold it. LFOs stop when the sound or mode changes. Pitch bend and CC messages are sent at up to about 50 per second per target, only when the value changes.</p>
   </div>
 
   <div class="card">

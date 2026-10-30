@@ -149,7 +149,7 @@ async function goSound(raw) {
       send([0xB0 | ch, 0x00, 0x00]); await sleep(40);
       send([0xB0 | ch, 0x20, t >> 7]); await sleep(40);
       send([0xC0 | ch, t & 127]); await sleep(500);
-      curSound = t; resetKnobs(false);
+      curSound = t; stopLfos(); resetKnobs(false);
       try { await readCurrent(); await restoreArp(wasOn); } catch (e) { banner('Re-read failed: ' + e.message); }
     }
   } finally { soundBusy = false; }
@@ -163,7 +163,7 @@ $('keeparp').onchange = e => store.set('arp.keepArp', e.target.checked);
 const stepSound = d => state && goSound((desiredSound ?? curSound ?? 0) + d);
 
 async function switchMode(m) {                      // 0 = Combination Play, 2 = Program Play
-  banner('Switching mode…'); curSound = null; desiredSound = null; resetKnobs(false);
+  banner('Switching mode…'); curSound = null; desiredSound = null; stopLfos(); resetKnobs(false);
   const wasOn = !!state?.arp;
   send([...hdr(), 0x4E, m, 0xF7]);
   await sleep(2500);                                // the unit ignores requests for a moment after a mode change
@@ -186,12 +186,12 @@ const KNOBS = [
   { id: 'cutoff', label: 'Cutoff', cc: 74 }, { id: 'reso', label: 'Resonance', cc: 71 }, { id: 'egint', label: 'EG Intensity', cc: 79 },
   { id: 'egrel', label: 'EG Release', cc: 72 }, { id: 'egatk', label: 'EG Attack', cc: 73 }, { id: 'egdec', label: 'EG Decay', cc: 75 }, { id: 'egsus', label: 'EG Sustain', cc: 70 },
 ];
-const knobVal = {};
+const knobVal = Object.fromEntries(KNOBS.map(k => [k.id, 0]));
 const knobCC = x => clamp(Math.round((x + 99) / 198 * 127), 0, 127);
 $('filter').innerHTML = KNOBS.map(k => `<div class="row"><label>${k.label}</label><input type="range" id="k_${k.id}" min="-99" max="99" step="1" value="0" disabled><span class="val" id="k_${k.id}_v">0</span></div>`).join('');
 function setKnob(k, x, sendIt) {
   knobVal[k.id] = x; $('k_' + k.id).value = x; $('k_' + k.id + '_v').textContent = (x > 0 ? '+' : '') + x;
-  if (sendIt && out) send([0xB0 | ch, k.cc, knobCC(x)]);
+  if (sendIt && out && !LFO[k.id].on) send([0xB0 | ch, k.cc, knobCC(x)]);
 }
 function resetKnobs(sendIt) { for (const k of KNOBS) setKnob(k, 0, sendIt); }
 for (const k of KNOBS) {
@@ -212,24 +212,102 @@ function sendStick(bend, up, dn) {
   stick = { bend, up, dn };
   $('st_x').textContent = bend - 8192; $('st_up').textContent = up; $('st_dn').textContent = dn;
 }
-function moveStick(e) {
-  const r = pad.getBoundingClientRect();
-  const x = clamp((e.clientX - r.left) / r.width * 2 - 1, -1, 1), y = clamp(1 - (e.clientY - r.top) / r.height * 2, -1, 1);
+// The pad position (padPos, -1…+1) is the base; LFOs add an offset on top, except while the pad is being dragged.
+let padPos = { x: 0, y: 0 }, padDrag = false, lfoOff = { x: 0, y: 0 };
+function applyStick() {
+  const x = clamp(padPos.x + (padDrag ? 0 : lfoOff.x), -1, 1), y = clamp(padPos.y + (padDrag ? 0 : lfoOff.y), -1, 1);
   padKnob.style.left = (50 + x * 42) + '%'; padKnob.style.top = (50 - y * 42) + '%';
   sendStick(Math.round(8192 + x * 8191), y > 0 ? Math.round(y * 127) : 0, y < 0 ? Math.round(-y * 127) : 0);
 }
-pad.onpointerdown = e => { if (!state) return; pad.setPointerCapture(e.pointerId); moveStick(e); };
+function moveStick(e) {
+  const r = pad.getBoundingClientRect();
+  padPos = { x: clamp((e.clientX - r.left) / r.width * 2 - 1, -1, 1), y: clamp(1 - (e.clientY - r.top) / r.height * 2, -1, 1) };
+  applyStick();
+}
+pad.onpointerdown = e => { if (!state) return; padDrag = true; pad.setPointerCapture(e.pointerId); moveStick(e); };
 pad.onpointermove = e => { if (pad.hasPointerCapture(e.pointerId)) moveStick(e); };
 const releaseStick = e => {
   if (!pad.hasPointerCapture(e.pointerId)) return;
   pad.releasePointerCapture(e.pointerId);
-  if (!$('snap').checked) return;                   // snap off: the stick stays where it was released
-  centerStick();
+  padDrag = false;
+  if ($('snap').checked) padPos = { x: 0, y: 0 };   // snap off: the stick stays where it was released
+  applyStick();
 };
-function centerStick() { padKnob.style.left = padKnob.style.top = '50%'; sendStick(8192, 0, 0); }
+function centerStick() { padPos = { x: 0, y: 0 }; applyStick(); }
 $('snap').checked = store.get('stick.snap', true);
 $('snap').onchange = e => { store.set('stick.snap', e.target.checked); if (e.target.checked) centerStick(); };
 pad.onpointerup = pad.onpointercancel = releaseStick;
+
+// ---------- LFO automation for the joystick axes and the filter knobs ----------
+// Each LFO adds an offset on top of the manual value (slider / pad position). Rates are tempo-synced to the arp or free in Hz.
+const TARGETS = [
+  { id: 'jx', label: 'Joystick X (bend)' }, { id: 'jy', label: 'Joystick Y (CC#1 / CC#2)' },
+  ...KNOBS.map(k => ({ id: k.id, label: k.label, knob: k })),
+];
+const RATES = [['16', '4 bars'], ['8', '2 bars'], ['4', '1 bar'], ['2', '1/2'], ['1', '1/4'], ['0.5', '1/8'], ['0.25', '1/16'], ['free', 'Free (Hz)']];
+const opts = list => list.map(([v, t]) => `<option value="${v}">${t}</option>`).join('');
+const LFO = {};
+for (const t of TARGETS) LFO[t.id] = { on: false, shape: 'sine', rate: t.knob ? '4' : '1', hz: 1, depth: 50, pol: 'bi', phase: 0, hold: 0, last: null };
+$('lfos').innerHTML = TARGETS.map(t => `<div class="lfo" data-t="${t.id}">
+  <label class="lfo-h"><input type="checkbox" data-p="on" disabled> ${t.label}</label>
+  <select data-p="shape">${opts([['sine', 'Sine'], ['tri', 'Triangle'], ['saw', 'Saw'], ['square', 'Square'], ['rand', 'Random']])}</select>
+  <select data-p="rate">${opts(RATES)}</select>
+  <input type="number" data-p="hz" min="0.05" max="20" step="0.05" value="1" style="width:70px;display:none" title="Hz">
+  <select data-p="pol">${opts([['bi', '±'], ['up', '+ only'], ['dn', '− only']])}</select>
+  <input type="range" data-p="depth" min="0" max="100" step="1" value="50" title="Depth">
+  <span class="val" data-p="out"></span></div>`).join('');
+for (const t of TARGETS) $('lfos').querySelector(`[data-t="${t.id}"] [data-p="rate"]`).value = LFO[t.id].rate;
+
+const WAVES = {
+  sine: p => Math.sin(2 * Math.PI * p),
+  tri: p => p < .25 ? 4 * p : p < .75 ? 2 - 4 * p : 4 * p - 4,
+  saw: p => 2 * ((p + .5) % 1) - 1,
+  square: p => p < .5 ? 1 : -1,
+};
+const lfoWorker = new Worker(URL.createObjectURL(new Blob(['let id;onmessage=e=>{clearInterval(id);if(e.data)id=setInterval(()=>postMessage(0),e.data)}'], { type: 'text/javascript' })));
+let lfoLast = 0;                                    // a worker drives the ticks so a background tab doesn't throttle them
+lfoWorker.onmessage = () => lfoTick(performance.now());
+const anyLfo = () => TARGETS.some(t => LFO[t.id].on);
+function lfoTick(now) {
+  const dt = (now - lfoLast) / 1000; lfoLast = now;
+  const off = { x: 0, y: 0 };
+  for (const t of TARGETS) {
+    const l = LFO[t.id]; if (!l.on) continue;
+    const rate = l.rate === 'free' ? l.hz : (state?.tempo ?? 120) / 60 / +l.rate;
+    l.phase += dt * rate;
+    if (l.phase >= 1) { l.phase %= 1; l.hold = Math.random() * 2 - 1; }
+    let v = l.shape === 'rand' ? l.hold : WAVES[l.shape](l.phase);
+    if (l.pol === 'up') v = (v + 1) / 2; else if (l.pol === 'dn') v = -(v + 1) / 2;
+    const o = v * l.depth / 100;
+    if (t.knob) {
+      const eff = clamp(Math.round(knobVal[t.id] + o * 99), -99, 99), cc = knobCC(eff);
+      if (cc !== l.last) { send([0xB0 | ch, t.knob.cc, cc]); l.last = cc; }
+      $('lfos').querySelector(`[data-t="${t.id}"] [data-p="out"]`).textContent = (eff > 0 ? '+' : '') + eff;
+    } else { off[t.id === 'jx' ? 'x' : 'y'] = o; }
+  }
+  lfoOff = off; if (LFO.jx.on || LFO.jy.on) applyStick();
+}
+function lfoSet(id, on) {
+  const l = LFO[id], t = TARGETS.find(x => x.id === id), row = $('lfos').querySelector(`[data-t="${id}"]`);
+  l.on = on; l.last = null; row.querySelector('[data-p="on"]').checked = on;
+  if (!on) {
+    row.querySelector('[data-p="out"]').textContent = '';
+    if (t.knob) { if (out) send([0xB0 | ch, t.knob.cc, knobCC(knobVal[id])]); }   // back to the manual value
+    else { lfoOff = { x: LFO.jx.on ? lfoOff.x : 0, y: LFO.jy.on ? lfoOff.y : 0 }; if (id === 'jx') lfoOff.x = 0; else lfoOff.y = 0; applyStick(); }
+  }
+  if (on) l.phase = 0;
+  if (anyLfo()) { if (!lfoWorker.running) { lfoLast = performance.now(); lfoWorker.postMessage(20); lfoWorker.running = true; } }
+  else { lfoWorker.postMessage(0); lfoWorker.running = false; }
+}
+function stopLfos() { for (const t of TARGETS) if (LFO[t.id].on) lfoSet(t.id, false); }
+$('lfos').addEventListener('input', e => {
+  const row = e.target.closest('[data-t]'), p = e.target.dataset.p; if (!row || !p) return;
+  const l = LFO[row.dataset.t];
+  if (p === 'on') { lfoSet(row.dataset.t, e.target.checked); return; }
+  l[p] = p === 'depth' || p === 'hz' ? +e.target.value : e.target.value;
+  if (p === 'rate') row.querySelector('[data-p="hz"]').style.display = l.rate === 'free' ? '' : 'none';
+});
+$('lfostop').onclick = () => { stopLfos(); centerStick(); };
 
 // ---------- pattern stepping (coalesces rapid presses) ----------
 let stepBusy = false, desired = null;
@@ -273,7 +351,9 @@ function render() {
   for (const id of ['arp', 'latch', 'tempo', 'psearch', 'prev', 'next', 'save', 'sprev', 'snext', 'srandom', 'prandom', 'selbank', 'selnum', 'selsearch', 'selcat']) $(id).disabled = !on;
   $('refresh').disabled = !out; $('names').disabled = !out;
   for (const k of KNOBS) $('k_' + k.id).disabled = !on;
-  $('freset').disabled = !on; pad.classList.toggle('off', !on);
+  $('freset').disabled = !on; pad.classList.toggle('off', !on); $('lfostop').disabled = !on;
+  document.querySelectorAll('#lfos [data-p=on]').forEach(c => c.disabled = !on);
+  if (!on) stopLfos();
   document.querySelectorAll('#modes button').forEach(b => { b.disabled = !out; b.classList.toggle('on', on && (state.kind === 'combi') === (b.dataset.mode === '0')); });
   document.querySelectorAll('#slots input, #slots select').forEach(e => e.disabled = !on);
   if (!on) { $('pname').textContent = '–'; $('pcur').textContent = '–'; return; }
